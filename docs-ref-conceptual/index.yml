@@ -1,0 +1,118 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: <span data-ttu-id="d8069-101">.NET 開発者向けの Azure</span><span class="sxs-lookup"><span data-stu-id="d8069-101">Azure for .NET developers</span></span>
+metadata:
+  document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
+  title: '<span data-ttu-id="d8069-102">.NET 開発者向けの Azure - チュートリアル、API リファレンス</span><span class="sxs-lookup"><span data-stu-id="d8069-102">Azure for .NET developers - Tutorials, API Reference</span></span>'
+  description: <span data-ttu-id="d8069-103">以下のリソースを使用して、Azure でアプリの開発を開始しましょう。.NET 開発者向けの優れたチュートリアルとツールが用意されています。</span><span class="sxs-lookup"><span data-stu-id="d8069-103">Get started developing apps with Azure using the resources below to find great tutorials and tools for .NET developers.</span></span>
+  keywords: '<span data-ttu-id="d8069-104">Azure, .NET, SDK, API, NuGet</span><span class="sxs-lookup"><span data-stu-id="d8069-104">Azure, .NET, SDK, API, NuGet</span></span>'
+  author: camsoper
+  ms.author: casoper
+  manager: douge
+  ms.date: 07/13/2017
+  ms.topic: article
+  featureFlags:
+    - clicktale
+  ms.prod: azure
+  ms.technology: azure
+  ms.devlang: dotnet
+  ms.service: multiple
+sections:
+  - items:
+      - type: markdown
+        text: |
+          <span data-ttu-id="d8069-105">以下のリソースを使用して、Azure でアプリの開発を開始しましょう。.NET 開発者向けの優れたチュートリアルとツールが用意されています。</span><span class="sxs-lookup"><span data-stu-id="d8069-105">Get started developing apps with Azure using the resources below to find great tutorials and tools for .NET developers.</span></span>
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
+            html: <p><span data-ttu-id="d8069-106">最初の .NET アプリを Azure にデプロイする</span><span class="sxs-lookup"><span data-stu-id="d8069-106">Deploy your first .NET app to Azure</span></span></p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
+            title: <span data-ttu-id="d8069-107">作業の開始</span><span class="sxs-lookup"><span data-stu-id="d8069-107">Get Started</span></span>
+          - href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet&view=azure-dotnet'
+            html: <p><span data-ttu-id="d8069-108">.NET を使用した Azure サンプル コード</span><span class="sxs-lookup"><span data-stu-id="d8069-108">Azure code samples using .NET</span></span></p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_code-samples.svg'
+            title: <span data-ttu-id="d8069-109">コード サンプル</span><span class="sxs-lookup"><span data-stu-id="d8069-109">Code Samples</span></span>
+          - href: 'https://docs.microsoft.com/dotnet/azure/dotnet-tools?view=azure-dotnet'
+            html: <p><span data-ttu-id="d8069-110">開発者用ツール</span><span class="sxs-lookup"><span data-stu-id="d8069-110">Developer tools</span></span></p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_download-install.svg'
+            title: <span data-ttu-id="d8069-111">SDK &amp; ツール</span><span class="sxs-lookup"><span data-stu-id="d8069-111">SDK &amp; Tools</span></span>
+          - href: 'https://docs.microsoft.com/en-us/dotnet/api/overview/azure/?view=azure-dotnet'
+            html: <p><span data-ttu-id="d8069-112">.NET 用 NuGet パッケージ</span><span class="sxs-lookup"><span data-stu-id="d8069-112">NuGet packages for .NET</span></span></p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_api-reference.svg'
+            title: <span data-ttu-id="d8069-113">API リファレンス</span><span class="sxs-lookup"><span data-stu-id="d8069-113">API Reference</span></span>
+  - title: <span data-ttu-id="d8069-114">5 分間のクイック スタート</span><span class="sxs-lookup"><span data-stu-id="d8069-114">5-Minute Quickstarts</span></span>
+    items:
+      - type: paragraph
+        text: <span data-ttu-id="d8069-115">Azure サービスを使用して .NET アプリを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d8069-115">Learn how to build .NET apps with Azure services.</span></span>
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg'
+            title: <span data-ttu-id="d8069-116">最初の .NET アプリを Azure にデプロイする</span><span class="sxs-lookup"><span data-stu-id="d8069-116">Deploy your first .NET app to Azure</span></span>
+            href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
+          - image:
+              src: 'https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg'
+            title: <span data-ttu-id="d8069-117">.NET のサーバーレス機能を作成する</span><span class="sxs-lookup"><span data-stu-id="d8069-117">Create a .NET serverless function</span></span>
+            href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
+          - image:
+              src: 'https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg'
+            title: <span data-ttu-id="d8069-118">.NET アプリを Azure SQL Database に接続する</span><span class="sxs-lookup"><span data-stu-id="d8069-118">Connect your .NET app to Azure SQL Database</span></span>
+            href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
+          - image:
+              src: 'https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg'
+            title: <span data-ttu-id="d8069-119">Cosmos DB で .NET アプリを構築する</span><span class="sxs-lookup"><span data-stu-id="d8069-119">Build a .NET app with Cosmos DB</span></span>
+            href: 'https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnet-application'
+          - image:
+              src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
+            title: <span data-ttu-id="d8069-120">Service Fabric で .NET マイクロサービス アプリを作成する</span><span class="sxs-lookup"><span data-stu-id="d8069-120">Create a .NET micro-service app with Service Fabric</span></span>
+            href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+  - title: <span data-ttu-id="d8069-121">Azure で .NET の使用を開始する</span><span class="sxs-lookup"><span data-stu-id="d8069-121">Get Started with .NET on Azure</span></span>
+    items:
+      - type: markdown
+        text: '<iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Welcome-to-the-Azure-for-NET-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>'
+  - title: <span data-ttu-id="d8069-122">Pluralsight での .NET と Azure に関する無料ビデオ トレーニング</span><span class="sxs-lookup"><span data-stu-id="d8069-122">Free .NET and Azure Video Training on Pluralsight</span></span>
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: 'https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg'
+            title: <span data-ttu-id="d8069-123">.NET を用いた Azure での開発</span><span class="sxs-lookup"><span data-stu-id="d8069-123">Developing with .NET on Azure</span></span>
+  - title: <span data-ttu-id="d8069-124">サンプル</span><span class="sxs-lookup"><span data-stu-id="d8069-124">Samples</span></span>
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<span data-ttu-id="d8069-125"><a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/">Cosmos DB と Mongo DB API を使用した .NET アプリの開発</a></span><span class="sxs-lookup"><span data-stu-id="d8069-125"><a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/">Developing a .NET app using Cosmos DB and Mongo DB API</a></span></span>'
+          - html: '<span data-ttu-id="d8069-126"><a href="https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/">.NET での Azure クライアント側暗号化の概要</a></span><span class="sxs-lookup"><span data-stu-id="d8069-126"><a href="https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/">Get started with Azure client-side encryption in .NET</a></span></span>'
+          - html: '<span data-ttu-id="d8069-127"><a href="https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ ">.Net での Azure Table Storage の概要</a></span><span class="sxs-lookup"><span data-stu-id="d8069-127"><a href="https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ ">Get started with Azure Table Storage in .NET</a></span></span>'
+          - html: '<span data-ttu-id="d8069-128"><a href="https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/">.NET での Azure Blob Storage</a></span><span class="sxs-lookup"><span data-stu-id="d8069-128"><a href="https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/">Azure Blob Storage with .NET</a></span></span>'
+          - html: '<span data-ttu-id="d8069-129"><a href="https://azure.microsoft.com/resources/samples/redis-cache-getting-started/">Azure Redis Cache の使用</a></span><span class="sxs-lookup"><span data-stu-id="d8069-129"><a href="https://azure.microsoft.com/resources/samples/redis-cache-getting-started/">Get started with Azure Redis Cache</a></span></span>'
+  - title: <span data-ttu-id="d8069-130">ステップバイステップのチュートリアル</span><span class="sxs-lookup"><span data-stu-id="d8069-130">Step-by-Step Tutorials</span></span>
+    items:
+      - type: paragraph
+        text: <span data-ttu-id="d8069-131">.NET アプリでの Azure サービスとツールの使い方を習得できます。</span><span class="sxs-lookup"><span data-stu-id="d8069-131">Learn how to use Azure services and tools in your .NET apps.</span></span>
+      - type: list
+        style: unordered
+        items:
+          - html: '<span data-ttu-id="d8069-132"><a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Azure SQL Database を使用して ASP.NET Web アプリを作成する</a></span><span class="sxs-lookup"><span data-stu-id="d8069-132"><a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Create an ASP.NET web app with Azure SQL Database</a></span></span>'
+          - html: '<span data-ttu-id="d8069-133"><a href="https://docs.microsoft.com/azure/documentdb/documentdb-dotnet-application">CosmosDB を使用して ASP.NET Web アプリを作成する</a></span><span class="sxs-lookup"><span data-stu-id="d8069-133"><a href="https://docs.microsoft.com/azure/documentdb/documentdb-dotnet-application">Create an ASP.NET web app with CosmosDB</a></span></span>'
+          - html: '<span data-ttu-id="d8069-134"><a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Web API を作成して Azure にデプロイする</a></span><span class="sxs-lookup"><span data-stu-id="d8069-134"><a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Create and deploy a Web API in Azure</a></span></span>'
+          - html: '<span data-ttu-id="d8069-135"><a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes と Windows コンテナーの概要</a></span><span class="sxs-lookup"><span data-stu-id="d8069-135"><a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Get started with Kubernetes and Windows containers</a></span></span>'
+          - html: '<span data-ttu-id="d8069-136"><a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Azure SQL Database に接続してクエリを実行する</a></span><span class="sxs-lookup"><span data-stu-id="d8069-136"><a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Connect and query Azure SQL Database</a></span></span>'
+          - html: '<span data-ttu-id="d8069-137"><a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Azure Database for PostgreSQL に接続してクエリを実行する</a></span><span class="sxs-lookup"><span data-stu-id="d8069-137"><a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Connect and query Azure Database for PostgreSQL</a></span></span>'
+          - html: '<span data-ttu-id="d8069-138"><a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">CosmosDB DocumentDB API の概要</a></span><span class="sxs-lookup"><span data-stu-id="d8069-138"><a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">Get started with CosmosDB DocumentDB API</a></span></span>'
