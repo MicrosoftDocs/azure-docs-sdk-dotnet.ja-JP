@@ -72,7 +72,7 @@ sections:
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg'
             title: Cosmos DB で .NET アプリを構築する
-            href: 'https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnet-application'
+            href: 'https://docs.microsoft.com/en-us/azure/cosmos-db/create-documentdb-dotnet'
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
             title: Service Fabric で .NET マイクロサービス アプリを作成する
@@ -115,4 +115,4 @@ sections:
           - html: '<a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes と Windows コンテナーの概要</a>'
           - html: '<a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Azure SQL Database に接続してクエリを実行する</a>'
           - html: '<a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Azure Database for PostgreSQL に接続してクエリを実行する</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">CosmosDB DocumentDB API の概要</a>'
+          - html: '<a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">.NET Core で CosmosDB DocumentDB API を使ってみる</a>'
