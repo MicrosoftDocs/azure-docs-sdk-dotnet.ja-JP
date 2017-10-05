@@ -5,33 +5,75 @@ keywords: Azure, .NET, SDK, API, Data Factory
 author: camsoper
 ms.author: casoper
 manager: douge
-ms.date: 07/20/2017
+ms.date: 09/22/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: e0b85d7d3988febca6dce7f4038825d74e4b8d2e
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: data-factory
+ms.custom: devcenter
+ms.openlocfilehash: 6f1a1cf9ac8189af59ff4e3f42dc1d8fb9620ea2
+ms.sourcegitcommit: f35939d37f67485b3667739b02621e317db3e391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/23/2017
 ---
-# <a name="azure-data-factory-libraries-for-net"></a><span data-ttu-id="5c040-104">.NET 用 Azure Data Factory ライブラリ</span><span class="sxs-lookup"><span data-stu-id="5c040-104">Azure Data Factory libraries for .NET</span></span>
+# <a name="azure-data-factory-libraries-for-net"></a><span data-ttu-id="067d2-104">.NET 用 Azure Data Factory ライブラリ</span><span class="sxs-lookup"><span data-stu-id="067d2-104">Azure Data Factory libraries for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="5c040-105">概要</span><span class="sxs-lookup"><span data-stu-id="5c040-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="067d2-105">概要</span><span class="sxs-lookup"><span data-stu-id="067d2-105">Overview</span></span>
 
-<span data-ttu-id="5c040-106">Azure Data Factory は、クラウドベースのデータ統合サービスです。</span><span class="sxs-lookup"><span data-stu-id="5c040-106">Azure Data Factory is a cloud-based data integration service.</span></span> <span data-ttu-id="5c040-107">Azure Data Factory を使用すると、クラウドにデータ ドリブン ワークフローを作成して、データ移動とデータ変換を調整および自動化できます。</span><span class="sxs-lookup"><span data-stu-id="5c040-107">It enables you to create data-driven workflows in the cloud to orchestrate and automate data movement and data transformation.</span></span>
+<span data-ttu-id="067d2-106">Azure Data Factory は、クラウドベースのデータ統合サービスです。</span><span class="sxs-lookup"><span data-stu-id="067d2-106">Azure Data Factory is a cloud-based data integration service.</span></span> <span data-ttu-id="067d2-107">Azure Data Factory を使用すると、クラウドにデータ ドリブン ワークフローを作成して、データ移動とデータ変換を調整および自動化できます。</span><span class="sxs-lookup"><span data-stu-id="067d2-107">It enables you to create data-driven workflows in the cloud to orchestrate and automate data movement and data transformation.</span></span>
 
-<span data-ttu-id="5c040-108">詳細については、「[Azure Data Factory の概要](/azure/data-factory/data-factory-introduction)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="5c040-108">To learn more, read the [Introduction to Azure Data Factory](/azure/data-factory/data-factory-introduction).</span></span>
+<span data-ttu-id="067d2-108">詳細については、「[Azure Data Factory の概要](/azure/data-factory/data-factory-introduction)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="067d2-108">To learn more, read the [Introduction to Azure Data Factory](/azure/data-factory/data-factory-introduction).</span></span>
 
-## <a name="management-library"></a><span data-ttu-id="5c040-109">管理ライブラリ</span><span class="sxs-lookup"><span data-stu-id="5c040-109">Management library</span></span>
+## <a name="management-library---data-factory-v2-preview"></a><span data-ttu-id="067d2-109">管理ライブラリ - Data Factory V2 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="067d2-109">Management library - Data Factory V2 (Preview)</span></span>
 
-<span data-ttu-id="5c040-110">データ ドリブン ワークフロー (パイプライン) を作成し、スケジュールするには、管理ライブラリを使用します。</span><span class="sxs-lookup"><span data-stu-id="5c040-110">Use the management library to create and schedule data-driven workflows (pipelines).</span></span>
+<span data-ttu-id="067d2-110">Data Factory V2 (プレビュー) でデータドリブン ワークフロー (パイプライン) を作成し、スケジュールするには、管理ライブラリを使用します。</span><span class="sxs-lookup"><span data-stu-id="067d2-110">Use the management library to create and schedule data-driven workflows (pipelines) in Data Factory V2 (Preview).</span></span>  <span data-ttu-id="067d2-111">詳細については、「[Create a data factory and pipeline using .NET SDK (.NET SDK を使用してデータ ファクトリとパイプラインを作成する)](/azure/data-factory/quickstart-create-data-factory-dot-net)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="067d2-111">For more information, see [Create a data factory and pipeline using .NET SDK](/azure/data-factory/quickstart-create-data-factory-dot-net).</span></span>
 
-<span data-ttu-id="5c040-111">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactories)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。</span><span class="sxs-lookup"><span data-stu-id="5c040-111">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactories) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="067d2-112">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactory)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="067d2-112">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactory) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="5c040-112">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="5c040-112">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="067d2-113">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="067d2-113">Visual Studio Package Manager</span></span>
+
+```powershell
+# Get the most recent prerelease package
+Install-Package Microsoft.Azure.Management.DataFactory -Prerelease
+```
+
+```bash
+# Be sure to include the most recent version from the NuGet package page
+dotnet add package Microsoft.Azure.Management.DataFactory --version 0.2.0-preview
+```
+
+### <a name="code-example"></a><span data-ttu-id="067d2-114">コード例</span><span class="sxs-lookup"><span data-stu-id="067d2-114">Code Example</span></span>
+
+<span data-ttu-id="067d2-115">次の例では、管理ライブラリを使用してデータ ファクトリを作成します。</span><span class="sxs-lookup"><span data-stu-id="067d2-115">The following example uses the management library to create a data factory.</span></span>
+
+```csharp
+/*
+using Microsoft.Azure.Management.ResourceManager;
+using Microsoft.Azure.Management.DataFactory;
+using Microsoft.Azure.Management.DataFactory.Models;
+*/
+
+DataFactoryManagementClient client = new DataFactoryManagementClient(tokenCredentials) { SubscriptionId = subscriptionId };
+Factory dataFactory = new Factory
+{
+    Location = region,
+    Identity = new FactoryIdentity()
+};
+client.Factories.CreateOrUpdate(resourceGroup, dataFactoryName, dataFactory);
+```
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="067d2-116">Management API を探す</span><span class="sxs-lookup"><span data-stu-id="067d2-116">Explore the management APIs</span></span>](/dotnet/api/microsoft.azure.management.datafactory)
+
+## <a name="management-library---data-factory-v1"></a><span data-ttu-id="067d2-117">管理ライブラリ - Data Factory V1</span><span class="sxs-lookup"><span data-stu-id="067d2-117">Management library - Data Factory V1</span></span>
+
+<span data-ttu-id="067d2-118">Data Factory バージョン 1 でデータドリブン ワークフロー (パイプライン) を作成し、スケジュールするには、管理ライブラリを使用します。</span><span class="sxs-lookup"><span data-stu-id="067d2-118">Use the management library to create and schedule data-driven workflows (pipelines) in Data Factory Version 1.</span></span>  <span data-ttu-id="067d2-119">詳細については、[Data Factory バージョン 1](/azure/data-factory/v1/data-factory-introduction)のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="067d2-119">For more information, review the documentation for [Data Factory Version 1](/azure/data-factory/v1/data-factory-introduction).</span></span>
+
+<span data-ttu-id="067d2-120">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactories)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="067d2-120">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactories) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="067d2-121">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="067d2-121">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.DataFactories
@@ -41,9 +83,9 @@ Install-Package Microsoft.Azure.Management.DataFactories
 dotnet add package Microsoft.Azure.Management.DataFactories
 ```
 
-### <a name="code-example"></a><span data-ttu-id="5c040-113">コード例</span><span class="sxs-lookup"><span data-stu-id="5c040-113">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="067d2-122">コード例</span><span class="sxs-lookup"><span data-stu-id="067d2-122">Code Example</span></span>
 
-<span data-ttu-id="5c040-114">次の例では、管理ライブラリを使用してデータ ファクトリを作成します。</span><span class="sxs-lookup"><span data-stu-id="5c040-114">The following example uses the management library to create a data factory.</span></span>
+<span data-ttu-id="067d2-123">次の例では、管理ライブラリを使用してデータ ファクトリを作成します。</span><span class="sxs-lookup"><span data-stu-id="067d2-123">The following example uses the management library to create a data factory.</span></span>
 
 ```csharp
 DataFactoryManagementClient client = new DataFactoryManagementClient(aadTokenCredentials, resourceManagerUri);
@@ -61,13 +103,13 @@ client.DataFactories.CreateOrUpdate(resourceGroupName,
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="5c040-115">Management API を探す</span><span class="sxs-lookup"><span data-stu-id="5c040-115">Explore the management APIs</span></span>](/dotnet/api/overview/azure/datafactories/management)
+> [<span data-ttu-id="067d2-124">Management API を探す</span><span class="sxs-lookup"><span data-stu-id="067d2-124">Explore the management APIs</span></span>](/dotnet/api/overview/azure/datafactories/management)
 
-## <a name="samples"></a><span data-ttu-id="5c040-116">サンプル</span><span class="sxs-lookup"><span data-stu-id="5c040-116">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="067d2-125">サンプル</span><span class="sxs-lookup"><span data-stu-id="067d2-125">Samples</span></span>
 
-* <span data-ttu-id="5c040-117">Data Factory を使用して洞察を得るための [MyDriving - Azure IoT およびモバイル サンプル アプリケーション](https://azure.microsoft.com/resources/samples/mydriving/)。</span><span class="sxs-lookup"><span data-stu-id="5c040-117">[MyDriving - An Azure IOT and Mobile Sample Application](https://azure.microsoft.com/resources/samples/mydriving/) that uses Data Factory to drive insights.</span></span>
+* <span data-ttu-id="067d2-126">Data Factory を使用して洞察を得るための [MyDriving - Azure IoT およびモバイル サンプル アプリケーション](https://azure.microsoft.com/resources/samples/mydriving/)。</span><span class="sxs-lookup"><span data-stu-id="067d2-126">[MyDriving - An Azure IOT and Mobile Sample Application](https://azure.microsoft.com/resources/samples/mydriving/) that uses Data Factory to drive insights.</span></span>
 
-<span data-ttu-id="5c040-118">アプリで使用できるその他の[サンプル .NET コード](https://azure.microsoft.com/resources/samples/?platform=dotnet)を確認してください。</span><span class="sxs-lookup"><span data-stu-id="5c040-118">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
+<span data-ttu-id="067d2-127">アプリで使用できるその他の[サンプル .NET コード](https://azure.microsoft.com/resources/samples/?platform=dotnet)を確認してください。</span><span class="sxs-lookup"><span data-stu-id="067d2-127">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
