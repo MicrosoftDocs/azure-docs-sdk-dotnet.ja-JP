@@ -2,28 +2,34 @@
 title: ".NET 用 Azure Service Fabric ライブラリ"
 description: ".NET 用 Azure Service Fabric ライブラリのリファレンス"
 keywords: Azure, .NET, SDK, API, Service Fabric
-author: spboyer
+author: camsoper
 ms.author: casoper
 manager: douge
-ms.date: 07/07/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: c708ae06fa4b5165e3f615abf636b11bfd95cd3b
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: service-fabric
+ms.openlocfilehash: c15da57ef44663ad0463ba76ffa3b6832774240f
+ms.sourcegitcommit: a235826f194e938b094be3ed03d86f7e85bb4da6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="azure-service-fabric-libraries-for-net"></a>.NET 用 Azure Service Fabric ライブラリ
 
 ## <a name="overview"></a>概要
 
-Azure Service Fabric は、スケーラブルで信頼性に優れたマイクロサービスとコンテナーのパッケージ化とデプロイ、管理を簡単に行うことができる分散システム プラットフォームです。
+Azure Service Fabric は、スケーラブルで信頼性に優れたマイクロサービスとコンテナーのパッケージ化とデプロイ、管理を簡単に行うことができる分散システム プラットフォームです。  詳細については、「[Azure Service Fabric のドキュメント](/azure/service-fabric/)」を参照してください。
 
 ## <a name="client-library"></a>クライアント ライブラリ
+
+既存の Service Fabric クラスターと対話するには、Service Fabric クライアント ライブラリを使用します。  このライブラリには、3 つのカテゴリの API が含まれています。
+
+* **クライアント** API は、クラスターの管理、スケーリング、リサイクルに加え、アプリケーション パッケージのデプロイに使用されます。
+* **ランタイム** API は、実行中のアプリケーションが、ホストしているクラスターと対話する場合に使用されます。
+* **一般的な** API には、**クライアント** API と**ランタイム** API の両方で使用される種類が含まれています。
 
 [NuGet パッケージ](https://www.nuget.org/packages/Microsoft.ServiceFabric)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
@@ -37,9 +43,9 @@ Install-Package Microsoft.ServiceFabric
 dotnet add package Microsoft.ServiceFabric
 ```
 
-### <a name="code-example"></a>コード例
+### <a name="code-examples"></a>コード例
 
-次の例では、アプリケーション パッケージをイメージ ストアにコピーし、アプリケーションの種類をプロビジョニングして、アプリケーション インスタンスを作成します。
+次の例では、Service Fabric の**クライアント** API を使用してアプリケーション パッケージをイメージ ストアにコピーし、アプリケーションの種類をプロビジョニングして、アプリケーション インスタンスを作成します。
 
 ```csharp
 /* Include these dependencies
@@ -63,6 +69,64 @@ fabricClient.ApplicationManager.CreateApplicationAsync(appDesc).Wait();
 
 > [!div class="nextstepaction"]
 > [クライアント API を探す](/dotnet/api/overview/azure/servicefabric/client)
+
+この例では、ホストされるアプリケーション内から Service Fabric の**ランタイム** API と**一般的な** API を使用して、実行時に [Reliable Collection](/azure/service-fabric/service-fabric-reliable-services-reliable-collections) を更新します。
+
+```csharp
+using System.Fabric;
+using Microsoft.ServiceFabric.Data.Collections;
+using Microsoft.ServiceFabric.Services.Communication.Runtime;
+using Microsoft.ServiceFabric.Services.Runtime;
+
+/// <summary>
+/// This is the main entry point for your service replica.
+/// This method executes when this replica of your service becomes primary and has write status.
+/// </summary>
+/// <param name="cancellationToken">Canceled when Service Fabric needs to shut down this service replica.</param>
+protected override async Task RunAsync(CancellationToken cancellationToken)
+{
+    var myDictionary = await this.StateManager.GetOrAddAsync<IReliableDictionary<string, long>>("myDictionary");
+    while (true)
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+        using (var tx = this.StateManager.CreateTransaction())
+        {
+            var result = await myDictionary.TryGetValueAsync(tx, "Counter");
+            await myDictionary.AddOrUpdateAsync(tx, "Counter", 0, (key, value) => ++value);
+
+            // If an exception is thrown before calling CommitAsync, the transaction aborts, all changes are
+            // discarded, and nothing is saved to the secondary replicas.
+            await tx.CommitAsync();
+        }
+        await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
+    }
+}
+```
+
+> [!div class="nextstepaction"]
+> [ランタイム API を探す](/dotnet/api/overview/azure/servicefabric/runtime)
+
+> [!div class="nextstepaction"]
+> [一般的な API を探す](/dotnet/api/overview/azure/servicefabric/common)
+
+## <a name="management-library"></a>管理ライブラリ
+
+管理ライブラリは、Service Fabric クラスターの作成、更新、削除に使用されます。
+
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabric)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
+
+#### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
+
+```powershell
+Install-Package Microsoft.Azure.Management.ServiceFabric
+```
+
+```bash
+dotnet add package Microsoft.Azure.Management.ServiceFabric
+```
+
+> [!div class="nextstepaction"]
+> [Management API を探す](/dotnet/api/overview/azure/servicefabric/management)
 
 ## <a name="samples"></a>サンプル
 
