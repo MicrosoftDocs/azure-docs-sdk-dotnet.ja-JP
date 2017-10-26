@@ -4,18 +4,19 @@ description: ".NET 用 Azure 管理ライブラリの新機能や重大な変更
 keywords: "Azure, .NET, API, リファレンス, ノート, 更新, 非推奨"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.assetid: 
-ms.service: Azure
-ms.devlang: dotnet
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
-ms.technology: Azure
-ms.date: 06/20/2017
-ms.openlocfilehash: b4a66eb2860673f63a0d11c3cf31486337f36131
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 714bd05653c6b41b21b95581b1115b0bfa1956ed
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="release-notes"></a>リリース ノート 
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 08/28/2017
     <td valign="top">Azure コンテナー サービス<br>Azure コンテナー レジストリ</td>
   </tr>
   <tr>
-    <td>Storage</td>
+    <td>ストレージ</td>
     <td>ストレージ アカウント</td>
     <td></td>
     <td>暗号化</td>
@@ -57,7 +58,7 @@ ms.lasthandoff: 08/28/2017
     <td>その他のサービス</td>
     <td>リソース マネージャー<br>Key Vault<br>Redis<br>CDN<br>Batch
 </td>
-    <td valign="top">App Service - Web アプリ<br>関数<br>Service Bus</td>
+    <td valign="top">App Service - Web アプリ<br>Functions<br>Service Bus</td>
     <td valign="top">監視<br>Graph RBAC<br>DocumentDB<br>Scheduler</td>
   </tr>
   <tr>

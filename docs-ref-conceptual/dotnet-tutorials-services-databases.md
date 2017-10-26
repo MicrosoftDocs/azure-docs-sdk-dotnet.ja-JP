@@ -2,18 +2,20 @@
 title: "Azure データベースの使用に関する .NET チュートリアル"
 description: ".NET アプリケーションで Azure データベースに接続して使う方法に関するチュートリアルです。"
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/09/2017
 ms.author: casoper
-ms.openlocfilehash: 0a6d84efab9789090e6780504a39cb83893035d8
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 6b1160e20f44b822791deb1ad467ed984a80438b
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Azure データベースでの .NET の使用に関するチュートリアル
 
