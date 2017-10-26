@@ -4,18 +4,19 @@ description: ".NET 用 Azure Active Directory ライブラリのリファレン�
 keywords: Azure, .NET, SDK, API, AAD, Active Directory
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/17/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: adbe907888e49066b6d67a4fb26410a6f6b3b095
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: active-directory
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: aa20715fb62b1d4b714245c404f1a7c142caf586
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-active-directory-libraries-for-net"></a>.NET 用 Azure Active Directory ライブラリ
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 08/28/2017
 
 Azure Active Directory でユーザーをサインオンし、アプリケーションと API へのアクセスを管理します。
 
-Azure Active Directory の概要については、「[Azure AD を使用した ASP.NET Web アプリへのサインインおよびサインアウト](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)」をご覧ください。
+Azure Active Directory の概要については、「[Azure AD を使用した ASP.NET Web アプリへのサインインおよびサインアウト](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)」をご覧ください。
 
 ## <a name="client-library"></a>クライアント ライブラリ
 
@@ -77,7 +78,7 @@ catch (AdalException ex)
 * [Oauth2 を使ってアプリケーションのアクセス許可を持つ Web API を呼び出す](https://github.com/Azure-Samples/active-directory-dotnet-webapp-webapi-oauth2-appidentity)
 * [アプリケーションでロールベースのアクセス制御 (RBAC) を使う](https://github.com/Azure-Samples/active-directory-dotnet-webapp-roleclaims)
 
-[Azure Active Directory コード サンプル](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-code-samples)の完全なコレクションを確認してください。
+[Azure Active Directory コード サンプル](/azure/active-directory/develop/active-directory-code-samples)の完全なコレクションを確認してください。
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

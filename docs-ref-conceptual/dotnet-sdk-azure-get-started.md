@@ -4,19 +4,19 @@ description: "ユーザー自身の Azure サブスクリプションで .NET �
 keywords: "Azure, .NET, SDK, API ,認証, 概要"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 06/20/2017
-ms.topic: get-started-article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: 0379609e863c674de4518d5ed615b6b4f9c46a12
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 80f796493362a84474f5913a26ad6802f68a4906
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-started-with-the-azure-net-apis"></a>Azure .NET API の概要
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/28/2017
 ## <a name="prerequisites"></a>前提条件
 
 - Azure アカウント。 所有していない場合は、[無料試用版を入手](https://azure.microsoft.com/free/)してください。
-- [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)
+- [Azure PowerShell](/powershell/azure/install-azurerm-ps)
 
 ## <a name="set-up-authentication"></a>認証の設定
 
