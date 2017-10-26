@@ -11,7 +11,7 @@
         - name: SQL Database
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
         - name: Cosmos DB
-          href: 'https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnet-application'
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
     - name: .NET を使って作業を開始する
@@ -47,7 +47,7 @@
           href: dotnet-quickstart-xplat.md
         - name: データベース
           href: dotnet-tutorials-services-databases.md
-        - name: Storage
+        - name: ストレージ
           href: dotnet-tutorials-services-storage.md
         - name: コンテナー
           href: dotnet-tutorials-services-containers.md
