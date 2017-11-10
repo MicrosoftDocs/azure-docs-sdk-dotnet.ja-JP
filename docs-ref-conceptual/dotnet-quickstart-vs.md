@@ -1,6 +1,6 @@
 ---
-title: "Azure 開発者向け .NET"
-description: "Azure 開発者向け .NET"
+title: "Visual Studio から Azure へのデプロイ"
+description: "このチュートリアルでは、Visual Studio と .NET を使用して、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。"
 keywords: "Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ"
 author: camsoper
 manager: douge
@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 0f8e3e5ea1ef5cde239b2d8ebbc9fe75dd978cb1
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-for-azure-developers"></a>Azure 開発者向け .NET の使用
+# <a name="deploy-to-azure-from-visual-studio"></a>Visual Studio から Azure へのデプロイ
 
 このチュートリアルでは、Visual Studio と .NET を使用して、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。  終了時には、ASP.NET MVC Core で ビルドされ、Azure Web アプリとしてホストされた Web ベースの To Do アプリケーションが手に入ります。このアプリケーションは、データ ストレージに Azure CosmosDB を使用します。
 

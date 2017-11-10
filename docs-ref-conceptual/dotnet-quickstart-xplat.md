@@ -1,6 +1,6 @@
 ---
-title: "Azure 開発者向け .NET"
-description: "Azure 開発者向け .NET"
+title: "コマンド ラインと .NET Core を使用した Azure へのデプロイ"
+description: "この記事では、コマンドライン ツールを使用して Azure App Service に ASP.NET Core アプリケーションをデプロイする方法について説明します。"
 keywords: "Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ"
 author: camsoper
 manager: douge
@@ -11,15 +11,15 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 14374182ee0511e942940797465858b94ec08876
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: 2ed69bfed7310c9e6b2f3f8fedb906ce33d87c3c
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-cli-tools-for-azure-developers"></a>Azure 開発者向け .NET CLI ツールの概要
+# <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>コマンド ラインと .NET Core を使用した Azure へのデプロイ
 
-このチュートリアルでは、.NET Core を使って、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。  このチュートリアルを完了すると、ASP.NET MVC Core で ビルドされ、Azure Web アプリとしてホストされた Web ベースの To Do アプリケーションを使用できるようになります。このアプリケーションは、データ ストレージに Azure CosmosDB を使用します。
+このチュートリアルでは、.NET Core を使って、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。  終了時には、ASP.NET MVC Core で ビルドされ、Azure Web アプリとしてホストされた Web ベースの To Do アプリケーションが手に入ります。このアプリケーションは、データ ストレージに Azure CosmosDB を使用します。
 
 ## <a name="prerequisites"></a>前提条件
 
