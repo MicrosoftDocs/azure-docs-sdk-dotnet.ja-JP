@@ -77,6 +77,10 @@ sections:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
             title: Service Fabric で .NET マイクロサービス アプリを作成する
             href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-team-services.svg'
+            title: .NET の CI/CD パイプラインを作成する
+            href: 'https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore'
   - title: Azure で .NET の使用を開始する
     items:
       - type: markdown
