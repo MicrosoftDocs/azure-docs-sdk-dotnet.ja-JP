@@ -5,18 +5,18 @@ keywords: Azure, .NET, SDK, API, CosmosDB
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 11/17/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 890c00caeca06bf863425c7159d7833c4db8df38
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 9f29e53e7f202e48ade12e28f08487bbacd2833c
+ms.sourcegitcommit: 9cc5f8da9e9a15ba07fd67fe8b9a2d4ee6b57c73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="azure-cosmosdb-libraries-for-net"></a>.NET 用 Azure CosmosDB ライブラリ
 
@@ -24,11 +24,13 @@ ms.lasthandoff: 10/26/2017
 
 [Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/introduction) は、複数の異なる種類のデータベースをサポートする、スケーラブルな分散型データ ストアです。
 
+[CosmosDB を使ってみる](https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet)。
+
 ## <a name="client-library"></a>クライアント ライブラリ
 
-CosmosDB データ ストアのデータにアクセスしたり、CosmosDB データ ストアにデータを保存したりするには、CosmosDB .NET クライアント ライブラリを使用します。
+既存の CosmosDB データ ストアのデータにアクセスしたり、既存の CosmosDB データ ストアにデータを保存したりするには、CosmosDB .NET クライアント ライブラリを使用します。  新しい CosmosDB アカウントの作成を自動化するには、Azure Portal、CLI、または PowerShell を使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 
@@ -44,7 +46,7 @@ dotnet add package Microsoft.Azure.DocumentDB.Core
 
 ### <a name="code-example"></a>コード例
 
-この例では、既存の CosmosDB DocumentDB API データベースに接続し、コレクションからドキュメントを読み取って、`Item` オブジェクトとして逆シリアル化します。
+この例では、既存の CosmosDB DocumentDB API データベースに接続し、コレクションからドキュメントを読み取って、`Item` オブジェクトとして逆シリアル化します。   
 
 ```csharp
 /* Include this "using" directive...
@@ -53,8 +55,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-// "Item" is a class defined elsewhere...
-Item item = client.ReadDocumentAsync<Item>(documentUri).ToString()).Result;
+SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString()).Result;
 ```
 
 > [!div class="nextstepaction"]
