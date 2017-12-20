@@ -6,20 +6,34 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
+layout: LandingPage
+ms.topic: landing-page
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 718d91b98180a7584f78a2383d430c4700743306
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Azure 仮想マシンへの ASP.NET Web アプリケーションの移行
 
 このドキュメントでは、ASP.NET Web アプリケーションをオンプレミスから Azure 仮想マシンに移行する方法の概要を説明します。
+
+## <a name="quickstart"></a>クイック スタート
+
+仮想マシンを作成し、この仮想マシンにアプリを発行する方法について説明します。
+
+<div class="ico48Case">
+    <div class="ico48Link">
+        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
+            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+            <span>Azure VM に発行する</span>
+        </a>
+    </div>
+</div>
 
 ## <a name="get-started"></a>作業の開始
 
@@ -47,7 +61,7 @@ ms.lasthandoff: 11/15/2017
 
 オンプレミス コンピューターと同様に、仮想マシンの管理と更新はユーザーが行う必要があります<sup>&#42;</sup>。  [Azure App Service](https://docs.microsoft.com/azure/app-service/) や[コンテナー](https://docs.microsoft.com/azure/app-service/containers/)などのサービスとしてのプラットフォーム (PaaS) 環境でアプリケーションを実行できる場合、その必要はなくなります。
 
-*<sup>&#42;</sup>[仮想マシン スケール セットの OS の自動アップグレード](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade)は、現在、プレビュー サービスとして提供されています。*
+"*<sup>&#42;</sup>[仮想マシン スケール セットの OS の自動アップグレードは、](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade)現在、プレビュー サービスとして提供されています。*"
 
 ### <a name="virtual-networks"></a>Virtual Networks
 

@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2b1c51575872b12a94eb44c7c082996bb879bcc9
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>.NET 用 Azure Data Lake Store ライブラリ
 
@@ -25,6 +25,39 @@ ms.lasthandoff: 10/26/2017
 Azure Data Lake Store は、ビッグ データの分析ワークロードに対応するエンタープライズ規模のハイパースケール リポジトリです。 Azure Data Lake を使用すると、運用分析や調査分析を目的として任意のサイズ、種類、および取り込み速度のデータを 1 か所でキャプチャすることができます。
 
 詳細については、「[Azure Data Lake Store の概要](/azure/data-lake-store/data-lake-store-overview)」をご覧ください。
+
+## <a name="client-library"></a>クライアント ライブラリ
+
+クライアント ライブラリを使用して、Data Lake Store アカウントでのフォルダーの作成、ファイルのアップロード、ファイルのダウンロードなどのファイルシステム操作を、Data Lake Store に対して行います。  .NET での Data Lake Store の使用に関する詳細なチュートリアルについては、「[.NET SDK を使用した Azure Data Lake Store に対するファイルシステム操作](/azure/data-lake-store/data-lake-store-data-operations-net-sdk)」を参照してください。
+
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
+
+#### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
+
+```powershell
+Install-Package Microsoft.Azure.DataLake.Store
+```
+
+```bash
+dotnet add package Microsoft.Azure.DataLake.Store
+```
+### <a name="authentication"></a>認証
+
+* アプリケーションのエンドユーザー認証については、「[End-user authentication with Data Lake Store using .NET SDK (.NET SDK を使用した Data Lake Store に対するエンドユーザー認証)](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk)」を参照してください。
+* アプリケーションのサービス間認証については、「[Service-to-service authentication with Data Lake Store using .NET SDK (.NET SDK を使用した Data Lake Store に対するサービス間認証)](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk)」を参照してください。
+
+### <a name="code-example"></a>コード例
+
+次のスニペットを使用して、サービスに要求を発行するために使用される Data Lake Store ファイルシステム クライアント オブジェクトを作成します。
+
+```csharp
+// Create client objects
+AdlsClient client = AdlsClient.CreateClient(_adlsAccountName, adlCreds);
+```
+
+> [!div class="nextstepaction"]
+> [クライアント API を探す](/dotnet/api/overview/azure/datalakestore/client)
+
 
 ## <a name="management-library"></a>管理ライブラリ
 
@@ -42,30 +75,9 @@ Install-Package Microsoft.Azure.Management.DataLake.Store
 dotnet add package Microsoft.Azure.Management.DataLake.Store
 ```
 
-### <a name="code-example"></a>コード例
-
-この例では、Analytics アカウントおよびストアに対して認証し、管理に必要なクライアントを作成します。
-
-```csharp
-/*
-using AdlClient
-using AdlClient.Models 
-*/
-
-// Setup authentication 
-Authentication auth = new Authentication("microsoft.onmicrosoft.com"); // change this to YOUR tenant
-auth.Authenticate();
-
-// Identify the accounts
-StoreAccountRef adls_account = new StoreAccountRef(subscriptionId, resourceGroup, userName);
-
-// Create the clients
-AzureClient az = new AzureClient(auth);
-StoreClient adls = new StoreClient(auth, adls_account);
-```
-
 > [!div class="nextstepaction"]
-> [Management API を探す](/dotnet/api/overview/azure/datalakestore/management)
+> [クライアント API を探す](/dotnet/api/overview/azure/datalakestore/management)
+
 
 ## <a name="samples"></a>サンプル
 
