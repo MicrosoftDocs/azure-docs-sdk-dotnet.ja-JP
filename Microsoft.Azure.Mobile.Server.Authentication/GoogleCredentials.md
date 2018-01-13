@@ -1,0 +1,107 @@
+<Type Name="GoogleCredentials" FullName="Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials">
+  <TypeSignature Language="C#" Value="public class GoogleCredentials : Microsoft.Azure.Mobile.Server.Authentication.ProviderCredentials" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GoogleCredentials extends Microsoft.Azure.Mobile.Server.Authentication.ProviderCredentials" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials" />
+  <TypeSignature Language="VB.NET" Value="Public Class GoogleCredentials&#xA;Inherits ProviderCredentials" />
+  <TypeSignature Language="F#" Value="type GoogleCredentials = class&#xA;    inherit ProviderCredentials" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Mobile.Server.Authentication</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.Mobile.Server.Authentication.ProviderCredentials</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A <see cref="T:Microsoft.Azure.Mobile.Server.Authentication.ProviderCredentials" /> Google 認証のプロバイダー固有の資格情報を含んでいる実装します。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GoogleCredentials ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Mobile.Server.Authentication</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            <see cref="T:Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials" /> クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessToken">
+      <MemberSignature Language="C#" Value="public string AccessToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AccessToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials.AccessToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property AccessToken As String" />
+      <MemberSignature Language="F#" Value="member this.AccessToken : string with get, set" Usage="Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials.AccessToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Mobile.Server.Authentication</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または現在のユーザーのアクセス トークンを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessTokenExpiration">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; AccessTokenExpiration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; AccessTokenExpiration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials.AccessTokenExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property AccessTokenExpiration As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.AccessTokenExpiration : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials.AccessTokenExpiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Mobile.Server.Authentication</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはアクセス トークンの有効期限を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshToken">
+      <MemberSignature Language="C#" Value="public string RefreshToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RefreshToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials.RefreshToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshToken As String" />
+      <MemberSignature Language="F#" Value="member this.RefreshToken : string with get, set" Usage="Microsoft.Azure.Mobile.Server.Authentication.GoogleCredentials.RefreshToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Mobile.Server.Authentication</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または現在のユーザーの更新トークンを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

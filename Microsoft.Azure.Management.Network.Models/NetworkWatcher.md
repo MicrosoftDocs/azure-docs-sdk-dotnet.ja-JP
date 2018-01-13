@@ -1,0 +1,139 @@
+<Type Name="NetworkWatcher" FullName="Microsoft.Azure.Management.Network.Models.NetworkWatcher">
+  <TypeSignature Language="C#" Value="public class NetworkWatcher : Microsoft.Azure.Management.Network.Models.Resource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkWatcher extends Microsoft.Azure.Management.Network.Models.Resource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Models.NetworkWatcher" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetworkWatcher&#xA;Inherits Resource" />
+  <TypeSignature Language="F#" Value="type NetworkWatcher = class&#xA;    inherit Resource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.Management.Network.Models.Resource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            リソース グループ内のネットワーク監視します。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetworkWatcher ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.NetworkWatcher.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            NetworkWatcher クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetworkWatcher (string id = null, string name = null, string type = null, string location = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string etag = null, string provisioningState = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string etag, string provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.NetworkWatcher.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional location As String = null, Optional tags As IDictionary(Of String, String) = null, Optional etag As String = null, Optional provisioningState As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.NetworkWatcher : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string -&gt; Microsoft.Azure.Management.Network.Models.NetworkWatcher" Usage="new Microsoft.Azure.Management.Network.Models.NetworkWatcher (id, name, type, location, tags, etag, provisioningState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="etag" Type="System.String" />
+        <Parameter Name="provisioningState" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">リソースの ID</param>
+        <param name="name">リソース名。</param>
+        <param name="type">リソースの種類。</param>
+        <param name="location">リソースの場所。</param>
+        <param name="tags">リソース タグ。</param>
+        <param name="etag">読み取り専用する一意の文字列リソースを更新するたびに変化します。</param>
+        <param name="provisioningState">リソースのプロビジョニングの状態。 使用可能な値が含まれます: '成功'、'更新'、'削除'、'失敗'</param>
+        <summary>
+            NetworkWatcher クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Etag">
+      <MemberSignature Language="C#" Value="public string Etag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Etag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.NetworkWatcher.Etag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Etag As String" />
+      <MemberSignature Language="F#" Value="member this.Etag : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.NetworkWatcher.Etag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="etag")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または設定、リソースを更新するたびに変化する一意の読み取り専用文字列。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.NetworkWatcher.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Microsoft.Azure.Management.Network.Models.NetworkWatcher.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            リソースのプロビジョニングの状態を取得します。 使用可能な値が含まれます: '成功'、'更新'、'削除'、'失敗'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

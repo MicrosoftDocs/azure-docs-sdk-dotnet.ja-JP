@@ -1,0 +1,47 @@
+<Type Name="IWithCollation" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCollation">
+  <TypeSignature Language="C#" Value="public interface IWithCollation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithCollation" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCollation" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWithCollation" />
+  <TypeSignature Language="F#" Value="type IWithCollation = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            データベースの照合順序を設定する SQL データベースの定義。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="WithCollation">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCreateWithElasticPoolOptions WithCollation (string collation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCreateWithElasticPoolOptions WithCollation(string collation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCollation.WithCollation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithCollation (collation As String) As IWithCreateWithElasticPoolOptions" />
+      <MemberSignature Language="F#" Value="abstract member WithCollation : string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCreateWithElasticPoolOptions" Usage="iWithCollation.WithCollation collation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCreateWithElasticPoolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="collation">データベース用に設定する照合順序です。</param>
+        <summary>
+            SQL データベースの照合順序を設定します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>定義の次のステージ。</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

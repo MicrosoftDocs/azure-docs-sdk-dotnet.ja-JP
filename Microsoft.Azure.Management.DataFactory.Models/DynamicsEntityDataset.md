@@ -1,0 +1,137 @@
+<Type Name="DynamicsEntityDataset" FullName="Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset">
+  <TypeSignature Language="C#" Value="public class DynamicsEntityDataset : Microsoft.Azure.Management.DataFactory.Models.Dataset" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicsEntityDataset extends Microsoft.Azure.Management.DataFactory.Models.Dataset" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicsEntityDataset&#xA;Inherits Dataset" />
+  <TypeSignature Language="F#" Value="type DynamicsEntityDataset = class&#xA;    inherit Dataset" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <AssemblyVersion>0.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.Management.DataFactory.Models.Dataset</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonObject("DynamicsEntity")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Dynamics エンティティ データセットです。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicsEntityDataset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+        <AssemblyVersion>0.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            DynamicsEntityDataset クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicsEntityDataset (Microsoft.Azure.Management.DataFactory.Models.LinkedServiceReference linkedServiceName, System.Collections.Generic.IDictionary&lt;string,object&gt; additionalProperties = null, string description = null, object structure = null, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification&gt; parameters = null, object entityName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.DataFactory.Models.LinkedServiceReference linkedServiceName, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; additionalProperties, string description, object structure, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification&gt; parameters, object entityName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset.#ctor(Microsoft.Azure.Management.DataFactory.Models.LinkedServiceReference,System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification},System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (linkedServiceName As LinkedServiceReference, Optional additionalProperties As IDictionary(Of String, Object) = null, Optional description As String = null, Optional structure As Object = null, Optional parameters As IDictionary(Of String, ParameterSpecification) = null, Optional entityName As Object = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset : Microsoft.Azure.Management.DataFactory.Models.LinkedServiceReference * System.Collections.Generic.IDictionary&lt;string, obj&gt; * string * obj * System.Collections.Generic.IDictionary&lt;string, Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification&gt; * obj -&gt; Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset" Usage="new Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset (linkedServiceName, additionalProperties, description, structure, parameters, entityName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
+        <AssemblyVersion>0.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="linkedServiceName" Type="Microsoft.Azure.Management.DataFactory.Models.LinkedServiceReference" />
+        <Parameter Name="additionalProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="structure" Type="System.Object" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification&gt;" />
+        <Parameter Name="entityName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="linkedServiceName">リンクされたサービスの参照。</param>
+        <param name="additionalProperties">メッセージから一致しないプロパティを逆シリアル化は、このコレクション</param>
+        <param name="description">データセットの説明。</param>
+        <param name="structure">データセットの構造を定義する列。 型: 配列 (または配列の resultType を含む式)、itemType: DatasetDataElement です。</param>
+        <param name="parameters">データセットのパラメーターです。</param>
+        <param name="entityName">エンティティの論理名。 型: 文字列 (または式の resultType 文字列)。</param>
+        <summary>
+            DynamicsEntityDataset クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityName">
+      <MemberSignature Language="C#" Value="public object EntityName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object EntityName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset.EntityName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntityName As Object" />
+      <MemberSignature Language="F#" Value="member this.EntityName : obj with get, set" Usage="Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset.EntityName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+        <AssemblyVersion>0.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="typeProperties.entityName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはエンティティの論理名を設定します。 型: 文字列 (または式の resultType 文字列)。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.DynamicsEntityDataset.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="dynamicsEntityDataset.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+        <AssemblyVersion>0.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            オブジェクトを検証します。
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            検証が失敗した場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

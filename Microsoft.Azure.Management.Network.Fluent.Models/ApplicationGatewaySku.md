@@ -1,0 +1,148 @@
+<Type Name="ApplicationGatewaySku" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku">
+  <TypeSignature Language="C#" Value="public class ApplicationGatewaySku" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationGatewaySku extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationGatewaySku" />
+  <TypeSignature Language="F#" Value="type ApplicationGatewaySku = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            アプリケーション ゲートウェイの SKU
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationGatewaySku ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            ApplicationGatewaySku クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationGatewaySku (string name = null, string tier = null, Nullable&lt;int&gt; capacity = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string tier, valuetype System.Nullable`1&lt;int32&gt; capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.#ctor(System.String,System.String,System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional tier As String = null, Optional capacity As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku : string * string * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku (name, tier, capacity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="tier" Type="System.String" />
+        <Parameter Name="capacity" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">アプリケーション ゲートウェイ SKU の名前。 使用可能な値が: 'Standard_Small'、'Standard_Medium'、'Standard_Large'、'WAF_Medium' および 'WAF_Large' です。 使用可能な値が含まれます: 'Standard_Small'、'Standard_Medium'、'Standard_Large'、'WAF_Medium'、'WAF_Large'</param>
+        <param name="tier">Application gateway の階層。 使用可能な値が: 'Standard' および 'WAF' です。 使用可能な値が含まれます: 'Standard'、'WAF'</param>
+        <param name="capacity">アプリケーション ゲートウェイの容量 (インスタンス数)。</param>
+        <summary>
+            ApplicationGatewaySku クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Capacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Capacity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Capacity As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Capacity : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.Capacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="capacity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはアプリケーション ゲートウェイの容量 (インスタンス数) を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはアプリケーション ゲートウェイ SKU の名前を設定します。 使用可能な値が: 'Standard_Small'、'Standard_Medium'、'Standard_Large'、'WAF_Medium' および 'WAF_Large' です。 使用可能な値が含まれます: 'Standard_Small'、'Standard_Medium'、'Standard_Large'、'WAF_Medium'、'WAF_Large'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tier">
+      <MemberSignature Language="C#" Value="public string Tier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.Tier" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tier As String" />
+      <MemberSignature Language="F#" Value="member this.Tier : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.Tier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tier")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはアプリケーション ゲートウェイの層を設定します。 使用可能な値が: 'Standard' および 'WAF' です。 使用可能な値が含まれます: 'Standard'、'WAF'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

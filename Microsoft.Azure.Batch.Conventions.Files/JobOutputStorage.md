@@ -1,0 +1,257 @@
+<Type Name="JobOutputStorage" FullName="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage">
+  <TypeSignature Language="C#" Value="public class JobOutputStorage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobOutputStorage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" />
+  <TypeSignature Language="VB.NET" Value="Public Class JobOutputStorage" />
+  <TypeSignature Language="F#" Value="type JobOutputStorage = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Azure Batch のジョブの出力の永続的な記憶域を表します。
+            </summary>
+    <remarks>
+            ジョブの出力は、特定のタスクではなく、ジョブ全体に論理的に関連付けられている出力データを参照してください。 たとえば、ムービー レンダリング ジョブ、タスク、ムービーにすべてのフレームを結合する場合論理的がジョブの出力。 'ジョブ' の出力は、どのタスクを認識してから、クライアントを保存するように出力をこれによりの目的は、これを生成します。
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobOutputStorage (Uri jobOutputContainerUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri jobOutputContainerUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (jobOutputContainerUri As Uri)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage : Uri -&gt; Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" Usage="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage jobOutputContainerUri" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="jobOutputContainerUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="jobOutputContainerUri">ジョブに使用する blob コンテナーの Azure ストレージ内の URL を出力します。 この URL は、コンテナーへのアクセスを付与する SAS (Shared Access Signature) を含める必要があります。 またはコンテナーをパブリックにする必要があります。</param>
+        <summary>
+            新しいインスタンスを初期化、<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" />ジョブ出力のコンテナーを表す URL からのクラスです。
+            </summary>
+        <remarks>コンテナーは既に存在する必要があります。JobOutputStorage クラスが作成していないのです。</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobOutputStorage (Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount, string jobId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount, string jobId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storageAccount As CloudStorageAccount, jobId As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage : Microsoft.WindowsAzure.Storage.CloudStorageAccount * string -&gt; Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" Usage="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage (storageAccount, jobId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
+        <Parameter Name="jobId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="storageAccount">ストレージ アカウントは、Azure Batch アカウントにリンクします。</param>
+        <param name="jobId">Azure Batch のジョブの id。</param>
+        <summary>
+            新しいインスタンスを初期化、<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" />ストレージ アカウントとジョブの id からのクラスです。
+            </summary>
+        <remarks>ジョブ出力コンテナーが存在する必要があります。JobOutputStorage クラスが作成していないのです。</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobOutputStorage (Uri jobOutputContainerUri, Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy storageRetryPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri jobOutputContainerUri, class Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy storageRetryPolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(System.Uri,Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (jobOutputContainerUri As Uri, storageRetryPolicy As IRetryPolicy)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage : Uri * Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy -&gt; Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" Usage="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage (jobOutputContainerUri, storageRetryPolicy)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="jobOutputContainerUri" Type="System.Uri" />
+        <Parameter Name="storageRetryPolicy" Type="Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy" />
+      </Parameters>
+      <Docs>
+        <param name="jobOutputContainerUri">ジョブに使用する blob コンテナーの Azure ストレージ内の URL を出力します。 この URL は、コンテナーへのアクセスを付与する SAS (Shared Access Signature) を含める必要があります。 またはコンテナーをパブリックにする必要があります。</param>
+        <param name="storageRetryPolicy">記憶域の要求の再試行ポリシーです。</param>
+        <summary>
+            新しいインスタンスを初期化、<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" />ジョブ出力のコンテナーを表す URL からのクラスです。
+            </summary>
+        <remarks>コンテナーは既に存在する必要があります。JobOutputStorage クラスが作成していないのです。</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JobOutputStorage (Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount, string jobId, Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy storageRetryPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount, string jobId, class Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy storageRetryPolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String,Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storageAccount As CloudStorageAccount, jobId As String, storageRetryPolicy As IRetryPolicy)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage : Microsoft.WindowsAzure.Storage.CloudStorageAccount * string * Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy -&gt; Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" Usage="new Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage (storageAccount, jobId, storageRetryPolicy)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
+        <Parameter Name="jobId" Type="System.String" />
+        <Parameter Name="storageRetryPolicy" Type="Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy" />
+      </Parameters>
+      <Docs>
+        <param name="storageAccount">ストレージ アカウントは、Azure Batch アカウントにリンクします。</param>
+        <param name="jobId">Azure Batch のジョブの id。</param>
+        <param name="storageRetryPolicy">記憶域の要求の再試行ポリシーです。</param>
+        <summary>
+            新しいインスタンスを初期化、<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" />ストレージ アカウントとジョブの id からのクラスです。
+            </summary>
+        <remarks>ジョブ出力コンテナーが存在する必要があります。JobOutputStorage クラスが作成していないのです。</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOutputAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; GetOutputAsync (Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind, string filePath, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; GetOutputAsync(class Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind, string filePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.GetOutputAsync(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetOutputAsync : Microsoft.Azure.Batch.Conventions.Files.JobOutputKind * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt;" Usage="jobOutputStorage.GetOutputAsync (kind, filePath, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage/&lt;GetOutputAsync&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="kind">A<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />を取得する出力のカテゴリを表す<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobOutput" />または<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobPreview" />です。</param>
+        <param name="filePath">Blob ストレージに永続化が出力されるパスです。</param>
+        <param name="cancellationToken">A<see cref="T:System.Threading.CancellationToken" />非同期操作の有効期間を制御するためです。</param>
+        <summary>
+            種類とパスによって Azure blob ストレージからジョブの出力を取得します。
+            </summary>
+        <returns>Azure blob ストレージに要求されたファイルへの参照。</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListOutputs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; ListOutputs (Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; ListOutputs(class Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.ListOutputs(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListOutputs (kind As JobOutputKind) As IEnumerable(Of OutputFileReference)" />
+      <MemberSignature Language="F#" Value="member this.ListOutputs : Microsoft.Azure.Batch.Conventions.Files.JobOutputKind -&gt; seq&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt;" Usage="jobOutputStorage.ListOutputs kind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />
+      </Parameters>
+      <Docs>
+        <param name="kind">A<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />出力を一覧表示などのカテゴリを表す<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobOutput" />または<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobPreview" />です。</param>
+        <summary>
+            指定した種類のジョブの出力を一覧表示します。
+            </summary>
+        <returns>指定した種類の永続化されたジョブ出力の一覧です。</returns>
+        <remarks>列挙される場合に遅延の一覧を取得し、Azure blob ストレージからされます。</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind, string relativePath, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind, string relativePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.SaveAsync(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : Microsoft.Azure.Batch.Conventions.Files.JobOutputKind * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="jobOutputStorage.SaveAsync (kind, relativePath, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage/&lt;SaveAsync&gt;d__6))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />
+        <Parameter Name="relativePath" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="kind">A<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />など、このファイルの格納に使用するカテゴリを表す<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobOutput" />または<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobPreview" />です。</param>
+        <param name="relativePath">現在のディレクトリに対して相対的に、保存するファイルのパス。
+            ファイルが現在のディレクトリのサブディレクトリ内にある場合は、相対パスは blob ストレージに保持されます。</param>
+        <param name="cancellationToken">A<see cref="T:System.Threading.CancellationToken" />非同期操作の有効期間を制御するためです。</param>
+        <summary>
+            指定したファイルを永続的ストレージに保存します。
+            </summary>
+        <returns>非同期操作を表す <see cref="T:System.Threading.Tasks.Task" />。</returns>
+        <remarks>ファイルが現在のディレクトリの外部にある場合は、ディレクトリ ツリーを走査は削除されます。
+            たとえば、<paramref name="relativePath" />の"..\ProcessEnv.cmd"の blob 名を作成する目的で"ProcessEnv.cmd"として取り扱われます。</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="kind" />または<paramref name="relativePath" />引数が null です。</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="relativePath" />引数が絶対パス、または空です。</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind, string sourcePath, string destinationRelativePath, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class Microsoft.Azure.Batch.Conventions.Files.JobOutputKind kind, string sourcePath, string destinationRelativePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.SaveAsync(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : Microsoft.Azure.Batch.Conventions.Files.JobOutputKind * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="jobOutputStorage.SaveAsync (kind, sourcePath, destinationRelativePath, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage/&lt;SaveAsync&gt;d__8))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />
+        <Parameter Name="sourcePath" Type="System.String" />
+        <Parameter Name="destinationRelativePath" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="kind">A<see cref="T:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind" />など、このファイルの格納に使用するカテゴリを表す<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobOutput" />または<see cref="F:Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.JobPreview" />です。</param>
+        <param name="sourcePath">保存するファイルのパス。</param>
+        <param name="destinationRelativePath">ファイルの保存先となる blob の名前です。 これには、"pointclouds/pointcloud_0001.txt"などの相対的なコンポーネントが含まれます。</param>
+        <param name="cancellationToken">A<see cref="T:System.Threading.CancellationToken" />非同期操作の有効期間を制御するためです。</param>
+        <summary>
+            指定したファイルを永続的ストレージに保存します。
+            </summary>
+        <returns>非同期操作を表す <see cref="T:System.Threading.Tasks.Task" />。</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="kind" />、 <paramref name="sourcePath" />、または<paramref name="destinationRelativePath" />引数が null です。</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="sourcePath" />または<paramref name="destinationRelativePath" />引数が空です。</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

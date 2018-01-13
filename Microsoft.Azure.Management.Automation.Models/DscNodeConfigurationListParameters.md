@@ -1,0 +1,63 @@
+<Type Name="DscNodeConfigurationListParameters" FullName="Microsoft.Azure.Management.Automation.Models.DscNodeConfigurationListParameters">
+  <TypeSignature Language="C#" Value="public class DscNodeConfigurationListParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DscNodeConfigurationListParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.DscNodeConfigurationListParameters" />
+  <TypeSignature Language="VB.NET" Value="Public Class DscNodeConfigurationListParameters" />
+  <TypeSignature Language="F#" Value="type DscNodeConfigurationListParameters = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            一覧のノードの構成操作に指定するパラメーターです。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DscNodeConfigurationListParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.DscNodeConfigurationListParameters.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            DscNodeConfigurationListParameters クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationName">
+      <MemberSignature Language="C#" Value="public string ConfigurationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscNodeConfigurationListParameters.ConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscNodeConfigurationListParameters.ConfigurationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            省略可能。 取得または構成の名前を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

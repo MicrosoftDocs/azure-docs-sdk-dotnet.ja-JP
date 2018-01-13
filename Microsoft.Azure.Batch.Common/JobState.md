@@ -1,0 +1,177 @@
+<Type Name="JobState" FullName="Microsoft.Azure.Batch.Common.JobState">
+  <TypeSignature Language="C#" Value="public enum JobState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JobState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Common.JobState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum JobState" />
+  <TypeSignature Language="F#" Value="type JobState = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            ジョブの状態
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Batch.Common.JobState Active = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Common.JobState.Active" />
+      <MemberSignature Language="VB.NET" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 0" Usage="Microsoft.Azure.Batch.Common.JobState.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Common.JobState</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            ジョブは、スケジュールされたタスクがある使用可能です。
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="Completed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Batch.Common.JobState Completed = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Common.JobState.Completed" />
+      <MemberSignature Language="VB.NET" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 5" Usage="Microsoft.Azure.Batch.Common.JobState.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Common.JobState</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            すべてのタスクが終了すると、し、システムより多くのタスクまたはジョブにさらなる変更を許可されません。
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleting">
+      <MemberSignature Language="C#" Value="Deleting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Batch.Common.JobState Deleting = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Common.JobState.Deleting" />
+      <MemberSignature Language="VB.NET" Value="Deleting" />
+      <MemberSignature Language="F#" Value="Deleting = 6" Usage="Microsoft.Azure.Batch.Common.JobState.Deleting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Common.JobState</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            ユーザーが、ジョブが削除されることを要求されましたが、(たとえば、システムがまだ終了していますのタスクを実行している) ため、削除操作が進行中です。
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Batch.Common.JobState Disabled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Common.JobState.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 2" Usage="Microsoft.Azure.Batch.Common.JobState.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Common.JobState</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            ユーザーは、ジョブを無効にします。 タスクが実行されていないと、新しいタスクがスケジュールされません。
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabling">
+      <MemberSignature Language="C#" Value="Disabling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Batch.Common.JobState Disabling = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Common.JobState.Disabling" />
+      <MemberSignature Language="VB.NET" Value="Disabling" />
+      <MemberSignature Language="F#" Value="Disabling = 1" Usage="Microsoft.Azure.Batch.Common.JobState.Disabling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Common.JobState</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            ユーザーがジョブを無効にする、要求しますが、無効化操作がまだ進行中 (たとえば、タスクの終了を待機しています)。
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabling">
+      <MemberSignature Language="C#" Value="Enabling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Batch.Common.JobState Enabling = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Common.JobState.Enabling" />
+      <MemberSignature Language="VB.NET" Value="Enabling" />
+      <MemberSignature Language="F#" Value="Enabling = 3" Usage="Microsoft.Azure.Batch.Common.JobState.Enabling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Common.JobState</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            ユーザーがジョブを有効にする、要求しますが、有効にする操作が進行中です。
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminating">
+      <MemberSignature Language="C#" Value="Terminating" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Batch.Common.JobState Terminating = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Common.JobState.Terminating" />
+      <MemberSignature Language="VB.NET" Value="Terminating" />
+      <MemberSignature Language="F#" Value="Terminating = 4" Usage="Microsoft.Azure.Batch.Common.JobState.Terminating" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Common.JobState</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            ジョブが完了すると、ジョブ マネージャー タスクが完了したか、ユーザーが、ジョブを終了しましたが、(たとえば、ジョブのリリース タスクが実行されている) ために、終了操作が進行中です。
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+<Type Name="CSMUpdateProtectionPolicyRequest" FullName="Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest">
+  <TypeSignature Language="C#" Value="public class CSMUpdateProtectionPolicyRequest : Microsoft.Azure.Management.BackupServices.Models.CSMBaseRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CSMUpdateProtectionPolicyRequest extends Microsoft.Azure.Management.BackupServices.Models.CSMBaseRequest" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class CSMUpdateProtectionPolicyRequest&#xA;Inherits CSMBaseRequest" />
+  <TypeSignature Language="F#" Value="type CSMUpdateProtectionPolicyRequest = class&#xA;    inherit CSMBaseRequest" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.BackupServicesManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.Management.BackupServices.Models.CSMBaseRequest</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            CSMUpdateProtectionPolicyRequest 要求の定義。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CSMUpdateProtectionPolicyRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.BackupServicesManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            CSMUpdateProtectionPolicyRequest クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CSMUpdateProtectionPolicyRequest (Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest.#ctor(Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (properties As CSMUpdateProtectionPolicyRequestProperties)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest : Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties -&gt; Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest" Usage="new Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest properties" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.BackupServicesManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="properties" Type="Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties" />
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <summary>
+            必須の引数で CSMUpdateProtectionPolicyRequest クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As CSMUpdateProtectionPolicyRequestProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties with get, set" Usage="Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequest.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.BackupServicesManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.BackupServices.Models.CSMUpdateProtectionPolicyRequestProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            必須。 CSMUpdateProtectionPolicy 要求のプロパティ
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

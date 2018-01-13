@@ -1,0 +1,744 @@
+<Type Name="IDisksOperations" FullName="Microsoft.Azure.Management.Compute.Fluent.IDisksOperations">
+  <TypeSignature Language="C#" Value="public interface IDisksOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDisksOperations" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDisksOperations" />
+  <TypeSignature Language="F#" Value="type IDisksOperations = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            DisksOperations 操作です。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginCreateOrUpdateWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; BeginCreateOrUpdateWithHttpMessagesAsync (string resourceGroupName, string diskName, Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner disk, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; BeginCreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string diskName, class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner disk, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.BeginCreateOrUpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member BeginCreateOrUpdateWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;" Usage="iDisksOperations.BeginCreateOrUpdateWithHttpMessagesAsync (resourceGroupName, diskName, disk, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="disk" Type="Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="disk">
+            ディスクの Put 操作の本文に指定されているディスク オブジェクト。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            作成するか、ディスクを更新します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDeleteWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; BeginDeleteWithHttpMessagesAsync (string resourceGroupName, string diskName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; BeginDeleteWithHttpMessagesAsync(string resourceGroupName, string diskName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.BeginDeleteWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member BeginDeleteWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;" Usage="iDisksOperations.BeginDeleteWithHttpMessagesAsync (resourceGroupName, diskName, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ディスクを削除します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGrantAccessWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt; BeginGrantAccessWithHttpMessagesAsync (string resourceGroupName, string diskName, Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner grantAccessData, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt; BeginGrantAccessWithHttpMessagesAsync(string resourceGroupName, string diskName, class Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner grantAccessData, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.BeginGrantAccessWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member BeginGrantAccessWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt;" Usage="iDisksOperations.BeginGrantAccessWithHttpMessagesAsync (resourceGroupName, diskName, grantAccessData, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="grantAccessData" Type="Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="grantAccessData">
+            ディスク アクセスの取得操作の本文に指定されているアクセス データ オブジェクト。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ディスクへのアクセスを許可します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRevokeAccessWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; BeginRevokeAccessWithHttpMessagesAsync (string resourceGroupName, string diskName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; BeginRevokeAccessWithHttpMessagesAsync(string resourceGroupName, string diskName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.BeginRevokeAccessWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member BeginRevokeAccessWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;" Usage="iDisksOperations.BeginRevokeAccessWithHttpMessagesAsync (resourceGroupName, diskName, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ディスクへのアクセスを取り消します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdateWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; BeginUpdateWithHttpMessagesAsync (string resourceGroupName, string diskName, Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner disk, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; BeginUpdateWithHttpMessagesAsync(string resourceGroupName, string diskName, class Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner disk, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.BeginUpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member BeginUpdateWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;" Usage="iDisksOperations.BeginUpdateWithHttpMessagesAsync (resourceGroupName, diskName, disk, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="disk" Type="Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="disk">
+            修正プログラムのディスク操作の本文に指定されているディスク オブジェクト。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            更新プログラム (修正プログラム) ディスクです。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; CreateOrUpdateWithHttpMessagesAsync (string resourceGroupName, string diskName, Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner disk, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; CreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string diskName, class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner disk, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.CreateOrUpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;" Usage="iDisksOperations.CreateOrUpdateWithHttpMessagesAsync (resourceGroupName, diskName, disk, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="disk" Type="Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="disk">
+            ディスクの Put 操作の本文に指定されているディスク オブジェクト。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            作成するか、ディスクを更新します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; DeleteWithHttpMessagesAsync (string resourceGroupName, string diskName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; DeleteWithHttpMessagesAsync(string resourceGroupName, string diskName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.DeleteWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;" Usage="iDisksOperations.DeleteWithHttpMessagesAsync (resourceGroupName, diskName, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ディスクを削除します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; GetWithHttpMessagesAsync (string resourceGroupName, string diskName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; GetWithHttpMessagesAsync(string resourceGroupName, string diskName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.GetWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;" Usage="iDisksOperations.GetWithHttpMessagesAsync (resourceGroupName, diskName, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ディスクに関する情報を取得します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GrantAccessWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt; GrantAccessWithHttpMessagesAsync (string resourceGroupName, string diskName, Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner grantAccessData, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt; GrantAccessWithHttpMessagesAsync(string resourceGroupName, string diskName, class Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner grantAccessData, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.GrantAccessWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GrantAccessWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt;" Usage="iDisksOperations.GrantAccessWithHttpMessagesAsync (resourceGroupName, diskName, grantAccessData, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.AccessUriInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="grantAccessData" Type="Microsoft.Azure.Management.Compute.Fluent.Models.GrantAccessDataInner" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="grantAccessData">
+            ディスク アクセスの取得操作の本文に指定されているアクセス データ オブジェクト。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ディスクへのアクセスを許可します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByResourceGroupNextWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListByResourceGroupNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListByResourceGroupNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.ListByResourceGroupNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ListByResourceGroupNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;" Usage="iDisksOperations.ListByResourceGroupNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nextPageLink" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="nextPageLink">
+            一覧表示操作に成功した呼び出しからの NextLink です。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            リソース グループの下のすべてのディスクを一覧表示します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByResourceGroupWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListByResourceGroupWithHttpMessagesAsync (string resourceGroupName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListByResourceGroupWithHttpMessagesAsync(string resourceGroupName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.ListByResourceGroupWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ListByResourceGroupWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;" Usage="iDisksOperations.ListByResourceGroupWithHttpMessagesAsync (resourceGroupName, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            リソース グループの下のすべてのディスクを一覧表示します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListNextWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.ListNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ListNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;" Usage="iDisksOperations.ListNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nextPageLink" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="nextPageLink">
+            一覧表示操作に成功した呼び出しからの NextLink です。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            サブスクリプションの下のすべてのディスクを一覧表示します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt; ListWithHttpMessagesAsync(class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.ListWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ListWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;" Usage="iDisksOperations.ListWithHttpMessagesAsync (customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            サブスクリプションの下のすべてのディスクを一覧表示します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RevokeAccessWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; RevokeAccessWithHttpMessagesAsync (string resourceGroupName, string diskName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt; RevokeAccessWithHttpMessagesAsync(string resourceGroupName, string diskName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.RevokeAccessWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member RevokeAccessWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;" Usage="iDisksOperations.RevokeAccessWithHttpMessagesAsync (resourceGroupName, diskName, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.OperationStatusResponseInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ディスクへのアクセスを取り消します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; UpdateWithHttpMessagesAsync (string resourceGroupName, string diskName, Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner disk, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt; UpdateWithHttpMessagesAsync(string resourceGroupName, string diskName, class Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner disk, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IDisksOperations.UpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;" Usage="iDisksOperations.UpdateWithHttpMessagesAsync (resourceGroupName, diskName, disk, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Fluent.Models.DiskInner&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="diskName" Type="System.String" />
+        <Parameter Name="disk" Type="Microsoft.Azure.Management.Compute.Fluent.Models.DiskUpdateInner" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前。
+            </param>
+        <param name="diskName">
+            指定されたサブスクリプションとリソース グループ内のディスクの名前。
+            </param>
+        <param name="disk">
+            修正プログラムのディスク操作の本文に指定されているディスク オブジェクト。
+            </param>
+        <param name="customHeaders">
+            追加されるヘッダーを要求します。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            更新プログラム (修正プログラム) ディスクです。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.Azure.CloudException">
+            操作には、無効な状態コードが返された場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            応答をシリアル化を解除できない場合にスローされます。
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            必須のパラメーターが null の場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

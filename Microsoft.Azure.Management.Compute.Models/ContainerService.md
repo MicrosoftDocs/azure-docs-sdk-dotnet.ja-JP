@@ -1,0 +1,375 @@
+<Type Name="ContainerService" FullName="Microsoft.Azure.Management.Compute.Models.ContainerService">
+  <TypeSignature Language="C#" Value="public class ContainerService : Microsoft.Azure.Management.Compute.Models.Resource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerService extends Microsoft.Azure.Management.Compute.Models.Resource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Models.ContainerService" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerService&#xA;Inherits Resource" />
+  <TypeSignature Language="F#" Value="type ContainerService = class&#xA;    inherit Resource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.Management.Compute.Models.Resource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            コンテナー サービス。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.ContainerService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            ContainerService クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerService (string location, Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile masterProfile, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt; agentPoolProfiles, Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile linuxProfile, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string provisioningState = null, Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile orchestratorProfile = null, Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile customProfile = null, Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile servicePrincipalProfile = null, Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile windowsProfile = null, Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile diagnosticsProfile = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, class Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile masterProfile, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt; agentPoolProfiles, class Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile linuxProfile, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string provisioningState, class Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile orchestratorProfile, class Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile customProfile, class Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile servicePrincipalProfile, class Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile windowsProfile, class Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile diagnosticsProfile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.ContainerService.#ctor(System.String,Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile,System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile},Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile,Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile,Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile,Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile,Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String, masterProfile As ContainerServiceMasterProfile, agentPoolProfiles As IList(Of ContainerServiceAgentPoolProfile), linuxProfile As ContainerServiceLinuxProfile, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional provisioningState As String = null, Optional orchestratorProfile As ContainerServiceOrchestratorProfile = null, Optional customProfile As ContainerServiceCustomProfile = null, Optional servicePrincipalProfile As ContainerServiceServicePrincipalProfile = null, Optional windowsProfile As ContainerServiceWindowsProfile = null, Optional diagnosticsProfile As ContainerServiceDiagnosticsProfile = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Models.ContainerService : string * Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt; * Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile * Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile * Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile * Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile * Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile -&gt; Microsoft.Azure.Management.Compute.Models.ContainerService" Usage="new Microsoft.Azure.Management.Compute.Models.ContainerService (location, masterProfile, agentPoolProfiles, linuxProfile, id, name, type, tags, provisioningState, orchestratorProfile, customProfile, servicePrincipalProfile, windowsProfile, diagnosticsProfile)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="masterProfile" Type="Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile" />
+        <Parameter Name="agentPoolProfiles" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt;" />
+        <Parameter Name="linuxProfile" Type="Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="provisioningState" Type="System.String" />
+        <Parameter Name="orchestratorProfile" Type="Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile" />
+        <Parameter Name="customProfile" Type="Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile" />
+        <Parameter Name="servicePrincipalProfile" Type="Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile" />
+        <Parameter Name="windowsProfile" Type="Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile" />
+        <Parameter Name="diagnosticsProfile" Type="Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile" />
+      </Parameters>
+      <Docs>
+        <param name="location">リソースの場所</param>
+        <param name="masterProfile">マスターのエージェントのプロパティです。</param>
+        <param name="agentPoolProfiles">エージェント プールのプロパティです。</param>
+        <param name="linuxProfile">Linux Vm のプロパティです。</param>
+        <param name="id">リソース Id</param>
+        <param name="name">リソース名</param>
+        <param name="type">リソースの種類</param>
+        <param name="tags">リソース タグ</param>
+        <param name="provisioningState">現在の配置またはプロビジョニングの状態、応答でのみ表示されます。</param>
+        <param name="orchestratorProfile">Orchestrator のプロパティです。</param>
+        <param name="customProfile">カスタム クラスターのプロパティです。</param>
+        <param name="servicePrincipalProfile">クラスターのサービス プリンシパルのプロパティです。</param>
+        <param name="windowsProfile">Windows Vm のプロパティです。</param>
+        <param name="diagnosticsProfile">診断エージェントのプロパティです。</param>
+        <summary>
+            ContainerService クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentPoolProfiles">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt; AgentPoolProfiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt; AgentPoolProfiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.AgentPoolProfiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property AgentPoolProfiles As IList(Of ContainerServiceAgentPoolProfile)" />
+      <MemberSignature Language="F#" Value="member this.AgentPoolProfiles : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.AgentPoolProfiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.agentPoolProfiles")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.ContainerServiceAgentPoolProfile&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはエージェント プールのプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile CustomProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile CustomProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.CustomProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomProfile As ContainerServiceCustomProfile" />
+      <MemberSignature Language="F#" Value="member this.CustomProfile : Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.CustomProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.customProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.ContainerServiceCustomProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはカスタムのクラスターのプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagnosticsProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile DiagnosticsProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile DiagnosticsProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.DiagnosticsProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiagnosticsProfile As ContainerServiceDiagnosticsProfile" />
+      <MemberSignature Language="F#" Value="member this.DiagnosticsProfile : Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.DiagnosticsProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.diagnosticsProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.ContainerServiceDiagnosticsProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または診断のエージェントのプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinuxProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile LinuxProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile LinuxProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.LinuxProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinuxProfile As ContainerServiceLinuxProfile" />
+      <MemberSignature Language="F#" Value="member this.LinuxProfile : Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.LinuxProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.linuxProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.ContainerServiceLinuxProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または Linux Vm のプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MasterProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile MasterProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile MasterProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.MasterProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property MasterProfile As ContainerServiceMasterProfile" />
+      <MemberSignature Language="F#" Value="member this.MasterProfile : Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.MasterProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.masterProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.ContainerServiceMasterProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはマスター エージェントのプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrchestratorProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile OrchestratorProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile OrchestratorProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.OrchestratorProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrchestratorProfile As ContainerServiceOrchestratorProfile" />
+      <MemberSignature Language="F#" Value="member this.OrchestratorProfile : Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.OrchestratorProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.orchestratorProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.ContainerServiceOrchestratorProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または orchestrator のプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            現在の展開または応答でのみ表示されますが、プロビジョニングの状態を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicePrincipalProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile ServicePrincipalProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile ServicePrincipalProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.ServicePrincipalProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServicePrincipalProfile As ContainerServiceServicePrincipalProfile" />
+      <MemberSignature Language="F#" Value="member this.ServicePrincipalProfile : Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.ServicePrincipalProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.servicePrincipalProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.ContainerServiceServicePrincipalProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはクラスターのサービス プリンシパルのプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.ContainerService.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="containerService.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            オブジェクトを検証します。
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            検証が失敗した場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile WindowsProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile WindowsProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.ContainerService.WindowsProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowsProfile As ContainerServiceWindowsProfile" />
+      <MemberSignature Language="F#" Value="member this.WindowsProfile : Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile with get, set" Usage="Microsoft.Azure.Management.Compute.Models.ContainerService.WindowsProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.windowsProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.ContainerServiceWindowsProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または Windows Vm のプロパティを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

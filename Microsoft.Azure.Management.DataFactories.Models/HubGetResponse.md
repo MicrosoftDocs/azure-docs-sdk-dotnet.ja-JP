@@ -1,0 +1,63 @@
+<Type Name="HubGetResponse" FullName="Microsoft.Azure.Management.DataFactories.Models.HubGetResponse">
+  <TypeSignature Language="C#" Value="public class HubGetResponse : Microsoft.Azure.AzureOperationResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HubGetResponse extends Microsoft.Azure.AzureOperationResponse" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataFactories.Models.HubGetResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class HubGetResponse&#xA;Inherits AzureOperationResponse" />
+  <TypeSignature Language="F#" Value="type HubGetResponse = class&#xA;    inherit AzureOperationResponse" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.AzureOperationResponse</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Get ハブ操作の応答。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HubGetResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.Models.HubGetResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            HubGetResponse クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hub">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.DataFactories.Models.Hub Hub { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.DataFactories.Models.Hub Hub" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactories.Models.HubGetResponse.Hub" />
+      <MemberSignature Language="VB.NET" Value="Public Property Hub As Hub" />
+      <MemberSignature Language="F#" Value="member this.Hub : Microsoft.Azure.Management.DataFactories.Models.Hub with get, set" Usage="Microsoft.Azure.Management.DataFactories.Models.HubGetResponse.Hub" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.DataFactories.Models.Hub</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            省略可能。 ハブ インスタンス。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

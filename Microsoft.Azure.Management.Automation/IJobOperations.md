@@ -1,0 +1,381 @@
+<Type Name="IJobOperations" FullName="Microsoft.Azure.Management.Automation.IJobOperations">
+  <TypeSignature Language="C#" Value="public interface IJobOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IJobOperations" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.IJobOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IJobOperations" />
+  <TypeSignature Language="F#" Value="type IJobOperations = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            オートメーション ジョブのサービス操作。  (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobCreateResponse&gt; CreateAsync (string resourceGroupName, string automationAccount, Microsoft.Azure.Management.Automation.Models.JobCreateParameters parameters, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Automation.Models.JobCreateResponse&gt; CreateAsync(string resourceGroupName, string automationAccount, class Microsoft.Azure.Management.Automation.Models.JobCreateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.CreateAsync(System.String,System.String,Microsoft.Azure.Management.Automation.Models.JobCreateParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAsync : string * string * Microsoft.Azure.Management.Automation.Models.JobCreateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobCreateResponse&gt;" Usage="iJobOperations.CreateAsync (resourceGroupName, automationAccount, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobCreateResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="parameters" Type="Microsoft.Azure.Management.Automation.Models.JobCreateParameters" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="parameters">
+            ジョブの作成処理に渡されるパラメーター。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            Runbook のジョブを作成します。  (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            作成するジョブ操作の応答モデル。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetResponse&gt; GetAsync (string resourceGroupName, string automationAccount, Guid jobId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Automation.Models.JobGetResponse&gt; GetAsync(string resourceGroupName, string automationAccount, valuetype System.Guid jobId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.GetAsync(System.String,System.String,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetResponse&gt;" Usage="iJobOperations.GetAsync (resourceGroupName, automationAccount, jobId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="jobId">
+            ジョブ id。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブ id によって識別されるジョブを取得します。 (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            Get job 操作の応答モデル。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOutputAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetOutputResponse&gt; GetOutputAsync (string resourceGroupName, string automationAccount, Guid jobId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Automation.Models.JobGetOutputResponse&gt; GetOutputAsync(string resourceGroupName, string automationAccount, valuetype System.Guid jobId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.GetOutputAsync(System.String,System.String,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetOutputAsync : string * string * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetOutputResponse&gt;" Usage="iJobOperations.GetOutputAsync (resourceGroupName, automationAccount, jobId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetOutputResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="jobId">
+            ジョブ id。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブ id によって識別されるジョブの出力を取得します。 (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            Get ジョブの応答モデルでは、操作を出力します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRunbookContentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetRunbookContentResponse&gt; GetRunbookContentAsync (string resourceGroupName, string automationAccount, Guid jobId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Automation.Models.JobGetRunbookContentResponse&gt; GetRunbookContentAsync(string resourceGroupName, string automationAccount, valuetype System.Guid jobId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.GetRunbookContentAsync(System.String,System.String,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetRunbookContentAsync : string * string * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetRunbookContentResponse&gt;" Usage="iJobOperations.GetRunbookContentAsync (resourceGroupName, automationAccount, jobId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobGetRunbookContentResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="jobId">
+            ジョブ id。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブ id によって識別されるジョブの runbook のコンテンツを取得します。 (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            Get の runbook のジョブ操作の内容の応答モデル。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobListResponse&gt; ListAsync (string resourceGroupName, string automationAccount, Microsoft.Azure.Management.Automation.Models.JobListParameters parameters, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Automation.Models.JobListResponse&gt; ListAsync(string resourceGroupName, string automationAccount, class Microsoft.Azure.Management.Automation.Models.JobListParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.Automation.Models.JobListParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ListAsync : string * string * Microsoft.Azure.Management.Automation.Models.JobListParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobListResponse&gt;" Usage="iJobOperations.ListAsync (resourceGroupName, automationAccount, parameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="parameters" Type="Microsoft.Azure.Management.Automation.Models.JobListParameters" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="parameters">
+            一覧表示操作に指定するパラメーターです。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブの一覧を取得します。  (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            一覧のジョブ操作の応答モデル。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListNextAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobListResponse&gt; ListNextAsync (string nextLink, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Automation.Models.JobListResponse&gt; ListNextAsync(string nextLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.ListNextAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ListNextAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobListResponse&gt;" Usage="iJobOperations.ListNextAsync (nextLink, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Automation.Models.JobListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nextLink" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="nextLink">
+            次の項目のセットを取得するリンクです。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブの [次へ] の一覧を取得します。  (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            一覧のジョブ操作の応答モデル。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt; ResumeAsync (string resourceGroupName, string automationAccount, Guid jobId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.AzureOperationResponse&gt; ResumeAsync(string resourceGroupName, string automationAccount, valuetype System.Guid jobId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.ResumeAsync(System.String,System.String,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ResumeAsync : string * string * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt;" Usage="iJobOperations.ResumeAsync (resourceGroupName, automationAccount, jobId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="jobId">
+            ジョブ id。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブ Id によって識別されるジョブを再開します。  (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            HTTP ステータス コードと要求 ID を含む標準サービスの応答
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt; StopAsync (string resourceGroupName, string automationAccount, Guid jobId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.AzureOperationResponse&gt; StopAsync(string resourceGroupName, string automationAccount, valuetype System.Guid jobId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.StopAsync(System.String,System.String,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member StopAsync : string * string * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt;" Usage="iJobOperations.StopAsync (resourceGroupName, automationAccount, jobId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="jobId">
+            ジョブ id。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブ Id によって識別されるジョブを停止します。  (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            HTTP ステータス コードと要求 ID を含む標準サービスの応答
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt; SuspendAsync (string resourceGroupName, string automationAccount, Guid jobId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.AzureOperationResponse&gt; SuspendAsync(string resourceGroupName, string automationAccount, valuetype System.Guid jobId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.IJobOperations.SuspendAsync(System.String,System.String,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SuspendAsync : string * string * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt;" Usage="iJobOperations.SuspendAsync (resourceGroupName, automationAccount, jobId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.AzureOperationResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="automationAccount" Type="System.String" />
+        <Parameter Name="jobId" Type="System.Guid" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupName">
+            リソース グループの名前
+            </param>
+        <param name="automationAccount">
+            オートメーション アカウントの名前。
+            </param>
+        <param name="jobId">
+            ジョブ id。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            ジョブ Id によって識別されるジョブを中断します。  (詳細については http://aka.ms/azureautomationsdk/joboperations を参照してください)
+            </summary>
+        <returns>
+            HTTP ステータス コードと要求 ID を含む標準サービスの応答
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

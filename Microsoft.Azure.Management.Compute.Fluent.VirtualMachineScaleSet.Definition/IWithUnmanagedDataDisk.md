@@ -1,0 +1,19 @@
+<Type Name="IWithUnmanagedDataDisk" FullName="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithUnmanagedDataDisk">
+  <TypeSignature Language="C#" Value="public interface IWithUnmanagedDataDisk" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithUnmanagedDataDisk" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithUnmanagedDataDisk" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWithUnmanagedDataDisk" />
+  <TypeSignature Language="F#" Value="type IWithUnmanagedDataDisk = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            仮想マシンのスケールのステージでは、アンマネージ データ ディスクを指定する定義が許可を設定します。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

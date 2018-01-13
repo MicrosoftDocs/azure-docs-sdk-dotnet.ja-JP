@@ -1,0 +1,322 @@
+<Type Name="ResourceMetric" FullName="Microsoft.Azure.Management.WebSites.Models.ResourceMetric">
+  <TypeSignature Language="C#" Value="public class ResourceMetric" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceMetric extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.ResourceMetric" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourceMetric" />
+  <TypeSignature Language="F#" Value="type ResourceMetric = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            任意のリソースのメトリックを表すオブジェクトです。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceMetric ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            ResourceMetric クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceMetric (Microsoft.Azure.Management.WebSites.Models.ResourceMetricName name = null, string unit = null, string timeGrain = null, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string resourceId = null, string id = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt; metricValues = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt; properties = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.WebSites.Models.ResourceMetricName name, string unit, string timeGrain, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string resourceId, string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt; metricValues, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt; properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.#ctor(Microsoft.Azure.Management.WebSites.Models.ResourceMetricName,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As ResourceMetricName = null, Optional unit As String = null, Optional timeGrain As String = null, Optional startTime As Nullable(Of DateTime) = null, Optional endTime As Nullable(Of DateTime) = null, Optional resourceId As String = null, Optional id As String = null, Optional metricValues As IList(Of ResourceMetricValue) = null, Optional properties As IList(Of ResourceMetricProperty) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.ResourceMetric : Microsoft.Azure.Management.WebSites.Models.ResourceMetricName * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.ResourceMetric" Usage="new Microsoft.Azure.Management.WebSites.Models.ResourceMetric (name, unit, timeGrain, startTime, endTime, resourceId, id, metricValues, properties)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="Microsoft.Azure.Management.WebSites.Models.ResourceMetricName" />
+        <Parameter Name="unit" Type="System.String" />
+        <Parameter Name="timeGrain" Type="System.String" />
+        <Parameter Name="startTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="endTime" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="resourceId" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="metricValues" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">メトリックの名前です。</param>
+        <param name="unit">メトリックの単位です。</param>
+        <param name="timeGrain">メトリックの粒度。 例: PT1H、PT5M、P1D</param>
+        <param name="startTime">メトリックの開始時刻です。</param>
+        <param name="endTime">メトリックの終了時刻です。</param>
+        <param name="resourceId">メトリック リソース id。</param>
+        <param name="id">リソース id です。</param>
+        <param name="metricValues">メトリックの値。</param>
+        <param name="properties">プロパティ</param>
+        <summary>
+            ResourceMetric クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EndTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EndTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.EndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndTime As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.EndTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.EndTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="endTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            メトリックの終了時刻を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            リソース id。 を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetricValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt; MetricValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt; MetricValues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.MetricValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetricValues As IList(Of ResourceMetricValue)" />
+      <MemberSignature Language="F#" Value="member this.MetricValues : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.MetricValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="metricValues")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            メトリックの値を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.WebSites.Models.ResourceMetricName Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.WebSites.Models.ResourceMetricName Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As ResourceMetricName" />
+      <MemberSignature Language="F#" Value="member this.Name : Microsoft.Azure.Management.WebSites.Models.ResourceMetricName" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.WebSites.Models.ResourceMetricName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            メトリックの名前を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IList(Of ResourceMetricProperty)" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ResourceMetricProperty&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            プロパティを取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceId">
+      <MemberSignature Language="C#" Value="public string ResourceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.ResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceId As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceId : string" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.ResourceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="resourceId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得メトリック リソース id。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.StartTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.StartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            メトリックの開始時刻を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeGrain">
+      <MemberSignature Language="C#" Value="public string TimeGrain { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TimeGrain" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.TimeGrain" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeGrain As String" />
+      <MemberSignature Language="F#" Value="member this.TimeGrain : string" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.TimeGrain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timeGrain")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            メトリックの粒度を取得します。 例: PT1H、PT5M、P1D
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unit">
+      <MemberSignature Language="C#" Value="public string Unit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Unit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Unit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As String" />
+      <MemberSignature Language="F#" Value="member this.Unit : string" Usage="Microsoft.Azure.Management.WebSites.Models.ResourceMetric.Unit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="unit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            メトリックの単位を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

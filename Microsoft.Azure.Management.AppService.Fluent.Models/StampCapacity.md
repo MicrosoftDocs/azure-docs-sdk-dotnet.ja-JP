@@ -1,0 +1,353 @@
+<Type Name="StampCapacity" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity">
+  <TypeSignature Language="C#" Value="public class StampCapacity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StampCapacity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity" />
+  <TypeSignature Language="VB.NET" Value="Public Class StampCapacity" />
+  <TypeSignature Language="F#" Value="type StampCapacity = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            容量の情報をスタンプします。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StampCapacity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            StampCapacity クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StampCapacity (string name = null, Nullable&lt;long&gt; availableCapacity = null, Nullable&lt;long&gt; totalCapacity = null, string unit = null, Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt; computeMode = null, Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt; workerSize = null, Nullable&lt;int&gt; workerSizeId = null, Nullable&lt;bool&gt; excludeFromCapacityAllocation = null, Nullable&lt;bool&gt; isApplicableForAllComputeModes = null, string siteMode = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;int64&gt; availableCapacity, valuetype System.Nullable`1&lt;int64&gt; totalCapacity, string unit, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt; computeMode, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt; workerSize, valuetype System.Nullable`1&lt;int32&gt; workerSizeId, valuetype System.Nullable`1&lt;bool&gt; excludeFromCapacityAllocation, valuetype System.Nullable`1&lt;bool&gt; isApplicableForAllComputeModes, string siteMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.#ctor(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.String,System.Nullable{Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions},System.Nullable{Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional availableCapacity As Nullable(Of Long) = null, Optional totalCapacity As Nullable(Of Long) = null, Optional unit As String = null, Optional computeMode As Nullable(Of ComputeModeOptions) = null, Optional workerSize As Nullable(Of WorkerSizeOptions) = null, Optional workerSizeId As Nullable(Of Integer) = null, Optional excludeFromCapacityAllocation As Nullable(Of Boolean) = null, Optional isApplicableForAllComputeModes As Nullable(Of Boolean) = null, Optional siteMode As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity : string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * string * Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt; * Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity (name, availableCapacity, totalCapacity, unit, computeMode, workerSize, workerSizeId, excludeFromCapacityAllocation, isApplicableForAllComputeModes, siteMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="availableCapacity" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="totalCapacity" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="unit" Type="System.String" />
+        <Parameter Name="computeMode" Type="System.Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt;" />
+        <Parameter Name="workerSize" Type="System.Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt;" />
+        <Parameter Name="workerSizeId" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="excludeFromCapacityAllocation" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="isApplicableForAllComputeModes" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="siteMode" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">スタンプの名前です。</param>
+        <param name="availableCapacity">使用可能な容量 (マシンの数、ストレージなどのバイト数.) です。</param>
+        <param name="totalCapacity">容量の合計 (マシンの数、ストレージなどのバイト数.) です。</param>
+        <param name="unit">ユニットの名前です。</param>
+        <param name="computeMode">共有専用ワーカー。 使用可能な値が含まれます: 'Shared'、'Dedicated'、'Dynamic'</param>
+        <param name="workerSize">マシンのサイズ。 使用可能な値が含まれます: 'Default'、'Small'、'中'、'サイズ</param>
+        <param name="workerSizeId">マシンの ID のサイズ: 0 - サイズの小さい 1 - Medium 2 - 大きな</param>
+        <param name="excludeFromCapacityAllocation">場合&lt;コード&gt;true&lt;/code&gt;、基本的なアプリが含まれています。
+            基本的なアプリは、容量の割り当ては使用されません。</param>
+        <param name="isApplicableForAllComputeModes">&lt;コード&gt;true&lt;/code&gt;容量が、それ以外のすべてのアプリの該当する場合は&lt;コード&gt;false&lt;/code&gt;です。</param>
+        <param name="siteMode">共有または専用です。</param>
+        <summary>
+            StampCapacity クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AvailableCapacity">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; AvailableCapacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; AvailableCapacity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.AvailableCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property AvailableCapacity As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.AvailableCapacity : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.AvailableCapacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="availableCapacity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または使用可能な容量を設定 (コンピューターの数、ストレージなどのバイト.) です。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeMode">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt; ComputeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt; ComputeMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.ComputeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ComputeMode As Nullable(Of ComputeModeOptions)" />
+      <MemberSignature Language="F#" Value="member this.ComputeMode : Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.ComputeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="computeMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ComputeModeOptions&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または共有専用ワーカーを設定します。 使用可能な値が含まれます: 'Shared'、'Dedicated'、'Dynamic'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludeFromCapacityAllocation">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ExcludeFromCapacityAllocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeFromCapacityAllocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.ExcludeFromCapacityAllocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExcludeFromCapacityAllocation As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExcludeFromCapacityAllocation : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.ExcludeFromCapacityAllocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="excludeFromCapacityAllocation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            場合取得または設定&amp;lt; コード&amp;gt 以外の場合は true。&amp;lt;/code&amp;gt;、基本的なアプリが含まれています。
+            基本的なアプリは、容量の割り当ては使用されません。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsApplicableForAllComputeModes">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsApplicableForAllComputeModes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsApplicableForAllComputeModes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.IsApplicableForAllComputeModes" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsApplicableForAllComputeModes As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsApplicableForAllComputeModes : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.IsApplicableForAllComputeModes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isApplicableForAllComputeModes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または設定&amp;lt; コード&amp;gt 以外の場合は true。&amp;lt;/code&amp;gt; の容量が、それ以外のすべてのアプリに適用できる場合&amp;lt; コード&amp;gt 以外の場合は false&amp;lt;/code&amp;gt;。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはスタンプの名前を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteMode">
+      <MemberSignature Language="C#" Value="public string SiteMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SiteMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.SiteMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SiteMode As String" />
+      <MemberSignature Language="F#" Value="member this.SiteMode : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.SiteMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="siteMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または、共有または専用に設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalCapacity">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; TotalCapacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; TotalCapacity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.TotalCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalCapacity As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.TotalCapacity : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.TotalCapacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="totalCapacity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または設定の合計容量 (マシンの数、ストレージなどのバイト数.) です。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unit">
+      <MemberSignature Language="C#" Value="public string Unit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Unit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.Unit" />
+      <MemberSignature Language="VB.NET" Value="Public Property Unit As String" />
+      <MemberSignature Language="F#" Value="member this.Unit : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.Unit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="unit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはユニットの名前を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkerSize">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt; WorkerSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt; WorkerSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.WorkerSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkerSize As Nullable(Of WorkerSizeOptions)" />
+      <MemberSignature Language="F#" Value="member this.WorkerSize : Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.WorkerSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="workerSize")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.WorkerSizeOptions&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または、マシンのサイズを設定します。 使用可能な値が含まれます: 'Default'、'Small'、'中'、'サイズ
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkerSizeId">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; WorkerSizeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; WorkerSizeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.WorkerSizeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkerSizeId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.WorkerSizeId : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.StampCapacity.WorkerSizeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="workerSizeId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            マシンのサイズ ID 取得または設定します 0 - サイズの小さい 1 - Medium 2 - 大きな。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

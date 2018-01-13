@@ -1,0 +1,52 @@
+<Type Name="IWithAzureResource&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAzureResource&lt;ParentT&gt;">
+  <TypeSignature Language="C#" Value="public interface IWithAzureResource&lt;ParentT&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithAzureResource`1&lt;ParentT&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAzureResource`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWithAzureResource(Of ParentT)" />
+  <TypeSignature Language="F#" Value="type IWithAzureResource&lt;'ParentT&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.TrafficManager.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="ParentT" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="ParentT">UpdateDefinitionStages.WithAttach.attach() の戻り値の型。</typeparam>
+    <summary>
+            Traffic manager プロファイルをターゲットの Azure リソースの ID を指定できるように Azure エンドポイント定義の段階です。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToResourceId">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;ParentT&gt; ToResourceId (string resourceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach`1&lt;!ParentT&gt; ToResourceId(string resourceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAzureResource`1.ToResourceId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToResourceId (resourceId As String) As IWithAttach(Of ParentT)" />
+      <MemberSignature Language="F#" Value="abstract member ToResourceId : string -&gt; Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;'ParentT&gt;" Usage="iWithAzureResource.ToResourceId resourceId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.TrafficManager.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;ParentT&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceId">Azure のリソース id です。</param>
+        <summary>
+            Azure のリソースのリソース ID を指定します。
+            サポートされている Azure リソースとは、クラウド サービス、web アプリまたはパブリック ip です。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>定義の次のステージ。</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

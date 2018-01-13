@@ -1,0 +1,106 @@
+<Type Name="NodeDeactivationTaskType" FullName="System.Fabric.NodeDeactivationTaskType">
+  <TypeSignature Language="C#" Value="public enum NodeDeactivationTaskType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NodeDeactivationTaskType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Fabric.NodeDeactivationTaskType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NodeDeactivationTaskType" />
+  <TypeSignature Language="F#" Value="type NodeDeactivationTaskType = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Fabric</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+      <para>ノード非アクティブ化タスクの種類を指定します。</para>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Client">
+      <MemberSignature Language="C#" Value="Client" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Fabric.NodeDeactivationTaskType Client = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Fabric.NodeDeactivationTaskType.Client" />
+      <MemberSignature Language="VB.NET" Value="Client" />
+      <MemberSignature Language="F#" Value="Client = 3" Usage="System.Fabric.NodeDeactivationTaskType.Client" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Fabric.NodeDeactivationTaskType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+          <para>タスクが、パブリック API を呼び出すことによって作成されたことを指定します。</para>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Infrastructure">
+      <MemberSignature Language="C#" Value="Infrastructure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Fabric.NodeDeactivationTaskType Infrastructure = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Fabric.NodeDeactivationTaskType.Infrastructure" />
+      <MemberSignature Language="VB.NET" Value="Infrastructure" />
+      <MemberSignature Language="F#" Value="Infrastructure = 1" Usage="System.Fabric.NodeDeactivationTaskType.Infrastructure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Fabric.NodeDeactivationTaskType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <para>Azure MR で作成されたタスクを指定します。</para>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Fabric.NodeDeactivationTaskType Invalid = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Fabric.NodeDeactivationTaskType.Invalid" />
+      <MemberSignature Language="VB.NET" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 0" Usage="System.Fabric.NodeDeactivationTaskType.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Fabric.NodeDeactivationTaskType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <para>無効なタスクの種類。</para>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Repair">
+      <MemberSignature Language="C#" Value="Repair" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Fabric.NodeDeactivationTaskType Repair = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Fabric.NodeDeactivationTaskType.Repair" />
+      <MemberSignature Language="VB.NET" Value="Repair" />
+      <MemberSignature Language="F#" Value="Repair = 2" Usage="System.Fabric.NodeDeactivationTaskType.Repair" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Fabric.NodeDeactivationTaskType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <para>修復マネージャー サービスで作成したタスクを指定します。</para>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+<Type Name="AsciiFoldingTokenFilter" FullName="Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter">
+  <TypeSignature Language="C#" Value="public class AsciiFoldingTokenFilter : Microsoft.Azure.Search.Models.TokenFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsciiFoldingTokenFilter extends Microsoft.Azure.Search.Models.TokenFilter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsciiFoldingTokenFilter&#xA;Inherits TokenFilter" />
+  <TypeSignature Language="F#" Value="type AsciiFoldingTokenFilter = class&#xA;    inherit TokenFilter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Search</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.Search.Models.TokenFilter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.AsciiFoldingTokenFilter")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            このような対応が存在しない場合は、アルファベット、数字、および記号の Unicode 文字の最初の 127 ASCII 文字 (Unicode の「基本的なラテン」ブロック) ではない、ASCII 値に変換します。 このトークンのフィルターは、Apache Lucene を使用して実装されます。
+            <see href="http://lucene.apache.org/core/4_10_3/analyzers-common/org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter.html" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsciiFoldingTokenFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            AsciiFoldingTokenFilter クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsciiFoldingTokenFilter (string name, Nullable&lt;bool&gt; preserveOriginal = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;bool&gt; preserveOriginal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter.#ctor(System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional preserveOriginal As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter : string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter" Usage="new Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter (name, preserveOriginal)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="preserveOriginal" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">トークンのフィルターの名前。 文字、数字、スペース、ダッシュまたはアンダー スコア、だけ開始されますが、および文字の英数字で終わるのみを含める必要があり、128 文字に制限されます。</param>
+        <param name="preserveOriginal">元のトークンが保持されるかどうかを示す値。 既定値は false です。</param>
+        <summary>
+            AsciiFoldingTokenFilter クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveOriginal">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; PreserveOriginal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; PreserveOriginal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter.PreserveOriginal" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveOriginal As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.PreserveOriginal : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter.PreserveOriginal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="preserveOriginal")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または元のトークンが保持されるかどうかを示す値を設定します。 既定値は false です。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.AsciiFoldingTokenFilter.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="asciiFoldingTokenFilter.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            オブジェクトを検証します。
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            検証が失敗した場合にスローされます。
+            </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

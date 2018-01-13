@@ -1,0 +1,75 @@
+<Type Name="IWithDestinationAddress&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationAddress&lt;ParentT&gt;">
+  <TypeSignature Language="C#" Value="public interface IWithDestinationAddress&lt;ParentT&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithDestinationAddress`1&lt;ParentT&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationAddress`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWithDestinationAddress(Of ParentT)" />
+  <TypeSignature Language="F#" Value="type IWithDestinationAddress&lt;'ParentT&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="ParentT" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="ParentT">この定義をアタッチした後に戻るに親の定義の段階です。</typeparam>
+    <summary>
+            指定する宛先アドレスを許可するネットワーク ルールの定義の段階です。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToAddress">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort&lt;ParentT&gt; ToAddress (string cidr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort`1&lt;!ParentT&gt; ToAddress(string cidr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationAddress`1.ToAddress(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToAddress (cidr As String) As IWithDestinationPort(Of ParentT)" />
+      <MemberSignature Language="F#" Value="abstract member ToAddress : string -&gt; Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort&lt;'ParentT&gt;" Usage="iWithDestinationAddress.ToAddress cidr" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort&lt;ParentT&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cidr" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="cidr">CIDR 表記で表される IP アドレスの範囲です。</param>
+        <summary>
+            この規則を適用するトラフィックの宛先アドレス範囲を指定します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>定義の次のステージ。</return>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAnyAddress">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort&lt;ParentT&gt; ToAnyAddress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort`1&lt;!ParentT&gt; ToAnyAddress() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationAddress`1.ToAnyAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToAnyAddress () As IWithDestinationPort(Of ParentT)" />
+      <MemberSignature Language="F#" Value="abstract member ToAnyAddress : unit -&gt; Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort&lt;'ParentT&gt;" Usage="iWithDestinationAddress.ToAnyAddress " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.NetworkSecurityRule.UpdateDefinition.IWithDestinationPort&lt;ParentT&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            すべてのトラフィックの宛先アドレスに適用するルールは、します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>定義の次のステージ。</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

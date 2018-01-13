@@ -1,0 +1,103 @@
+<Type Name="ServerUsagesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.ServerUsagesOperationsExtensions">
+  <TypeSignature Language="C#" Value="public static class ServerUsagesOperationsExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ServerUsagesOperationsExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.ServerUsagesOperationsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ServerUsagesOperationsExtensions" />
+  <TypeSignature Language="F#" Value="type ServerUsagesOperationsExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ServerUsagesOperations の拡張メソッド。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ListByServer">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.Sql.Models.ServerUsage&gt; ListByServer (this Microsoft.Azure.Management.Sql.IServerUsagesOperations operations, string resourceGroupName, string serverName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Management.Sql.Models.ServerUsage&gt; ListByServer(class Microsoft.Azure.Management.Sql.IServerUsagesOperations operations, string resourceGroupName, string serverName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ServerUsagesOperationsExtensions.ListByServer(Microsoft.Azure.Management.Sql.IServerUsagesOperations,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByServer (operations As IServerUsagesOperations, resourceGroupName As String, serverName As String) As IEnumerable(Of ServerUsage)" />
+      <MemberSignature Language="F#" Value="static member ListByServer : Microsoft.Azure.Management.Sql.IServerUsagesOperations * string * string -&gt; seq&lt;Microsoft.Azure.Management.Sql.Models.ServerUsage&gt;" Usage="Microsoft.Azure.Management.Sql.ServerUsagesOperationsExtensions.ListByServer (operations, resourceGroupName, serverName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.Sql.Models.ServerUsage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IServerUsagesOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            この拡張メソッドの操作のグループです。
+            </param>
+        <param name="resourceGroupName">
+            リソースを格納するリソース グループの名前。 この値は、Azure リソース マネージャー API またはポータルから取得できます。
+            </param>
+        <param name="serverName">
+            サーバーの名前。
+            </param>
+        <summary>
+            サーバーの使用法を返します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListByServerAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.Sql.Models.ServerUsage&gt;&gt; ListByServerAsync (this Microsoft.Azure.Management.Sql.IServerUsagesOperations operations, string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Management.Sql.Models.ServerUsage&gt;&gt; ListByServerAsync(class Microsoft.Azure.Management.Sql.IServerUsagesOperations operations, string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ServerUsagesOperationsExtensions.ListByServerAsync(Microsoft.Azure.Management.Sql.IServerUsagesOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ListByServerAsync : Microsoft.Azure.Management.Sql.IServerUsagesOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Azure.Management.Sql.Models.ServerUsage&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.ServerUsagesOperationsExtensions.ListByServerAsync (operations, resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.ServerUsagesOperationsExtensions/&lt;ListByServerAsync&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.Sql.Models.ServerUsage&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IServerUsagesOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            この拡張メソッドの操作のグループです。
+            </param>
+        <param name="resourceGroupName">
+            リソースを格納するリソース グループの名前。 この値は、Azure リソース マネージャー API またはポータルから取得できます。
+            </param>
+        <param name="serverName">
+            サーバーの名前。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            サーバーの使用法を返します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

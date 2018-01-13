@@ -1,0 +1,63 @@
+<Type Name="LocationOperationsExtensions" FullName="Microsoft.Azure.Management.Batch.Fluent.LocationOperationsExtensions">
+  <TypeSignature Language="C#" Value="public static class LocationOperationsExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LocationOperationsExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Fluent.LocationOperationsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module LocationOperationsExtensions" />
+  <TypeSignature Language="F#" Value="type LocationOperationsExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Batch.Fluent</AssemblyName>
+    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            LocationOperations の拡張メソッド。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetQuotasAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Fluent.Models.BatchLocationQuotaInner&gt; GetQuotasAsync (this Microsoft.Azure.Management.Batch.Fluent.ILocationOperations operations, string locationName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Batch.Fluent.Models.BatchLocationQuotaInner&gt; GetQuotasAsync(class Microsoft.Azure.Management.Batch.Fluent.ILocationOperations operations, string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Fluent.LocationOperationsExtensions.GetQuotasAsync(Microsoft.Azure.Management.Batch.Fluent.ILocationOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetQuotasAsync : Microsoft.Azure.Management.Batch.Fluent.ILocationOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Fluent.Models.BatchLocationQuotaInner&gt;" Usage="Microsoft.Azure.Management.Batch.Fluent.LocationOperationsExtensions.GetQuotasAsync (operations, locationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Batch.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Batch.Fluent.LocationOperationsExtensions/&lt;GetQuotasAsync&gt;d__0))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Fluent.Models.BatchLocationQuotaInner&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Batch.Fluent.ILocationOperations" RefType="this" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            この拡張メソッドの操作のグループです。
+            </param>
+        <param name="locationName">
+            クォータの目的の地域。
+            </param>
+        <param name="cancellationToken">
+            キャンセル トークン。
+            </param>
+        <summary>
+            指定された場所に、指定されたサブスクリプションのバッチ サービスのクォータを取得します。
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

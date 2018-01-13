@@ -1,0 +1,58 @@
+<Type Name="AzureActiveDirectoryTokenProvider" FullName="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider">
+  <TypeSignature Language="C#" Value="public class AzureActiveDirectoryTokenProvider : Microsoft.Azure.EventHubs.TokenProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureActiveDirectoryTokenProvider extends Microsoft.Azure.EventHubs.TokenProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class AzureActiveDirectoryTokenProvider&#xA;Inherits TokenProvider" />
+  <TypeSignature Language="F#" Value="type AzureActiveDirectoryTokenProvider = class&#xA;    inherit TokenProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.EventHubs.TokenProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Event Hubs の Azure Active Directory のトークン プロバイダーを表します。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetTokenAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.SecurityToken&gt; GetTokenAsync (string appliesTo, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.EventHubs.SecurityToken&gt; GetTokenAsync(string appliesTo, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.GetTokenAsync(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTokenAsync (appliesTo As String, timeout As TimeSpan) As Task(Of SecurityToken)" />
+      <MemberSignature Language="F#" Value="override this.GetTokenAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.SecurityToken&gt;" Usage="azureActiveDirectoryTokenProvider.GetTokenAsync (appliesTo, timeout)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider/&lt;GetTokenAsync&gt;d__12))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.SecurityToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appliesTo" Type="System.String" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="appliesTo">アクセス トークンが適用される URI</param>
+        <param name="timeout">セキュリティ トークンを取得するメッセージのタイムアウト値を指定する時間間隔</param>
+        <summary>
+            取得、<see cref="T:Microsoft.Azure.EventHubs.SecurityToken" />指定された対象ユーザーと期間。
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Azure.EventHubs.SecurityToken" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

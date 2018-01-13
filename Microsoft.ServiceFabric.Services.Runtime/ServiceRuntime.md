@@ -1,0 +1,101 @@
+<Type Name="ServiceRuntime" FullName="Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime">
+  <TypeSignature Language="C#" Value="public static class ServiceRuntime" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ServiceRuntime extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceRuntime" />
+  <TypeSignature Language="F#" Value="type ServiceRuntime = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Service Fabric ランタイムに信頼性の高いサービスを登録するメソッドを提供する静的クラスです。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RegisterServiceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RegisterServiceAsync (string serviceTypeName, Func&lt;System.Fabric.StatefulServiceContext,Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase&gt; serviceFactory, TimeSpan timeout = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RegisterServiceAsync(string serviceTypeName, class System.Func`2&lt;class System.Fabric.StatefulServiceContext, class Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase&gt; serviceFactory, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime.RegisterServiceAsync(System.String,System.Func{System.Fabric.StatefulServiceContext,Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase},System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member RegisterServiceAsync : string * Func&lt;System.Fabric.StatefulServiceContext, Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase&gt; * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime.RegisterServiceAsync (serviceTypeName, serviceFactory, timeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime/&lt;RegisterServiceAsync&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceTypeName" Type="System.String" />
+        <Parameter Name="serviceFactory" Type="System.Func&lt;System.Fabric.StatefulServiceContext,Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase&gt;" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="serviceTypeName">マニフェストとしても指定されていないサービスのサービス型の名前。</param>
+        <param name="serviceFactory">ステートフルなサービス オブジェクトを作成するファクトリ メソッド。</param>
+        <param name="timeout">Register 操作のタイムアウト。</param>
+        <param name="cancellationToken">キャンセル要求を監視するためのトークン。</param>
+        <summary>
+            Service Fabric ランタイムを信頼性の高いステートフルなサービスを登録します。
+            </summary>
+        <returns>
+            非同期の register 操作を表すタスク。
+            </returns>
+        <remarks>To be added.</remarks>
+        <para>この操作の既定のタイムアウトは、クラスター マニフェストのホスティング セクションに ServiceFactoryRegistrationTimeout から取得されます。 ServiceFactoryRegistrationTimeout の既定値は、120 秒です。</para>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterServiceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RegisterServiceAsync (string serviceTypeName, Func&lt;System.Fabric.StatelessServiceContext,Microsoft.ServiceFabric.Services.Runtime.StatelessService&gt; serviceFactory, TimeSpan timeout = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RegisterServiceAsync(string serviceTypeName, class System.Func`2&lt;class System.Fabric.StatelessServiceContext, class Microsoft.ServiceFabric.Services.Runtime.StatelessService&gt; serviceFactory, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime.RegisterServiceAsync(System.String,System.Func{System.Fabric.StatelessServiceContext,Microsoft.ServiceFabric.Services.Runtime.StatelessService},System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member RegisterServiceAsync : string * Func&lt;System.Fabric.StatelessServiceContext, Microsoft.ServiceFabric.Services.Runtime.StatelessService&gt; * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime.RegisterServiceAsync (serviceTypeName, serviceFactory, timeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime/&lt;RegisterServiceAsync&gt;d__0))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceTypeName" Type="System.String" />
+        <Parameter Name="serviceFactory" Type="System.Func&lt;System.Fabric.StatelessServiceContext,Microsoft.ServiceFabric.Services.Runtime.StatelessService&gt;" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="serviceTypeName">マニフェストとしても指定されていないサービスのサービス型の名前。</param>
+        <param name="serviceFactory">ステートレス サービス オブジェクトを作成するファクトリ メソッド。</param>
+        <param name="timeout">Register 操作のタイムアウト。</param>
+        <param name="cancellationToken">キャンセル要求を監視するためのトークン。</param>
+        <summary>
+            Service Fabric ランタイムを信頼できるステートレスなサービスを登録します。
+            </summary>
+        <returns>
+            非同期の register 操作を表すタスク。
+            </returns>
+        <remarks>To be added.</remarks>
+        <para>この操作の既定のタイムアウトは、クラスター マニフェストのホスティング セクションに ServiceFactoryRegistrationTimeout から取得されます。 ServiceFactoryRegistrationTimeout の既定値は、120 秒です。</para>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

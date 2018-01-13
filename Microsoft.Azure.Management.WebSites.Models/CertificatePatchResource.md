@@ -1,0 +1,654 @@
+<Type Name="CertificatePatchResource" FullName="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource">
+  <TypeSignature Language="C#" Value="public class CertificatePatchResource : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CertificatePatchResource extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class CertificatePatchResource&#xA;Inherits ProxyOnlyResource" />
+  <TypeSignature Language="F#" Value="type CertificatePatchResource = class&#xA;    inherit ProxyOnlyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            証明書の ARM リソースです。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CertificatePatchResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            CertificatePatchResource クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CertificatePatchResource (string id = null, string name = null, string kind = null, string type = null, string friendlyName = null, string subjectName = null, System.Collections.Generic.IList&lt;string&gt; hostNames = null, byte[] pfxBlob = null, string siteName = null, string selfLink = null, string issuer = null, Nullable&lt;DateTime&gt; issueDate = null, Nullable&lt;DateTime&gt; expirationDate = null, string password = null, string thumbprint = null, Nullable&lt;bool&gt; valid = null, byte[] cerBlob = null, string publicKeyHash = null, Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile hostingEnvironmentProfile = null, string keyVaultId = null, string keyVaultSecretName = null, Nullable&lt;Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt; keyVaultSecretStatus = null, string geoRegion = null, string serverFarmId = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string friendlyName, string subjectName, class System.Collections.Generic.IList`1&lt;string&gt; hostNames, unsigned int8[] pfxBlob, string siteName, string selfLink, string issuer, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; issueDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expirationDate, string password, string thumbprint, valuetype System.Nullable`1&lt;bool&gt; valid, unsigned int8[] cerBlob, string publicKeyHash, class Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile hostingEnvironmentProfile, string keyVaultId, string keyVaultSecretName, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt; keyVaultSecretStatus, string geoRegion, string serverFarmId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Byte[],System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.Boolean},System.Byte[],System.String,Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile,System.String,System.String,System.Nullable{Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus},System.String,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource : string * string * string * string * string * string * System.Collections.Generic.IList&lt;string&gt; * byte[] * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * string * Nullable&lt;bool&gt; * byte[] * string * Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile * string * string * Nullable&lt;Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt; * string * string -&gt; Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource" Usage="new Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource (id, name, kind, type, friendlyName, subjectName, hostNames, pfxBlob, siteName, selfLink, issuer, issueDate, expirationDate, password, thumbprint, valid, cerBlob, publicKeyHash, hostingEnvironmentProfile, keyVaultId, keyVaultSecretName, keyVaultSecretStatus, geoRegion, serverFarmId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="friendlyName" Type="System.String" />
+        <Parameter Name="subjectName" Type="System.String" />
+        <Parameter Name="hostNames" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="pfxBlob" Type="System.Byte[]" />
+        <Parameter Name="siteName" Type="System.String" />
+        <Parameter Name="selfLink" Type="System.String" />
+        <Parameter Name="issuer" Type="System.String" />
+        <Parameter Name="issueDate" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="expirationDate" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="thumbprint" Type="System.String" />
+        <Parameter Name="valid" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cerBlob" Type="System.Byte[]" />
+        <Parameter Name="publicKeyHash" Type="System.String" />
+        <Parameter Name="hostingEnvironmentProfile" Type="Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile" />
+        <Parameter Name="keyVaultId" Type="System.String" />
+        <Parameter Name="keyVaultSecretName" Type="System.String" />
+        <Parameter Name="keyVaultSecretStatus" Type="System.Nullable&lt;Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt;" />
+        <Parameter Name="geoRegion" Type="System.String" />
+        <Parameter Name="serverFarmId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">リソース id です。</param>
+        <param name="name">リソースの名前です。</param>
+        <param name="kind">リソースの種類。</param>
+        <param name="type">リソースの種類。</param>
+        <param name="friendlyName">証明書のフレンドリ名。</param>
+        <param name="subjectName">証明書のサブジェクト名。</param>
+        <param name="hostNames">ホスト名に、証明書が適用されます。</param>
+        <param name="pfxBlob">Pfx blob。</param>
+        <param name="siteName">アプリの名前です。</param>
+        <param name="selfLink">自己リンク。</param>
+        <param name="issuer">証明書の発行者。</param>
+        <param name="issueDate">証明書の問題の日付。</param>
+        <param name="expirationDate">証明書 expriration 日付です。</param>
+        <param name="password">証明書のパスワード。</param>
+        <param name="thumbprint">証明書の拇印。</param>
+        <param name="valid">証明書は有効ですか?</param>
+        <param name="cerBlob">.Cer ファイルの実際のバイト数</param>
+        <param name="publicKeyHash">公開キー ハッシュします。</param>
+        <param name="hostingEnvironmentProfile">証明書の使用を App Service 環境を指定します。</param>
+        <param name="keyVaultId">Key Vault Csm リソース id。</param>
+        <param name="keyVaultSecretName">Key Vault シークレットの名前です。</param>
+        <param name="keyVaultSecretStatus">Key Vault シークレットの状態です。
+            使用可能な値が含まれます: '初期化'、'WaitingOnCertificateOrder'、'成功'、'CertificateOrderFailed'、'OperationNotPermittedOnKeyVault'、'AzureServiceUnauthorizedToAccessKeyVault'、'KeyVaultDoesNotExist'、'KeyVaultSecretDoesNotExist'、'された'、'ExternalPrivateKey'、'Unknown'</param>
+        <param name="geoRegion">証明書の領域。</param>
+        <param name="serverFarmId">リソース ID、関連付けられている App Service プランの設定として書式設定:"/subscriptions/{subscriptionID}/resourceGroups/{groupName}/providers/Microsoft.Web/serverfarms/{appServicePlanName}"。</param>
+        <summary>
+            CertificatePatchResource クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CerBlob">
+      <MemberSignature Language="C#" Value="public byte[] CerBlob { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CerBlob" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.CerBlob" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CerBlob As Byte()" />
+      <MemberSignature Language="F#" Value="member this.CerBlob : byte[]" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.CerBlob" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.cerBlob")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            .Cer ファイルの生のバイト数を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpirationDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ExpirationDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ExpirationDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.ExpirationDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpirationDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.ExpirationDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.ExpirationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.expirationDate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Expriration 日付の証明書を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FriendlyName">
+      <MemberSignature Language="C#" Value="public string FriendlyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.FriendlyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FriendlyName As String" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.FriendlyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.friendlyName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            証明書のフレンドリ名を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeoRegion">
+      <MemberSignature Language="C#" Value="public string GeoRegion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GeoRegion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.GeoRegion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeoRegion As String" />
+      <MemberSignature Language="F#" Value="member this.GeoRegion : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.GeoRegion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.geoRegion")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            証明書の領域を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostingEnvironmentProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile HostingEnvironmentProfile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile HostingEnvironmentProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.HostingEnvironmentProfile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostingEnvironmentProfile As HostingEnvironmentProfile" />
+      <MemberSignature Language="F#" Value="member this.HostingEnvironmentProfile : Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.HostingEnvironmentProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.hostingEnvironmentProfile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.WebSites.Models.HostingEnvironmentProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            証明書の使用を App Service 環境の仕様を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; HostNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; HostNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.HostNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostNames As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.HostNames : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.HostNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.hostNames")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または証明書が対象のホスト名を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssueDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; IssueDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; IssueDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.IssueDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssueDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.IssueDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.IssueDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.issueDate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            証明書の発行日を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Issuer">
+      <MemberSignature Language="C#" Value="public string Issuer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Issuer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Issuer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Issuer As String" />
+      <MemberSignature Language="F#" Value="member this.Issuer : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Issuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.issuer")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            発行者の証明書を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultId">
+      <MemberSignature Language="C#" Value="public string KeyVaultId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyVaultId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.KeyVaultId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultId As String" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultId : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.KeyVaultId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.keyVaultId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または設定キーの資格情報コンテナー Csm リソース id。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultSecretName">
+      <MemberSignature Language="C#" Value="public string KeyVaultSecretName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyVaultSecretName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.KeyVaultSecretName" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultSecretName As String" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultSecretName : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.KeyVaultSecretName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.keyVaultSecretName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはキーの資格情報コンテナーのシークレット名を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultSecretStatus">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt; KeyVaultSecretStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt; KeyVaultSecretStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.KeyVaultSecretStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyVaultSecretStatus As Nullable(Of KeyVaultSecretStatus)" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultSecretStatus : Nullable&lt;Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.KeyVaultSecretStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.keyVaultSecretStatus")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.WebSites.Models.KeyVaultSecretStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            秘密キー コンテナーの状態を取得します。 使用可能な値が含まれます: '初期化'、'WaitingOnCertificateOrder'、'成功'、'CertificateOrderFailed'、'OperationNotPermittedOnKeyVault'、'AzureServiceUnauthorizedToAccessKeyVault'、'KeyVaultDoesNotExist'、'KeyVaultSecretDoesNotExist'、'された'、'ExternalPrivateKey'、'Unknown'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public string Password { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Password" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Password" />
+      <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Password" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.password")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または証明書のパスワードを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PfxBlob">
+      <MemberSignature Language="C#" Value="public byte[] PfxBlob { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] PfxBlob" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.PfxBlob" />
+      <MemberSignature Language="VB.NET" Value="Public Property PfxBlob As Byte()" />
+      <MemberSignature Language="F#" Value="member this.PfxBlob : byte[] with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.PfxBlob" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.pfxBlob")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または pfx blob を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKeyHash">
+      <MemberSignature Language="C#" Value="public string PublicKeyHash { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PublicKeyHash" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.PublicKeyHash" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKeyHash As String" />
+      <MemberSignature Language="F#" Value="member this.PublicKeyHash : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.PublicKeyHash" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publicKeyHash")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            公開キー ハッシュを取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelfLink">
+      <MemberSignature Language="C#" Value="public string SelfLink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelfLink" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.SelfLink" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelfLink As String" />
+      <MemberSignature Language="F#" Value="member this.SelfLink : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.SelfLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.selfLink")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            自己リンクを取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerFarmId">
+      <MemberSignature Language="C#" Value="public string ServerFarmId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerFarmId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.ServerFarmId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerFarmId As String" />
+      <MemberSignature Language="F#" Value="member this.ServerFarmId : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.ServerFarmId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.serverFarmId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または設定として書式設定、関連付けられている、App Service プランのリソース ID:"/subscriptions/{subscriptionID}/resourceGroups/{groupName}/providers/Microsoft.Web/serverfarms/{appServicePlanName}"。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteName">
+      <MemberSignature Language="C#" Value="public string SiteName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SiteName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.SiteName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SiteName As String" />
+      <MemberSignature Language="F#" Value="member this.SiteName : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.SiteName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.siteName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            アプリ名を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubjectName">
+      <MemberSignature Language="C#" Value="public string SubjectName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubjectName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.SubjectName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectName As String" />
+      <MemberSignature Language="F#" Value="member this.SubjectName : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.SubjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.subjectName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            証明書のサブジェクト名を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumbprint">
+      <MemberSignature Language="C#" Value="public string Thumbprint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Thumbprint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Thumbprint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Thumbprint As String" />
+      <MemberSignature Language="F#" Value="member this.Thumbprint : string" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Thumbprint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.thumbprint")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            証明書の拇印を取得します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Valid">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Valid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Valid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Valid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Valid As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Valid : Nullable&lt;bool&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.CertificatePatchResource.Valid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.valid")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得は、有効な証明書ですか?
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

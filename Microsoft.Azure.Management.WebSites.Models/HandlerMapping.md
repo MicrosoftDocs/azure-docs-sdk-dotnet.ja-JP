@@ -1,0 +1,149 @@
+<Type Name="HandlerMapping" FullName="Microsoft.Azure.Management.WebSites.Models.HandlerMapping">
+  <TypeSignature Language="C#" Value="public class HandlerMapping" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandlerMapping extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.HandlerMapping" />
+  <TypeSignature Language="VB.NET" Value="Public Class HandlerMapping" />
+  <TypeSignature Language="F#" Value="type HandlerMapping = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            IIS のハンドラー マッピングはどのハンドラーで処理する HTTP 要求を特定の拡張子で定義するために使用します。
+            たとえば、*.php 拡張子を持つすべての HTTP 要求を処理する cgi.exe プロセスの構成に使用されます。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HandlerMapping ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.HandlerMapping.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            HandlerMapping クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HandlerMapping (string extension = null, string scriptProcessor = null, string arguments = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string extension, string scriptProcessor, string arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.HandlerMapping.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional extension As String = null, Optional scriptProcessor As String = null, Optional arguments As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.HandlerMapping : string * string * string -&gt; Microsoft.Azure.Management.WebSites.Models.HandlerMapping" Usage="new Microsoft.Azure.Management.WebSites.Models.HandlerMapping (extension, scriptProcessor, arguments)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="extension" Type="System.String" />
+        <Parameter Name="scriptProcessor" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="extension">この拡張機能での要求は、指定された FastCGI アプリケーションを使用して処理されます。</param>
+        <param name="scriptProcessor">FastCGI アプリケーションへの絶対パス。</param>
+        <param name="arguments">スクリプト プロセッサに渡されるコマンドライン引数。</param>
+        <summary>
+            HandlerMapping クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public string Arguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Arguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.HandlerMapping.Arguments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Arguments As String" />
+      <MemberSignature Language="F#" Value="member this.Arguments : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.HandlerMapping.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="arguments")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはスクリプト プロセッサに渡されるコマンドライン引数を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extension">
+      <MemberSignature Language="C#" Value="public string Extension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Extension" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.HandlerMapping.Extension" />
+      <MemberSignature Language="VB.NET" Value="Public Property Extension As String" />
+      <MemberSignature Language="F#" Value="member this.Extension : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.HandlerMapping.Extension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="extension")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            この要求の設定を取得または拡張機能は、指定された FastCGI アプリケーションを使用して処理されます。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptProcessor">
+      <MemberSignature Language="C#" Value="public string ScriptProcessor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptProcessor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.HandlerMapping.ScriptProcessor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScriptProcessor As String" />
+      <MemberSignature Language="F#" Value="member this.ScriptProcessor : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.HandlerMapping.ScriptProcessor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="scriptProcessor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または FastCGI アプリケーションに絶対パスを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,167 @@
+<Type Name="AzureActiveDirectoryMetadata" FullName="System.Fabric.Security.AzureActiveDirectoryMetadata">
+  <TypeSignature Language="C#" Value="public sealed class AzureActiveDirectoryMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AzureActiveDirectoryMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Fabric.Security.AzureActiveDirectoryMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AzureActiveDirectoryMetadata" />
+  <TypeSignature Language="F#" Value="type AzureActiveDirectoryMetadata = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Fabric</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Azure Active Directory からの認証トークンを取得するために使用するメタデータを表します。
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Authority">
+      <MemberSignature Language="C#" Value="public string Authority { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Authority" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Security.AzureActiveDirectoryMetadata.Authority" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authority As String" />
+      <MemberSignature Language="F#" Value="member this.Authority : string" Usage="System.Fabric.Security.AzureActiveDirectoryMetadata.Authority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            トークンを取得する証明機関の場所を示す値を取得します。
+            </summary>
+        <value>
+            権限を返します。
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientApplication">
+      <MemberSignature Language="C#" Value="public string ClientApplication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientApplication" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Security.AzureActiveDirectoryMetadata.ClientApplication" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientApplication As String" />
+      <MemberSignature Language="F#" Value="member this.ClientApplication : string" Usage="System.Fabric.Security.AzureActiveDirectoryMetadata.ClientApplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            クラスターのアプリケーション リソースのトークンを取得するときに使用するクライアント ID を示す値を取得します。
+            </summary>
+        <value>
+            クライアント ID を返します。
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientRedirect">
+      <MemberSignature Language="C#" Value="public string ClientRedirect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientRedirect" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Security.AzureActiveDirectoryMetadata.ClientRedirect" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientRedirect As String" />
+      <MemberSignature Language="F#" Value="member this.ClientRedirect : string" Usage="System.Fabric.Security.AzureActiveDirectoryMetadata.ClientRedirect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            クライアント リダイレクト URI を示す値を取得します。
+            </summary>
+        <value>
+            クライアント リダイレクト URI を返します。
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClusterApplication">
+      <MemberSignature Language="C#" Value="public string ClusterApplication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClusterApplication" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Security.AzureActiveDirectoryMetadata.ClusterApplication" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClusterApplication As String" />
+      <MemberSignature Language="F#" Value="member this.ClusterApplication : string" Usage="System.Fabric.Security.AzureActiveDirectoryMetadata.ClusterApplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            クラスターのアプリケーションのリソースを示す値を取得します。
+            </summary>
+        <value>
+            クラスターのアプリケーション リソースを返します。
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginEndpoint">
+      <MemberSignature Language="C#" Value="public string LoginEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LoginEndpoint" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Security.AzureActiveDirectoryMetadata.LoginEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoginEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.LoginEndpoint : string" Usage="System.Fabric.Security.AzureActiveDirectoryMetadata.LoginEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            (用 ADAL 初期化) には、Azure Active Directory ログイン インスタンス エンドポイントを示す値を取得します。
+            </summary>
+        <value>
+            ログインのインスタンス エンドポイントを返します。
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TenantId">
+      <MemberSignature Language="C#" Value="public string TenantId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TenantId" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Security.AzureActiveDirectoryMetadata.TenantId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TenantId As String" />
+      <MemberSignature Language="F#" Value="member this.TenantId : string" Usage="System.Fabric.Security.AzureActiveDirectoryMetadata.TenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            関連する Azure Active Directory テナントのテナント ID を示す値を取得します。
+            </summary>
+        <value>
+            テナント ID を返します。
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

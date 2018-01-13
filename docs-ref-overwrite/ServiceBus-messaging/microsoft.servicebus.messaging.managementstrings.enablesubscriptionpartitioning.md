@@ -1,5 +1,6 @@
 ---
-uid: Microsoft.ServiceBus.Messaging.ManagementStrings.EnableSubscriptionPartitioning summary: *content
+uid: Microsoft.ServiceBus.Messaging.ManagementStrings.EnableSubscriptionPartitioning
+summary: *content
 ---
 
 EnableSubscriptionPartitioning 文字列の値を指定します。 

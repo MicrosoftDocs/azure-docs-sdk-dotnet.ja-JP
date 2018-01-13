@@ -1,0 +1,202 @@
+<Type Name="CertificateItem" FullName="Microsoft.Azure.KeyVault.Models.CertificateItem">
+  <TypeSignature Language="C#" Value="public class CertificateItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CertificateItem extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.KeyVault.Models.CertificateItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class CertificateItem" />
+  <TypeSignature Language="F#" Value="type CertificateItem = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            証明書のメタデータを含む証明書項目
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CertificateItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.Models.CertificateItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            CertificateItem クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CertificateItem (string id = null, Microsoft.Azure.KeyVault.Models.CertificateAttributes attributes = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, byte[] x509Thumbprint = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class Microsoft.Azure.KeyVault.Models.CertificateAttributes attributes, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, unsigned int8[] x509Thumbprint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.Models.CertificateItem.#ctor(System.String,Microsoft.Azure.KeyVault.Models.CertificateAttributes,System.Collections.Generic.IDictionary{System.String,System.String},System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional attributes As CertificateAttributes = null, Optional tags As IDictionary(Of String, String) = null, Optional x509Thumbprint As Byte() = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.KeyVault.Models.CertificateItem : string * Microsoft.Azure.KeyVault.Models.CertificateAttributes * System.Collections.Generic.IDictionary&lt;string, string&gt; * byte[] -&gt; Microsoft.Azure.KeyVault.Models.CertificateItem" Usage="new Microsoft.Azure.KeyVault.Models.CertificateItem (id, attributes, tags, x509Thumbprint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="attributes" Type="Microsoft.Azure.KeyVault.Models.CertificateAttributes" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="x509Thumbprint" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="id">証明書識別子です。</param>
+        <param name="attributes">証明書管理の属性です。</param>
+        <param name="tags">キー/値ペアの形式でのアプリケーション固有のメタデータ。</param>
+        <param name="x509Thumbprint">証明書の拇印です。</param>
+        <summary>
+            CertificateItem クラスの新しいインスタンスを初期化します。
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.KeyVault.Models.CertificateAttributes Attributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.KeyVault.Models.CertificateAttributes Attributes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.CertificateItem.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attributes As CertificateAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : Microsoft.Azure.KeyVault.Models.CertificateAttributes with get, set" Usage="Microsoft.Azure.KeyVault.Models.CertificateItem.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attributes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.KeyVault.Models.CertificateAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または、証明書の管理の属性を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.CertificateItem.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.KeyVault.Models.CertificateItem.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または証明書識別子を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identifier">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.KeyVault.CertificateIdentifier Identifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.KeyVault.CertificateIdentifier Identifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.CertificateItem.Identifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identifier As CertificateIdentifier" />
+      <MemberSignature Language="F#" Value="member this.Identifier : Microsoft.Azure.KeyVault.CertificateIdentifier" Usage="Microsoft.Azure.KeyVault.Models.CertificateItem.Identifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.KeyVault.CertificateIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            証明書識別子
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tags">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Tags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Tags" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.CertificateItem.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tags As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Tags : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Azure.KeyVault.Models.CertificateItem.Tags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tags")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得またはキー/値ペアの形式でアプリケーション固有のメタデータを設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X509Thumbprint">
+      <MemberSignature Language="C#" Value="public byte[] X509Thumbprint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] X509Thumbprint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.CertificateItem.X509Thumbprint" />
+      <MemberSignature Language="VB.NET" Value="Public Property X509Thumbprint As Byte()" />
+      <MemberSignature Language="F#" Value="member this.X509Thumbprint : byte[] with get, set" Usage="Microsoft.Azure.KeyVault.Models.CertificateItem.X509Thumbprint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Rest.Serialization.Base64UrlJsonConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="x5t")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            取得または証明書の拇印を設定します。
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

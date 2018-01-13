@@ -1,0 +1,349 @@
+<Type Name="DataSliceRunOperationsExtensions" FullName="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions">
+  <TypeSignature Language="C#" Value="public static class DataSliceRunOperationsExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataSliceRunOperationsExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DataSliceRunOperationsExtensions" />
+  <TypeSignature Language="F#" Value="type DataSliceRunOperationsExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse Get (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string runId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse Get(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string runId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.Get(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Get (operations As IDataSliceRunOperations, resourceGroupName As String, dataFactoryName As String, runId As String) As DataSliceRunGetResponse" />
+      <MemberSignature Language="F#" Value="static member Get : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string * string * string -&gt; Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.Get (operations, resourceGroupName, dataFactoryName, runId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="dataFactoryName" Type="System.String" />
+        <Parameter Name="runId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="resourceGroupName">
+            必須。 データ ファクトリのリソース グループ名。
+            </param>
+        <param name="dataFactoryName">
+            必須。 一意のデータ ファクトリのインスタンス名です。
+            </param>
+        <param name="runId">
+            必須。 一意のデータ スライスの実行の id。
+            </param>
+        <summary>
+            データ スライスの実行のインスタンスを取得します。
+            </summary>
+        <returns>
+            Get 操作の応答のデータ スライスを実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse&gt; GetAsync (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string runId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse&gt; GetAsync(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string runId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.GetAsync(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAsync (operations As IDataSliceRunOperations, resourceGroupName As String, dataFactoryName As String, runId As String) As Task(Of DataSliceRunGetResponse)" />
+      <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse&gt;" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.GetAsync (operations, resourceGroupName, dataFactoryName, runId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="dataFactoryName" Type="System.String" />
+        <Parameter Name="runId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="resourceGroupName">
+            必須。 データ ファクトリのリソース グループ名。
+            </param>
+        <param name="dataFactoryName">
+            必須。 一意のデータ ファクトリのインスタンス名です。
+            </param>
+        <param name="runId">
+            必須。 一意のデータ スライスの実行の id。
+            </param>
+        <summary>
+            データ スライスの実行のインスタンスを取得します。
+            </summary>
+        <returns>
+            Get 操作の応答のデータ スライスを実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLogs">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse GetLogs (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string dataSliceRunId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse GetLogs(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string dataSliceRunId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.GetLogs(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLogs (operations As IDataSliceRunOperations, resourceGroupName As String, dataFactoryName As String, dataSliceRunId As String) As DataSliceRunGetLogsResponse" />
+      <MemberSignature Language="F#" Value="static member GetLogs : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string * string * string -&gt; Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.GetLogs (operations, resourceGroupName, dataFactoryName, dataSliceRunId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="dataFactoryName" Type="System.String" />
+        <Parameter Name="dataSliceRunId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="resourceGroupName">
+            必須。 データ ファクトリのリソース グループ名。
+            </param>
+        <param name="dataFactoryName">
+            必須。 一意のデータ ファクトリのインスタンス名です。
+            </param>
+        <param name="dataSliceRunId">
+            必須。 一意のデータ スライスは、インスタンス id を実行します。
+            </param>
+        <summary>
+            データ スライスの実行のログを取得します。
+            </summary>
+        <returns>
+            データ スライスは、get ログ操作の応答を実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLogsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse&gt; GetLogsAsync (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string dataSliceRunId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse&gt; GetLogsAsync(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string dataSliceRunId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.GetLogsAsync(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLogsAsync (operations As IDataSliceRunOperations, resourceGroupName As String, dataFactoryName As String, dataSliceRunId As String) As Task(Of DataSliceRunGetLogsResponse)" />
+      <MemberSignature Language="F#" Value="static member GetLogsAsync : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse&gt;" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.GetLogsAsync (operations, resourceGroupName, dataFactoryName, dataSliceRunId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunGetLogsResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="dataFactoryName" Type="System.String" />
+        <Parameter Name="dataSliceRunId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="resourceGroupName">
+            必須。 データ ファクトリのリソース グループ名。
+            </param>
+        <param name="dataFactoryName">
+            必須。 一意のデータ ファクトリのインスタンス名です。
+            </param>
+        <param name="dataSliceRunId">
+            必須。 一意のデータ スライスは、インスタンス id を実行します。
+            </param>
+        <summary>
+            データ スライスの実行のログを取得します。
+            </summary>
+        <returns>
+            データ スライスは、get ログ操作の応答を実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse List (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string tableName, Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse List(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string tableName, class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.List(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String,System.String,System.String,Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function List (operations As IDataSliceRunOperations, resourceGroupName As String, dataFactoryName As String, tableName As String, parameters As DataSliceRunListParameters) As DataSliceRunListResponse" />
+      <MemberSignature Language="F#" Value="static member List : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string * string * string * Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters -&gt; Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.List (operations, resourceGroupName, dataFactoryName, tableName, parameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="dataFactoryName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="parameters" Type="Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="resourceGroupName">
+            必須。 データ ファクトリのリソース グループ名。
+            </param>
+        <param name="dataFactoryName">
+            必須。 一意のデータ ファクトリのインスタンス名です。
+            </param>
+        <param name="tableName">
+            必須。 一意テーブルのインスタンス名。
+            </param>
+        <param name="parameters">
+            必須。 テーブルのデータ スライスの一覧にフィルターを指定するためのパラメーターが実行されます。
+            </param>
+        <summary>
+            次のページにリンクを使用してインスタンスを実行するデータ スライスの最初のページを取得します。
+            </summary>
+        <returns>
+            一覧のデータ スライスは、操作の応答を実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt; ListAsync (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string tableName, Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt; ListAsync(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string resourceGroupName, string dataFactoryName, string tableName, class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.ListAsync(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String,System.String,System.String,Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListAsync (operations As IDataSliceRunOperations, resourceGroupName As String, dataFactoryName As String, tableName As String, parameters As DataSliceRunListParameters) As Task(Of DataSliceRunListResponse)" />
+      <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string * string * string * Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt;" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.ListAsync (operations, resourceGroupName, dataFactoryName, tableName, parameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="dataFactoryName" Type="System.String" />
+        <Parameter Name="tableName" Type="System.String" />
+        <Parameter Name="parameters" Type="Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListParameters" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="resourceGroupName">
+            必須。 データ ファクトリのリソース グループ名。
+            </param>
+        <param name="dataFactoryName">
+            必須。 一意のデータ ファクトリのインスタンス名です。
+            </param>
+        <param name="tableName">
+            必須。 一意テーブルのインスタンス名。
+            </param>
+        <param name="parameters">
+            必須。 テーブルのデータ スライスの一覧にフィルターを指定するためのパラメーターが実行されます。
+            </param>
+        <summary>
+            次のページにリンクを使用してインスタンスを実行するデータ スライスの最初のページを取得します。
+            </summary>
+        <returns>
+            一覧のデータ スライスは、操作の応答を実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListNext">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse ListNext (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string nextLink);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse ListNext(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string nextLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.ListNext(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListNext (operations As IDataSliceRunOperations, nextLink As String) As DataSliceRunListResponse" />
+      <MemberSignature Language="F#" Value="static member ListNext : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string -&gt; Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.ListNext (operations, nextLink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="nextLink" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="nextLink">
+            必須。 次のデータ スライスへの url は、ページを実行します。
+            </param>
+        <summary>
+            次のページへのリンクを持つ実行のインスタンスの次のページを取得します。
+            </summary>
+        <returns>
+            一覧のデータ スライスは、操作の応答を実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListNextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt; ListNextAsync (this Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string nextLink);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt; ListNextAsync(class Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations operations, string nextLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListNextAsync (operations As IDataSliceRunOperations, nextLink As String) As Task(Of DataSliceRunListResponse)" />
+      <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt;" Usage="Microsoft.Azure.Management.DataFactories.DataSliceRunOperationsExtensions.ListNextAsync (operations, nextLink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataFactories.Models.DataSliceRunListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.DataFactories.IDataSliceRunOperations" RefType="this" />
+        <Parameter Name="nextLink" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            Microsoft.Azure.Management.DataFactories.Core.IDataSliceRunOperations への参照。
+            </param>
+        <param name="nextLink">
+            必須。 次のデータ スライスへの url は、ページを実行します。
+            </param>
+        <summary>
+            次のページへのリンクを持つ実行のインスタンスの次のページを取得します。
+            </summary>
+        <returns>
+            一覧のデータ スライスは、操作の応答を実行します。
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
