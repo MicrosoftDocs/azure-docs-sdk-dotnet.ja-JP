@@ -1,0 +1,129 @@
+<Type Name="BandwidthSchedule" FullName="Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule">
+  <TypeSignature Language="C#" Value="public class BandwidthSchedule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BandwidthSchedule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule" />
+  <TypeSignature Language="VB.NET" Value="Public Class BandwidthSchedule" />
+  <TypeSignature Language="F#" Value="type BandwidthSchedule = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.WindowsAzure.Management.StorSimple</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            <span data-ttu-id="43b70-101">このクラスは、帯域幅ポリシーに含まれる個々 の帯域幅のスケジュールを表します。</span><span class="sxs-lookup"><span data-stu-id="43b70-101">This class represent the individual bandwidth schedule within a bandwidth policy</span></span>
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BandwidthSchedule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.WindowsAzure.Management.StorSimple</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            <span data-ttu-id="43b70-102">BandwidthSchedule クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="43b70-102">Initializes a new instance of the BandwidthSchedule class.</span></span>
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Days">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;int&gt; Days { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;int32&gt; Days" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Days" />
+      <MemberSignature Language="VB.NET" Value="Public Property Days As IList(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Days : System.Collections.Generic.IList&lt;int&gt; with get, set" Usage="Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Days" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.WindowsAzure.Management.StorSimple</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            <span data-ttu-id="43b70-103">必須。</span><span class="sxs-lookup"><span data-stu-id="43b70-103">Required.</span></span> <span data-ttu-id="43b70-104">取得または設定曜日の指定されたスケジュールを適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="43b70-104">Gets or sets the Days of week for which given schedule should be applied.</span></span>
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rate">
+      <MemberSignature Language="C#" Value="public int Rate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Rate" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rate As Integer" />
+      <MemberSignature Language="F#" Value="member this.Rate : int with get, set" Usage="Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Rate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.WindowsAzure.Management.StorSimple</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            <span data-ttu-id="43b70-105">必須。</span><span class="sxs-lookup"><span data-stu-id="43b70-105">Required.</span></span> <span data-ttu-id="43b70-106">取得または指定のスケジュールの b/秒で帯域幅の割合を設定します。</span><span class="sxs-lookup"><span data-stu-id="43b70-106">Gets or sets the bandwidth rate in b/sec for the given schedule.</span></span>
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public string Start { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Start" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As String" />
+      <MemberSignature Language="F#" Value="member this.Start : string with get, set" Usage="Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.WindowsAzure.Management.StorSimple</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            <span data-ttu-id="43b70-107">必須。</span><span class="sxs-lookup"><span data-stu-id="43b70-107">Required.</span></span> <span data-ttu-id="43b70-108">取得または指定のスケジュールを適用する開始時刻を設定します。</span><span class="sxs-lookup"><span data-stu-id="43b70-108">Gets or sets the start time from which the given schedule should be applied.</span></span>
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public string Stop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Stop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stop As String" />
+      <MemberSignature Language="F#" Value="member this.Stop : string with get, set" Usage="Microsoft.WindowsAzure.Management.StorSimple.Models.BandwidthSchedule.Stop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.WindowsAzure.Management.StorSimple</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            <span data-ttu-id="43b70-109">必須。</span><span class="sxs-lookup"><span data-stu-id="43b70-109">Required.</span></span> <span data-ttu-id="43b70-110">取得または指定のスケジュールの適用されるまで停止時刻を設定します。</span><span class="sxs-lookup"><span data-stu-id="43b70-110">Gets or sets the stop time till which the given schedule should be applied.</span></span>
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
