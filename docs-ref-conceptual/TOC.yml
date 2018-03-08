@@ -11,7 +11,7 @@
         - name: SQL Database
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
         - name: Cosmos DB
-          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
         - name: BLOB ストレージ
@@ -25,7 +25,7 @@
       items:
         - name: Azure SQL Database を使用して ASP.NET Web アプリを作成する
           href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-        - name: CosmosDB を使用して ASP.NET Web アプリを作成する
+        - name: Cosmos DB を使用して ASP.NET Web アプリを作成する
           href: /azure/documentdb/documentdb-dotnet-application
         - name: Web API を作成してデプロイする
           href: /azure/app-service-api/app-service-api-dotnet-get-started
@@ -35,8 +35,8 @@
           href: /azure/sql-database/sql-database-connect-query-dotnet
         - name: PostgreSQL に接続してクエリを実行する
           href: /azure/postgresql/connect-csharp
-        - name: CosmosDB DocumentDB API の概要
-          href: /azure/cosmos-db/documentdb-dotnetcore-get-started
+        - name: Cosmos DB SQL API を使ってみる
+          href: /azure/cosmos-db/sql-api-get-started
     - name: 方法
       items:
         - name: 移行
