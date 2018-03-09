@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 9a67edadc6e91d2ead82f41601e561809d6a811c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: b817216e114e5ab3ff22c1c5adb0f892c7874147
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>.NET 用 Azure 管理ライブラリの fluent の概念
 
@@ -72,7 +71,7 @@ foreach(var vm in vmList)
 
 | 動詞   |  使用例 |
 |--------|---------------|
-| 作成 | `azure.VirtualMachines.Create(listOfVMCreatables)` |
+| [作成] | `azure.VirtualMachines.Create(listOfVMCreatables)` |
 | 適用  | `virtualMachineScaleSet.Update().WithCapacity(6).Apply()` |
 | 削除 | `azure.Disks.DeleteById(id)` | 
 | 一覧表示   | `azure.SqlServers.List()` | 
@@ -81,7 +80,7 @@ foreach(var vm in vmList)
 >[!NOTE]
 > `Define()` と `Update()` は動詞ですが、その後に `Create()` または `Apply()` が続かない限り、他の処理がブロックされることはありません。
  
-特定のリソース オブジェクトには、Azure のリソースの状態を変更する動詞があります。 For example:
+特定のリソース オブジェクトには、Azure のリソースの状態を変更する動詞があります。 例: 
 
 ```csharp
 var vmToRestart = azure.VirtualMachines.GetById(id);

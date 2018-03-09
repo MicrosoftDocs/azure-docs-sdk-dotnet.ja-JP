@@ -12,17 +12,17 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: storage
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f9928736fa024258bcf19ba5ad91f0a328aa05a8
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 8f6e0414b54698d0a1dbe3d4c074456a6ad7b7be
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-storage-apis-for-net"></a>.NET 用 Azure Storage API
 
 ## <a name="overview"></a>概要
 
-.NET アプリケーションから [Azure Storage](https://review.docs.microsoft.com/en-us/azure/storage/storage-introduction) を使って、ファイル、BLOB (オブジェクト) データ、キーと値のペア、メッセージの読み取りと書き込みを行います。
+.NET アプリケーションから [Azure Storage](https://review.docs.microsoft.com/azure/storage/storage-introduction) を使って、ファイル、BLOB (オブジェクト) データ、キーと値のペア、メッセージの読み取りと書き込みを行います。
 
 Azure Storage を使い始めるには、「[.NET を使用して Azure Blob Storage を使用する](/azure/storage/storage-dotnet-how-to-use-blobs)」をご覧ください。
 

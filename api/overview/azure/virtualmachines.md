@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: d3bad2e94ec8b08bad2a014fb25d400625a3590d
-ms.sourcegitcommit: 2d08f2815fa7fab55e09d294fc4d74897df7951d
+ms.openlocfilehash: cac6dde85a7b0db2c98d0888cb0ee5c60ee31836
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-virtual-machine-libraries-for-net"></a>.NET 用 Azure 仮想マシン ライブラリ
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 11/07/2017
 
 Linux または Windows を実行するオンデマンドのスケーラブルなコンピューティング リソースです。
 
-Azure 仮想マシンの概要については、「[Azure Portal で Linux 仮想マシンを作成する](https://review.docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)」を参照してください。
+Azure 仮想マシンの概要については、「[Azure Portal で Linux 仮想マシンを作成する](https://review.docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal)」を参照してください。
 
 ## <a name="management-apis"></a>管理 API
 
@@ -69,14 +69,14 @@ IVirtualMachine windowsVM = azure.VirtualMachines.Define("MyVirtualMachine")
 ```
 
 > [!div class="nextstepaction"]
-> [Management API を探す](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
+> [Management API を探す](https://docs.microsoft.com/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
 
 ### <a name="samples"></a>サンプル
 
 * [仮想マシンの作成と管理](/dotnet/azure/dotnet-sdk-azure-virtual-machine-samples)
-* [.NET からテンプレートを使用して SSH 対応 VM をデプロイする](https://azure.microsoft.com/en-us/resources/samples/resource-manager-dotnet-template-deployment/)
+* [.NET からテンプレートを使用して SSH 対応 VM をデプロイする](https://azure.microsoft.com/resources/samples/resource-manager-dotnet-template-deployment/)
 
-仮想マシン サンプルの[完全な一覧](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=VM)をご覧ください。
+仮想マシン サンプルの[完全な一覧](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=VM)をご覧ください。
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

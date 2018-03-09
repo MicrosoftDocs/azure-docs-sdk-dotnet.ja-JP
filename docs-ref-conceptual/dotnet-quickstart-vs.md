@@ -10,12 +10,11 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.assetid: 
-ms.openlocfilehash: 0f8e3e5ea1ef5cde239b2d8ebbc9fe75dd978cb1
-ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
+ms.openlocfilehash: d5c34dfc7e649e00e8ef458537f3f76410db61d4
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Visual Studio から Azure へのデプロイ
 
@@ -106,7 +105,7 @@ DocumentDB のような Azure サービスを使用するアプリケーショ�
 az group delete -n DotNetAzureTutorial
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 * [ASP.NET Web アプリケーションで認証に Azure Active Directory を使用する](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
 * [Azure SQL Database を使用して Azure Web アプリをビルドする](/azure/app-service-web/web-sites-dotnet-get-started)
