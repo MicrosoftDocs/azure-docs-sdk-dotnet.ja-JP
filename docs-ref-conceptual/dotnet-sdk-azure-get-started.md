@@ -7,39 +7,38 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 80f796493362a84474f5913a26ad6802f68a4906
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-the-azure-net-apis"></a><span data-ttu-id="96507-104">Azure .NET API の概要</span><span class="sxs-lookup"><span data-stu-id="96507-104">Get started with the Azure .NET APIs</span></span>
+# <a name="get-started-with-the-azure-net-apis"></a><span data-ttu-id="72929-104">Azure .NET API の概要</span><span class="sxs-lookup"><span data-stu-id="72929-104">Get started with the Azure .NET APIs</span></span>
 
-<span data-ttu-id="96507-105">このチュートリアルでは、いくつかの [.NET 用 Azure API](/dotnet/api/overview/azure/) の使い方を示します。</span><span class="sxs-lookup"><span data-stu-id="96507-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="96507-106">認証の設定、Azure Storage アカウントの作成と使用、Azure SQL Database の作成と使用、仮想マシンのデプロイ、GitHub からの Azure App Service Web アプリのデプロイについて説明します。</span><span class="sxs-lookup"><span data-stu-id="96507-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
+<span data-ttu-id="72929-105">このチュートリアルでは、いくつかの [.NET 用 Azure API](/dotnet/api/overview/azure/) の使い方を示します。</span><span class="sxs-lookup"><span data-stu-id="72929-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="72929-106">認証の設定、Azure Storage アカウントの作成と使用、Azure SQL Database の作成と使用、仮想マシンのデプロイ、GitHub からの Azure App Service Web アプリのデプロイについて説明します。</span><span class="sxs-lookup"><span data-stu-id="72929-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="96507-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="96507-107">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="72929-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="72929-107">Prerequisites</span></span>
 
-- <span data-ttu-id="96507-108">Azure アカウント。</span><span class="sxs-lookup"><span data-stu-id="96507-108">An Azure account.</span></span> <span data-ttu-id="96507-109">所有していない場合は、[無料試用版を入手](https://azure.microsoft.com/free/)してください。</span><span class="sxs-lookup"><span data-stu-id="96507-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
-- [<span data-ttu-id="96507-110">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="96507-110">Azure PowerShell</span></span>](/powershell/azure/install-azurerm-ps)
+- <span data-ttu-id="72929-108">Azure アカウント。</span><span class="sxs-lookup"><span data-stu-id="72929-108">An Azure account.</span></span> <span data-ttu-id="72929-109">所有していない場合は、[無料試用版を入手](https://azure.microsoft.com/free/)してください。</span><span class="sxs-lookup"><span data-stu-id="72929-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
+- [<span data-ttu-id="72929-110">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="72929-110">Azure PowerShell</span></span>](/powershell/azure/install-azurerm-ps)
 
-## <a name="set-up-authentication"></a><span data-ttu-id="96507-111">認証の設定</span><span class="sxs-lookup"><span data-stu-id="96507-111">Set up authentication</span></span>
+## <a name="set-up-authentication"></a><span data-ttu-id="72929-111">認証の設定</span><span class="sxs-lookup"><span data-stu-id="72929-111">Set up authentication</span></span>
 
 [!include[Create service principal](includes/create-sp.md)]
 
 [!include[File-based authentication](includes/file-based-auth.md)]
 
-## <a name="create-a-new-project"></a><span data-ttu-id="96507-112">新しいプロジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="96507-112">Create a new project</span></span> 
+## <a name="create-a-new-project"></a><span data-ttu-id="72929-112">新しいプロジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="72929-112">Create a new project</span></span> 
 
-<span data-ttu-id="96507-113">新しいコンソール アプリケーション プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="96507-113">Create a new console application project.</span></span>  <span data-ttu-id="96507-114">Visual Studio でこれを行うには、**[ファイル]**、**[新規]** の順にクリックし、**[プロジェクト]** をクリックします。Visual C# テンプレートで、**[コンソール アプリ (.NET Core)]** を選び、プロジェクトの名前を設定して、**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="96507-114">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
+<span data-ttu-id="72929-113">新しいコンソール アプリケーション プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="72929-113">Create a new console application project.</span></span>  <span data-ttu-id="72929-114">Visual Studio でこれを行うには、**[ファイル]**、**[新規]** の順にクリックし、**[プロジェクト]** をクリックします。Visual C# テンプレートで、**[コンソール アプリ (.NET Core)]** を選び、プロジェクトの名前を設定して、**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72929-114">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
 
 ![[新しいプロジェクト] ダイアログ](media/dotnet-sdk-azure-get-started/new-project.png)
 
-<span data-ttu-id="96507-116">新しいコンソール アプリが作成されたら、**[ツール]**、**[NuGet パッケージ マネージャー]**、**[パッケージ マネージャー コンソール]** の順にクリックして、パッケージ マネージャー コンソールを開きます。</span><span class="sxs-lookup"><span data-stu-id="96507-116">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="96507-117">コンソールで、次の 3 つのコマンドを実行して、必要なパッケージを入手します。</span><span class="sxs-lookup"><span data-stu-id="96507-117">In the console, get the packages you'll need by executing the following three commands:</span></span>
+<span data-ttu-id="72929-116">新しいコンソール アプリが作成されたら、**[ツール]**、**[NuGet パッケージ マネージャー]**、**[パッケージ マネージャー コンソール]** の順にクリックして、パッケージ マネージャー コンソールを開きます。</span><span class="sxs-lookup"><span data-stu-id="72929-116">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="72929-117">コンソールで、次の 3 つのコマンドを実行して、必要なパッケージを入手します。</span><span class="sxs-lookup"><span data-stu-id="72929-117">In the console, get the packages you'll need by executing the following three commands:</span></span>
 
 ```powershell
 # Azure Management Libraries for .NET (Fluent)
@@ -52,9 +51,9 @@ Install-Package WindowsAzure.Storage
 Install-Package System.Data.SqlClient
 ```
 
-## <a name="directives"></a><span data-ttu-id="96507-118">ディレクティブ</span><span class="sxs-lookup"><span data-stu-id="96507-118">Directives</span></span>
+## <a name="directives"></a><span data-ttu-id="72929-118">ディレクティブ</span><span class="sxs-lookup"><span data-stu-id="72929-118">Directives</span></span>
 
-<span data-ttu-id="96507-119">アプリケーションの `Program.cs` ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="96507-119">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="96507-120">最上部の `using` ディレクティブを次の内容で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="96507-120">Replace the `using` directives at the top with the following:</span></span>
+<span data-ttu-id="72929-119">アプリケーションの `Program.cs` ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="72929-119">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="72929-120">最上部の `using` ディレクティブを次の内容で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="72929-120">Replace the `using` directives at the top with the following:</span></span>
 
 ```csharp
 using System;
@@ -69,11 +68,11 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using System.Data.SqlClient;
 ```
 
-## <a name="create-a-virtual-machine"></a><span data-ttu-id="96507-121">仮想マシンの作成</span><span class="sxs-lookup"><span data-stu-id="96507-121">Create a virtual machine</span></span>
+## <a name="create-a-virtual-machine"></a><span data-ttu-id="72929-121">仮想マシンの作成</span><span class="sxs-lookup"><span data-stu-id="72929-121">Create a virtual machine</span></span>
 
-<span data-ttu-id="96507-122">この例では、仮想マシンをデプロイします。</span><span class="sxs-lookup"><span data-stu-id="96507-122">This example deploys a virtual machine.</span></span> 
+<span data-ttu-id="72929-122">この例では、仮想マシンをデプロイします。</span><span class="sxs-lookup"><span data-stu-id="72929-122">This example deploys a virtual machine.</span></span> 
 
-<span data-ttu-id="96507-123">`Main` メソッドを次のコードで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="96507-123">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="96507-124">仮想マシンの実際の `username` と `password` を指定してください。</span><span class="sxs-lookup"><span data-stu-id="96507-124">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
+<span data-ttu-id="72929-123">`Main` メソッドを次のコードで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="72929-123">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="72929-124">仮想マシンの実際の `username` と `password` を指定してください。</span><span class="sxs-lookup"><span data-stu-id="72929-124">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -115,17 +114,17 @@ static void Main(string[] args)
 }
 ```
 
-<span data-ttu-id="96507-125">**F5** キーを押してサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="96507-125">Press **F5** to run the sample.</span></span>
+<span data-ttu-id="72929-125">**F5** キーを押してサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="72929-125">Press **F5** to run the sample.</span></span>
 
-<span data-ttu-id="96507-126">数分後、プログラムが終了すると、Enter キーを押すように求められます。</span><span class="sxs-lookup"><span data-stu-id="96507-126">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="96507-127">Enter キーを押した後、PowerShell を使ってサブスクリプションで仮想マシンを確認します。</span><span class="sxs-lookup"><span data-stu-id="96507-127">After pressing enter, verify the virtual machine in your subscription with PowerShell:</span></span>
+<span data-ttu-id="72929-126">数分後、プログラムが終了すると、Enter キーを押すように求められます。</span><span class="sxs-lookup"><span data-stu-id="72929-126">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="72929-127">Enter キーを押した後、PowerShell を使ってサブスクリプションで仮想マシンを確認します。</span><span class="sxs-lookup"><span data-stu-id="72929-127">After pressing enter, verify the virtual machine in your subscription with PowerShell:</span></span>
 
 ```powershell
 Get-AzureRmVm -ResourceGroupName sampleResourceGroup
 ```
 
-## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="96507-128">GitHub リポジトリからの Web アプリのデプロイ</span><span class="sxs-lookup"><span data-stu-id="96507-128">Deploy a web app from a GitHub repo</span></span>
+## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="72929-128">GitHub リポジトリからの Web アプリのデプロイ</span><span class="sxs-lookup"><span data-stu-id="72929-128">Deploy a web app from a GitHub repo</span></span>
 
-<span data-ttu-id="96507-129">次に、既存の GitHub リポジトリから新しい Web アプリを作成してデプロイするように、コードを変更します。</span><span class="sxs-lookup"><span data-stu-id="96507-129">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="96507-130">`Main` メソッドを次のコードに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="96507-130">Replace the `Main` method with the following code:</span></span>
+<span data-ttu-id="72929-129">次に、既存の GitHub リポジトリから新しい Web アプリを作成してデプロイするように、コードを変更します。</span><span class="sxs-lookup"><span data-stu-id="72929-129">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="72929-130">`Main` メソッドを次のコードに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="72929-130">Replace the `Main` method with the following code:</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -162,13 +161,13 @@ static void Main(string[] args)
 }
 ```
 
-<span data-ttu-id="96507-131">前と同じように **F5** キーを押してコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="96507-131">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="96507-132">ブラウザーを開き、コンソールに表示される URL に移動して、デプロイを確認します。</span><span class="sxs-lookup"><span data-stu-id="96507-132">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
+<span data-ttu-id="72929-131">前と同じように **F5** キーを押してコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="72929-131">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="72929-132">ブラウザーを開き、コンソールに表示される URL に移動して、デプロイを確認します。</span><span class="sxs-lookup"><span data-stu-id="72929-132">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
 
-## <a name="connect-to-a-sql-database"></a><span data-ttu-id="96507-133">SQL Database への接続</span><span class="sxs-lookup"><span data-stu-id="96507-133">Connect to a SQL database</span></span>
+## <a name="connect-to-a-sql-database"></a><span data-ttu-id="72929-133">SQL Database への接続</span><span class="sxs-lookup"><span data-stu-id="72929-133">Connect to a SQL database</span></span>
 
-<span data-ttu-id="96507-134">この例では、新しい Azure SQL Database を作成し、いくつかの SQL 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="96507-134">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
+<span data-ttu-id="72929-134">この例では、新しい Azure SQL Database を作成し、いくつかの SQL 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="72929-134">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
 
-<span data-ttu-id="96507-135">`Main` メソッドを次のように置き換えて、`dbPassword` に強力なパスワードを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="96507-135">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
+<span data-ttu-id="72929-135">`Main` メソッドを次のように置き換えて、`dbPassword` に強力なパスワードを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="72929-135">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
 
 ```csharp
  static void Main(string[] args)
@@ -241,13 +240,13 @@ static void Main(string[] args)
     Console.ReadLine();
 }
 ```
-<span data-ttu-id="96507-136">前と同じように **F5** キーを押してコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="96507-136">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="96507-137">サーバーが作成されて意図したとおりに動作していることはコンソール出力で確認できますが、好みに応じて、SQL Server Management Studio などのツールで直接接続してもかまいません。</span><span class="sxs-lookup"><span data-stu-id="96507-137">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
+<span data-ttu-id="72929-136">前と同じように **F5** キーを押してコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="72929-136">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="72929-137">サーバーが作成されて意図したとおりに動作していることはコンソール出力で確認できますが、好みに応じて、SQL Server Management Studio などのツールで直接接続してもかまいません。</span><span class="sxs-lookup"><span data-stu-id="72929-137">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
 
-## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="96507-138">新しいストレージ アカウントへの BLOB の書き込み</span><span class="sxs-lookup"><span data-stu-id="96507-138">Write a blob into a new storage account</span></span>
+## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="72929-138">新しいストレージ アカウントへの BLOB の書き込み</span><span class="sxs-lookup"><span data-stu-id="72929-138">Write a blob into a new storage account</span></span>
 
-<span data-ttu-id="96507-139">この例では、ストレージ アカウントを作成して、BLOB をアップロードします。</span><span class="sxs-lookup"><span data-stu-id="96507-139">This example will create a storage account and upload a blob.</span></span>  
+<span data-ttu-id="72929-139">この例では、ストレージ アカウントを作成して、BLOB をアップロードします。</span><span class="sxs-lookup"><span data-stu-id="72929-139">This example will create a storage account and upload a blob.</span></span>  
 
-<span data-ttu-id="96507-140">`Main` メソッドを次のコードで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="96507-140">Replace the `Main` method with the following.</span></span>
+<span data-ttu-id="72929-140">`Main` メソッドを次のコードで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="72929-140">Replace the `Main` method with the following.</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -303,26 +302,26 @@ static void Main(string[] args)
 }
 ```
 
-<span data-ttu-id="96507-141">**F5** キーを押してサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="96507-141">Press **F5** to run the sample.</span></span>
+<span data-ttu-id="72929-141">**F5** キーを押してサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="72929-141">Press **F5** to run the sample.</span></span>
 
-<span data-ttu-id="96507-142">数分後、プログラムが終了します。</span><span class="sxs-lookup"><span data-stu-id="96507-142">After several minutes, the program will finish.</span></span> <span data-ttu-id="96507-143">コンソールに表示される URL を参照して、BLOB がアップロードされたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="96507-143">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="96507-144">"Hello, Azure!" というテキストが</span><span class="sxs-lookup"><span data-stu-id="96507-144">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="96507-145">ブラウザーに表示されるはずです。</span><span class="sxs-lookup"><span data-stu-id="96507-145">in your browser.</span></span>
+<span data-ttu-id="72929-142">数分後、プログラムが終了します。</span><span class="sxs-lookup"><span data-stu-id="72929-142">After several minutes, the program will finish.</span></span> <span data-ttu-id="72929-143">コンソールに表示される URL を参照して、BLOB がアップロードされたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="72929-143">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="72929-144">"Hello, Azure!" というテキストが</span><span class="sxs-lookup"><span data-stu-id="72929-144">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="72929-145">ブラウザーに表示されるはずです。</span><span class="sxs-lookup"><span data-stu-id="72929-145">in your browser.</span></span>
 
-## <a name="clean-up"></a><span data-ttu-id="96507-146">クリーンアップ</span><span class="sxs-lookup"><span data-stu-id="96507-146">Clean up</span></span>
+## <a name="clean-up"></a><span data-ttu-id="72929-146">クリーンアップ</span><span class="sxs-lookup"><span data-stu-id="72929-146">Clean up</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="96507-147">このチュートリアルで作成したリソースをクリーンアップしないと、引き続き課金されます。</span><span class="sxs-lookup"><span data-stu-id="96507-147">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="96507-148">忘れずにこの手順を実行してください。</span><span class="sxs-lookup"><span data-stu-id="96507-148">Be sure to do this step.</span></span>
+> <span data-ttu-id="72929-147">このチュートリアルで作成したリソースをクリーンアップしないと、引き続き課金されます。</span><span class="sxs-lookup"><span data-stu-id="72929-147">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="72929-148">忘れずにこの手順を実行してください。</span><span class="sxs-lookup"><span data-stu-id="72929-148">Be sure to do this step.</span></span>
 
-<span data-ttu-id="96507-149">PowerShell で次のように入力して、作成したすべてのリソースを削除します。</span><span class="sxs-lookup"><span data-stu-id="96507-149">Delete all the resources you created by entering the following in PowerShell:</span></span>
+<span data-ttu-id="72929-149">PowerShell で次のように入力して、作成したすべてのリソースを削除します。</span><span class="sxs-lookup"><span data-stu-id="72929-149">Delete all the resources you created by entering the following in PowerShell:</span></span>
 
 ```powershell
 Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
-## <a name="explore-more-samples"></a><span data-ttu-id="96507-150">その他のサンプルを探す</span><span class="sxs-lookup"><span data-stu-id="96507-150">Explore more samples</span></span>
+## <a name="explore-more-samples"></a><span data-ttu-id="72929-150">その他のサンプルを探す</span><span class="sxs-lookup"><span data-stu-id="72929-150">Explore more samples</span></span>
 
-<span data-ttu-id="96507-151">.NET 用 Azure ライブラリを使ってリソースを管理したりタスクを自動化したりする方法をさらに詳しく知るには、[仮想マシン](dotnet-sdk-azure-virtual-machine-samples.md)、[Web アプリ](dotnet-sdk-azure-web-apps-samples.md)、[SQL データベース](dotnet-sdk-azure-sql-database-samples.md)に関するサンプル コードを参照してください。</span><span class="sxs-lookup"><span data-stu-id="96507-151">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
+<span data-ttu-id="72929-151">.NET 用 Azure ライブラリを使ってリソースを管理したりタスクを自動化したりする方法をさらに詳しく知るには、[仮想マシン](dotnet-sdk-azure-virtual-machine-samples.md)、[Web アプリ](dotnet-sdk-azure-web-apps-samples.md)、[SQL データベース](dotnet-sdk-azure-sql-database-samples.md)に関するサンプル コードを参照してください。</span><span class="sxs-lookup"><span data-stu-id="72929-151">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
 
-## <a name="reference"></a><span data-ttu-id="96507-152">リファレンス</span><span class="sxs-lookup"><span data-stu-id="96507-152">Reference</span></span>
+## <a name="reference"></a><span data-ttu-id="72929-152">リファレンス</span><span class="sxs-lookup"><span data-stu-id="72929-152">Reference</span></span>
 
-<span data-ttu-id="96507-153">すべてのパッケージには、[リファレンス](http://docs.microsoft.com/dotnet/api)が提供されています。</span><span class="sxs-lookup"><span data-stu-id="96507-153">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
+<span data-ttu-id="72929-153">すべてのパッケージには、[リファレンス](http://docs.microsoft.com/dotnet/api)が提供されています。</span><span class="sxs-lookup"><span data-stu-id="72929-153">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
 
 [!include[Contribute and community](includes/contribute.md)]
