@@ -79,6 +79,8 @@
           href: dotnet-tutorials-services-monitoring.md
     - name: .NET コード サンプル
       items:
+        - name: フォト ギャラリー - Web Apps と Storage
+          href: 'https://azure.microsoft.com/resources/samples/storage-blobs-dotnet-webapp/'
         - name: Web Apps
           href: dotnet-sdk-azure-web-apps-samples.md
         - name: データベース
