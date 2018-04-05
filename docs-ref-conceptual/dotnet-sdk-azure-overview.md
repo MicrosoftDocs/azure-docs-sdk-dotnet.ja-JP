@@ -1,7 +1,7 @@
 ---
 title: Azure .NET API
-description: ".NET 用 Azure API の概要"
-keywords: "Azure, .NET, SDK, API, NuGet, ライブラリ, パッケージ"
+description: .NET 用 Azure API の概要
+keywords: Azure, .NET, SDK, API, NuGet, ライブラリ, パッケージ
 author: camsoper
 ms.author: casoper
 manager: wpickett

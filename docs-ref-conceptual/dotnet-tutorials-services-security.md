@@ -1,6 +1,6 @@
 ---
-title: "Azure アプリのセキュリティ保護に関する .NET チュートリアル"
-description: "Azure で実行する .NET アプリでのアプリケーションのセキュリティと ID の管理に関するチュートリアルです。"
+title: Azure アプリのセキュリティ保護に関する .NET チュートリアル
+description: Azure で実行する .NET アプリでのアプリケーションのセキュリティと ID の管理に関するチュートリアルです。
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,7 +1,7 @@
 ---
 title: Azure .NET Storage API
-description: ".NET 用 Azure Storage ライブラリのリファレンス"
-keywords: "Azure, .NET, SDK, API, ストレージ, BLOB"
+description: .NET 用 Azure Storage ライブラリのリファレンス
+keywords: Azure, .NET, SDK, API, ストレージ, BLOB
 author: camsoper
 ms.author: casoper
 manager: wpickett

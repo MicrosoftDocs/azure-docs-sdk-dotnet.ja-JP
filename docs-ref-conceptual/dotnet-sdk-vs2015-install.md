@@ -1,6 +1,6 @@
 ---
 title: Azure Tools for Visual Studio 2015
-description: "ツールを入手し、Visual Studio 2015 からの Azure .NET ライブラリの使用を始めてください。"
+description: ツールを入手し、Visual Studio 2015 からの Azure .NET ライブラリの使用を始めてください。
 keywords: Azure .NET, SDK, VS2015, Visual Studio 2015
 author: camsoper
 ms.author: casoper

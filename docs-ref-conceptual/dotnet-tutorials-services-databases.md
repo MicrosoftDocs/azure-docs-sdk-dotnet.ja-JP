@@ -1,6 +1,6 @@
 ---
-title: "Azure データベースの使用に関する .NET チュートリアル"
-description: ".NET アプリケーションで Azure データベースに接続して使う方法に関するチュートリアルです。"
+title: Azure データベースの使用に関する .NET チュートリアル
+description: .NET アプリケーションで Azure データベースに接続して使う方法に関するチュートリアルです。
 author: camsoper
 ms.author: casoper
 manager: wpickett

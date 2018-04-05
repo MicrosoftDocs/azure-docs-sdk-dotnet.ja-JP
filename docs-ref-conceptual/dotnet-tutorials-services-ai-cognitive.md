@@ -1,6 +1,6 @@
 ---
-title: "Azure の AI および Cognitive Services に関する .NET チュートリアル | Microsoft Docs"
-description: "Microsoft Azure サービスで .NET アプリに AI および Cognitive Services を追加します。"
+title: Azure の AI および Cognitive Services に関する .NET チュートリアル | Microsoft Docs
+description: Microsoft Azure サービスで .NET アプリに AI および Cognitive Services を追加します。
 author: camsoper
 ms.author: casoper
 manager: wpickett

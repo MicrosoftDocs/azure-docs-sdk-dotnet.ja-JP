@@ -1,6 +1,6 @@
 ---
-title: "Azure の .NET アプリでのストレージの使用に関するチュートリアル"
-description: "Azure で実行されている .NET アプリケーションでオブジェクトを保存し、ファイルを使用します"
+title: Azure の .NET アプリでのストレージの使用に関するチュートリアル
+description: Azure で実行されている .NET アプリケーションでオブジェクトを保存し、ファイルを使用します
 author: camsoper
 ms.author: casoper
 manager: wpickett

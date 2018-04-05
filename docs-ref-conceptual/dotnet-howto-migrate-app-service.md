@@ -1,7 +1,7 @@
 ---
-title: "Azure App Service への ASP.NET Web アプリケーションの移行"
-description: "ASP.NET Web アプリケーションをオンプレミスから Azure App Service に移行する方法について説明します。"
-keywords: "Azure .NET, ASP.NET, App Service, Web アプリ, 移行する, 移行"
+title: Azure App Service への ASP.NET Web アプリケーションの移行
+description: ASP.NET Web アプリケーションをオンプレミスから Azure App Service に移行する方法について説明します。
+keywords: Azure .NET, ASP.NET, App Service, Web アプリ, 移行する, 移行
 author: camsoper
 manager: wpickett
 ms.author: casoper

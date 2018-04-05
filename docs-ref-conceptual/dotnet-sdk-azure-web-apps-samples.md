@@ -1,7 +1,7 @@
 ---
-title: ".NET での Azure Web およびモバイル アプリの作成に関するサンプル コード"
-description: ".NET で Azure Web Apps の作成と更新を行うサンプル コードを入手してください"
-keywords: "Azure, .NET, SDK, API, SQL, データベース"
+title: .NET での Azure Web およびモバイル アプリの作成に関するサンプル コード
+description: .NET で Azure Web Apps の作成と更新を行うサンプル コードを入手してください
+keywords: Azure, .NET, SDK, API, SQL, データベース
 author: camsoper
 ms.author: casoper
 manager: wpickett

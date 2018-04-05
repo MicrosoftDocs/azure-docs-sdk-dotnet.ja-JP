@@ -1,7 +1,7 @@
 ---
-title: ".NET での Azure 仮想マシンの管理に関するサンプル コード"
-description: ".NET を使って Azure 仮想マシンの作成と更新を行うサンプル コードを入手しましょう"
-keywords: "Azure, .NET, SDK, API, 仮想マシン"
+title: .NET での Azure 仮想マシンの管理に関するサンプル コード
+description: .NET を使って Azure 仮想マシンの作成と更新を行うサンプル コードを入手しましょう
+keywords: Azure, .NET, SDK, API, 仮想マシン
 author: camsoper
 ms.author: casoper
 manager: wpickett

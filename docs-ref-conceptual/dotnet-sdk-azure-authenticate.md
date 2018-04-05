@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure ライブラリを使った認証"
-description: ".NET 用 Azure ライブラリを使って認証を行います"
-keywords: "Azure, .NET, SDK, API, 認証, active directory, サービス プリンシパル"
+title: .NET 用 Azure ライブラリを使った認証
+description: .NET 用 Azure ライブラリを使って認証を行います
+keywords: Azure, .NET, SDK, API, 認証, active directory, サービス プリンシパル
 author: camsoper
 ms.author: casoper
 manager: wpickett

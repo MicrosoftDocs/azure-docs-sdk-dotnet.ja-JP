@@ -1,7 +1,7 @@
 ---
-title: "Azure .NET API の概要"
-description: "ユーザー自身の Azure サブスクリプションで .NET 用 Azure ライブラリを使うための基本的な事柄について説明します。"
-keywords: "Azure, .NET, SDK, API ,認証, 概要"
+title: Azure .NET API の概要
+description: ユーザー自身の Azure サブスクリプションで .NET 用 Azure ライブラリを使うための基本的な事柄について説明します。
+keywords: Azure, .NET, SDK, API ,認証, 概要
 author: camsoper
 ms.author: casoper
 manager: wpickett

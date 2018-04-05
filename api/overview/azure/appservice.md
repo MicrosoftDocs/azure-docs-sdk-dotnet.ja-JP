@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure App Service ライブラリ"
-description: ".NET 用 Azure App Service ライブラリのリファレンス"
-keywords: "Azure, .NET, SDK, API, Web アプリ, app service, モバイル, asp.net"
+title: .NET 用 Azure App Service ライブラリ
+description: .NET 用 Azure App Service ライブラリのリファレンス
+keywords: Azure, .NET, SDK, API, Web アプリ, app service, モバイル, asp.net
 author: camsoper
 ms.author: casoper
 manager: wpickett

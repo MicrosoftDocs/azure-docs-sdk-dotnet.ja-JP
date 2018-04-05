@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure コンピューティング ライブラリ"
-description: ".NET 用 Azure コンピューティング ライブラリのリファレンス"
-keywords: "Azure, .NET, SDK, API, VM, 仮想マシン, コンピューティング"
+title: .NET 用 Azure コンピューティング ライブラリ
+description: .NET 用 Azure コンピューティング ライブラリのリファレンス
+keywords: Azure, .NET, SDK, API, VM, 仮想マシン, コンピューティング
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,6 +1,6 @@
 ---
-title: "Azure での .NET アプリのチュートリアル"
-description: "Azure サービスを使って Web およびモバイル .NET アプリ用の機能を作成して追加する方法についてのチュートリアルです。"
+title: Azure での .NET アプリのチュートリアル
+description: Azure サービスを使って Web およびモバイル .NET アプリ用の機能を作成して追加する方法についてのチュートリアルです。
 author: camsoper
 ms.author: casoper
 manager: wpickett

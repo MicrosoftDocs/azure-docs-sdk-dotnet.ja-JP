@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio から Azure へのデプロイ"
-description: "このチュートリアルでは、Visual Studio と .NET を使用して、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。"
-keywords: "Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ"
+title: Visual Studio から Azure へのデプロイ
+description: このチュートリアルでは、Visual Studio と .NET を使用して、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。
+keywords: Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ
 author: camsoper
 manager: douge
 ms.author: casoper

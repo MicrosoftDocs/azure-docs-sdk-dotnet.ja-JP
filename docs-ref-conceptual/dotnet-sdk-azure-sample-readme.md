@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure 管理ライブラリ サンプル手順"
-description: ".NET 用 Azure 管理ライブラリを使ってリソースの作成と更新を行うサンプル コードを入手してください。"
-keywords: "Azure, .NET, SDK, API, サンプル, 例"
+title: .NET 用 Azure 管理ライブラリ サンプル手順
+description: .NET 用 Azure 管理ライブラリを使ってリソースの作成と更新を行うサンプル コードを入手してください。
+keywords: Azure, .NET, SDK, API, サンプル, 例
 author: camsoper
 ms.author: casoper
 manager: wpickett
