@@ -1,6 +1,6 @@
 ---
-title: "Azure でのデータ分析に関する .NET チュートリアル | Microsoft Docs"
-description: "Microsoft Azure サービスでデータ分析アプリケーションを開発します。"
+title: Azure でのデータ分析に関する .NET チュートリアル | Microsoft Docs
+description: Microsoft Azure サービスでデータ分析アプリケーションを開発します。
 author: camsoper
 ms.author: casoper
 manager: wpickett

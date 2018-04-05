@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure 管理ライブラリ リリース ノート | Microsoft Docs"
-description: ".NET 用 Azure 管理ライブラリの新機能や重大な変更が記載されています。"
-keywords: "Azure, .NET, API, リファレンス, ノート, 更新, 非推奨"
+title: .NET 用 Azure 管理ライブラリ リリース ノート | Microsoft Docs
+description: .NET 用 Azure 管理ライブラリの新機能や重大な変更が記載されています。
+keywords: Azure, .NET, API, リファレンス, ノート, 更新, 非推奨
 author: camsoper
 ms.author: casoper
 manager: wpickett

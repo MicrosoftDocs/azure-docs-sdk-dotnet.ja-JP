@@ -1,7 +1,7 @@
 ---
-title: ".NET での Azure データベースの使用に関するサンプル コード"
-description: ".NET で Azure データベースを使ってアプリケーションを作成する方法に関するサンプル コードを入手してください"
-keywords: "Azure, .NET, SDK, API, SQL, データベース"
+title: .NET での Azure データベースの使用に関するサンプル コード
+description: .NET で Azure データベースを使ってアプリケーションを作成する方法に関するサンプル コードを入手してください
+keywords: Azure, .NET, SDK, API, SQL, データベース
 author: camsoper
 ms.author: casoper
 manager: wpickett

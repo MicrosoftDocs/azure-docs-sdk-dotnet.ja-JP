@@ -1,7 +1,7 @@
 ---
-title: "コマンド ラインと .NET Core を使用した Azure へのデプロイ"
-description: "この記事では、コマンドライン ツールを使用して Azure App Service に ASP.NET Core アプリケーションをデプロイする方法について説明します。"
-keywords: "Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ"
+title: コマンド ラインと .NET Core を使用した Azure へのデプロイ
+description: この記事では、コマンドライン ツールを使用して Azure App Service に ASP.NET Core アプリケーションをデプロイする方法について説明します。
+keywords: Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ
 author: camsoper
 manager: douge
 ms.author: casoper

@@ -1,6 +1,6 @@
 ---
-title: "Azure でのコンテナーのデプロイに関する .NET チュートリアル"
-description: "Docker コンテナー内の .NET アプリケーションを Azure にデプロイし、DC/OS、Mesos、または Kubernetes でスケーリングします。"
+title: Azure でのコンテナーのデプロイに関する .NET チュートリアル
+description: Docker コンテナー内の .NET アプリケーションを Azure にデプロイし、DC/OS、Mesos、または Kubernetes でスケーリングします。
 author: camsoper
 ms.author: casoper
 manager: wpickett

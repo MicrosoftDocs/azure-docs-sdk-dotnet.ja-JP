@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Data Lake Analytics ライブラリ"
-description: ".NET 用 Azure Data Lake Analytics ライブラリのリファレンス"
+title: .NET 用 Azure Data Lake Analytics ライブラリ
+description: .NET 用 Azure Data Lake Analytics ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Data Lake Analytics
 author: camsoper
 ms.author: casoper

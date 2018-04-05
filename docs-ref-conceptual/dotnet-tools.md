@@ -1,7 +1,7 @@
 ---
-title: "Azure .NET 開発者向けツール"
-description: "ツールを入手し、Windows、Linux、Mac 環境からの Azure .NET ライブラリの使用を始めてください。"
-keywords: "Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ"
+title: Azure .NET 開発者向けツール
+description: ツールを入手し、Windows、Linux、Mac 環境からの Azure .NET ライブラリの使用を始めてください。
+keywords: Azure .NET, SDK, Azure .NET API リファレンス, Azure .NET クラス ライブラリ
 author: camsoper
 ms.author: casoper
 manager: wpickett

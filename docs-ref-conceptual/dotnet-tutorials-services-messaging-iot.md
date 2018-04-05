@@ -1,6 +1,6 @@
 ---
-title: "Azure での .NET によるメッセージングと IoT に関するチュートリアル | Microsoft Docs"
-description: ".NET と Azure サービスを使って、クラウド アプリケーション間およびデバイスとクラウドの間でメッセージを送信します。"
+title: Azure での .NET によるメッセージングと IoT に関するチュートリアル | Microsoft Docs
+description: .NET と Azure サービスを使って、クラウド アプリケーション間およびデバイスとクラウドの間でメッセージを送信します。
 author: camsoper
 ms.author: casoper
 manager: wpickett

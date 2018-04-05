@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure CosmosDB ライブラリ"
-description: ".NET 用 Azure CosmosDB ライブラリのリファレンス"
+title: .NET 用 Azure CosmosDB ライブラリ
+description: .NET 用 Azure CosmosDB ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, CosmosDB
 author: camsoper
 ms.author: casoper

@@ -1,6 +1,6 @@
 ---
-title: "Azure での .NET アプリの管理と監視に関するチュートリアル"
-description: "Azure で実行する .NET アプリケーションの正常性とパフォーマンスを監視し、利用統計情報をインストルメント化してユーザーがアプリを使う方法に関する情報を保存します。"
+title: Azure での .NET アプリの管理と監視に関するチュートリアル
+description: Azure で実行する .NET アプリケーションの正常性とパフォーマンスを監視し、利用統計情報をインストルメント化してユーザーがアプリを使う方法に関する情報を保存します。
 author: camsoper
 ms.author: casoper
 manager: wpickett

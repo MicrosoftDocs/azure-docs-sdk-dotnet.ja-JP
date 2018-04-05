@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure 管理ライブラリの使用上の概念とパターン"
-description: 
-keywords: "Azure, .NET, SDK, API, パターン, 概念, fluent, ログ"
+title: .NET 用 Azure 管理ライブラリの使用上の概念とパターン
+description: ''
+keywords: Azure, .NET, SDK, API, パターン, 概念, fluent, ログ
 author: camsoper
 ms.author: casoper
 manager: wpickett
