@@ -63,7 +63,7 @@
           href: dotnet-tutorials-services-databases.md
         - name: Storage
           href: dotnet-tutorials-services-storage.md
-        - name: コンテナー
+        - name: Containers
           href: dotnet-tutorials-services-containers.md
         - name: メッセージング + IoT
           href: dotnet-tutorials-services-messaging-iot.md
@@ -78,14 +78,4 @@
         - name: 監視 + 管理
           href: dotnet-tutorials-services-monitoring.md
     - name: .NET コード サンプル
-      items:
-        - name: フォト ギャラリー - Web Apps と Storage
-          href: 'https://azure.microsoft.com/resources/samples/storage-blobs-dotnet-webapp/'
-        - name: Web Apps
-          href: dotnet-sdk-azure-web-apps-samples.md
-        - name: データベース
-          href: dotnet-sdk-azure-sql-database-samples.md
-        - name: 仮想マシン
-          href: dotnet-sdk-azure-virtual-machine-samples.md
-        - name: すべての .NET サンプル
-          href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet'
+      href: dotnet-samples.md
