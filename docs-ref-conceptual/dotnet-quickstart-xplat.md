@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: bb5d4958fb4398192d8427391695da1a7b8cc3c8
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 8371c304681ff88cba6f1cc3ba0d1caef836d609
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>コマンド ラインと .NET Core を使用した Azure へのデプロイ
 
-このチュートリアルでは、.NET Core を使って、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。  終了時には、ASP.NET MVC Core で ビルドされ、Azure Web アプリとしてホストされた Web ベースの To Do アプリケーションが手に入ります。このアプリケーションは、データ ストレージに Azure CosmosDB を使用します。
+このチュートリアルでは、.NET Core を使って、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。  このチュートリアルを完了すると、ASP.NET MVC Core でビルドされ、Azure Web アプリとしてホストされた Web ベースの To Do アプリケーションを使用できるようになります。このアプリケーションでは、データ ストレージに Azure Cosmos DB を使用します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 03/05/2018
 
 [Azure Cloud Shell](/azure/cloud-shell/) には、このチュートリアルのオプションの前提条件がすべてプレインストールされています。  チュートリアルをローカルに実行する場合にのみ、上記のオプション コンポーネントをインストールする必要があります。  Cloud Shell をすぐに起動するには、下のコード ブロックの右上にある **[試してみる]** ボタンをクリックしてください。
 
-## <a name="create-a-cosmosdb-account"></a>CosmosDB アカウントを作成する
+## <a name="create-an-azure-cosmos-db-account"></a>Azure Cosmos DB アカウントを作成する
 
-このチュートリアルでは、CosmosDB をデータ ストレージに使うので、アカウントを作成する必要があります。  ローカルまたは Cloud Shell で次のスクリプトを実行して、Azure CosmosDB DocumentDB API アカウントを作成します。
+このチュートリアルでは、Azure Cosmos DB をデータ ストレージに使用するので、アカウントを作成する必要があります。  ローカルまたは Cloud Shell で次のスクリプトを実行して、Azure Cosmos DB SQL API アカウントを作成します。
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -41,7 +41,7 @@ az group create --name DotNetAzureTutorial --location EastUS
 let randomNum=$RANDOM*$RANDOM
 cosmosdbname=dotnettutorial$randomNum
 
-# Create the CosmosDB account
+# Create the Azure Cosmos DB account
 az cosmosdb create --name $cosmosdbname --resource-group DotNetAzureTutorial
 
 # Retrieve the endpoint and key (you'll need these later)
@@ -52,7 +52,7 @@ cosmosAuthKey=$(az cosmosdb list-keys -n $cosmosdbname -g DotNetAzureTutorial --
 
 ## <a name="download-and-configure-the-application"></a>アプリケーションをダウンロードして構成する
 
-デプロイしようとしているアプリケーションは、ASP.NET MVC Core と CosmosDB クライアント ライブラリを使って作成されている[簡単な To Do アプリ](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)です。  このチュートリアルのコードを入手し、実際の CosmosDB の情報で構成してください。
+デプロイしようとしているアプリケーションは、ASP.NET MVC Core と Azure Cosmos DB クライアント ライブラリを使って作成された[簡単な To Do アプリ](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)です。  このチュートリアルのコードを入手し、実際の Azure Cosmos DB の情報で構成します。
 
 ```azurecli-interactive
 # Get the code from GitHub
@@ -131,7 +131,7 @@ az webapp show -n $webappname -g DotNetAzureTutorial --query defaultHostName -o 
 
 ## <a name="clean-up"></a>クリーンアップ
 
-アプリのテストおよびコードとリソースの検査が完了したら、リソース グループを削除することで、Web アプリと CosmosDB アカウントを削除できます。
+アプリのテストおよびコードとリソースの検査が完了したら、リソース グループを削除することで、Web アプリと Azure Cosmos DB アカウントを削除できます。
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial

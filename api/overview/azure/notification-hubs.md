@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Notification Hubs ライブラリ"
-description: ".NET 用 Azure Notification Hubs ライブラリのリファレンス"
+title: .NET 用 Azure Notification Hubs ライブラリ
+description: .NET 用 Azure Notification Hubs ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Notification Hubs
 author: camsoper
 ms.author: casoper
@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: notification-hubs
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 9fd49ccc8d02eff09a8a53e6f1b9baa6a7a59082
-ms.sourcegitcommit: 33732307162ddf6f272b0e9cc7f74eb8e6fdda1b
+ms.openlocfilehash: f863bf9d5d63129e04dd31ba96b3e803bead87bc
+ms.sourcegitcommit: 4c42de7e066b6aa0a5b5df02cce4d1d245aa558d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a>.NET 用 Azure Notification Hubs ライブラリ
 
@@ -41,7 +41,7 @@ dotnet add package Microsoft.Azure.NotificationHubs
 
 ### <a name="code-example"></a>コード例
 
-この例では、データベースに接続し、テーブルから行を読み取ります。
+この例では、Notification Hub に接続し、Windows プッシュ通知サービス (WNS) メッセージを送信します。
 
 ```csharp
 NotificationHubClient hub = NotificationHubClient

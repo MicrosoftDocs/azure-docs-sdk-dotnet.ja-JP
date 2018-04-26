@@ -10,24 +10,24 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: d5c34dfc7e649e00e8ef458537f3f76410db61d4
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Visual Studio から Azure へのデプロイ
 
-このチュートリアルでは、Visual Studio と .NET を使用して、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。  終了時には、ASP.NET MVC Core で ビルドされ、Azure Web アプリとしてホストされた Web ベースの To Do アプリケーションが手に入ります。このアプリケーションは、データ ストレージに Azure CosmosDB を使用します。
+このチュートリアルでは、Visual Studio と .NET を使用して、Microsoft Azure アプリケーションをビルドし、デプロイする手順について説明します。  このチュートリアルを完了すると、ASP.NET MVC Core でビルドされ、Azure Web アプリとしてホストされた Web ベースの To Do アプリケーションを使用できるようになります。このアプリケーションでは、データ ストレージに Azure Cosmos DB を使用します。
 
 ## <a name="prerequisites"></a>前提条件
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [Microsoft Azure サブスクリプション](https://azure.microsoft.com/free/)
 
-## <a name="create-a-cosmosdb-account"></a>CosmosDB アカウントを作成する
+## <a name="create-an-azure-cosmos-db-account"></a>Azure Cosmos DB アカウントを作成する
 
-このチュートリアルでは、CosmosDB をデータ ストレージに使うので、アカウントを作成する必要があります。  ローカルまたは Cloud Shell で次のスクリプトを実行して、Azure CosmosDB DocumentDB API アカウントを作成します。  次のコード ブロックの **[使ってみる]** をクリックして [Azure Cloud Shell](/azure/cloud-shell/) を起動し、スクリプト ブロックをコピーしてシェルに貼り付けます。
+このチュートリアルでは、Azure Cosmos DB をデータ ストレージに使用するので、アカウントを作成する必要があります。  ローカルまたは Cloud Shell で次のスクリプトを実行して、Azure Cosmos DB SQL API アカウントを作成します。  次のコード ブロックの **[使ってみる]** をクリックして [Azure Cloud Shell](/azure/cloud-shell/) を起動し、スクリプト ブロックをコピーしてシェルに貼り付けます。
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -37,7 +37,7 @@ az group create --name DotNetAzureTutorial --location EastUS
 let randomNum=$RANDOM*$RANDOM
 cosmosdbname=dotnettutorial$randomNum
 
-# Create the CosmosDB account
+# Create the Azure Cosmos DB account
 az cosmosdb create --name $cosmosdbname --resource-group DotNetAzureTutorial
 
 # Retrieve the endpoint and key (you'll need these later)
@@ -53,7 +53,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 ## <a name="downloading-and-running-the-application"></a>アプリケーションをダウンロードして実行する
 
-このチュートリアルのサンプル コードを取得し、使用する CosmosDB アカウントに連携させましょう。
+このチュートリアルのサンプル コードを取得し、Azure Cosmos DB アカウントに接続しましょう。
 
 1. サンプル コードをダウンロードします。  サンプル コードは [GitHub から取得](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)できます。また、[git コマンド ライン クライアント](https://git-scm.com/)を使用している場合は、次のコマンドを使用してサンプル コードをローカル コンピューターに複製します。
 
@@ -73,11 +73,11 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 4. **F5** キーを押して、プロジェクトの NuGet パッケージを復元し、プロジェクトをビルドしてローカルで実行します。
 
-Web アプリケーションは、ブラウザーでローカルで実行されます。  **[新規作成]** をクリックすると、To Do リストに新しい項目を追加できます。  アプリケーションで入力したデータは、CosmosDB アカウントに保存されます。  [Azure Portal でデータを表示](/azure/documentdb/documentdb-view-json-document-explorer)できます。
+Web アプリケーションは、ブラウザーでローカルで実行されます。  **[Create New]** をクリックすると、To Do リストに新しい項目を追加できます。  アプリケーションで入力したデータは、Azure Cosmos DB アカウントに保存されます。  [Azure Portal](https://portal.azure.com) でデータを表示するには、左側のメニューから [Azure Cosmos DB] を選択し、アカウントを選択して、**[データ エクスプローラー]** を選択します。
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>アプリケーションを Azure Web アプリとしてデプロイする
 
-DocumentDB のような Azure サービスを使用するアプリケーションが正常にビルドされました。  次に、Web アプリケーションをクラウドにデプロイします。
+Azure Cosmos DB などの Azure サービスを使用するアプリケーションが正常にビルドされました。  次に、Web アプリケーションをクラウドにデプロイします。
 
 > [!IMPORTANT]
 > Azure サブスクリプションの関連付け先と同じアカウントで Visual Studio にサインインする必要があります。
@@ -99,7 +99,7 @@ DocumentDB のような Azure サービスを使用するアプリケーショ�
 
 ## <a name="clean-up"></a>クリーンアップ
 
-アプリのテストおよびコードとリソースの検査が完了したら、リソース グループを削除することで、Web アプリと CosmosDB アカウントを削除できます。 Cloud Shell で次のコマンドを実行します。
+アプリのテストおよびコードとリソースの検査が完了したら、Cloud Shell でリソース グループを削除することで、Web アプリと Azure Cosmos DB アカウントを削除できます。
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial
