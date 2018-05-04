@@ -1,1 +1,0 @@
-# <a name="index-test-file-for-open-publishing"></a>Open Publishing 用のインデックス テスト ファイル
