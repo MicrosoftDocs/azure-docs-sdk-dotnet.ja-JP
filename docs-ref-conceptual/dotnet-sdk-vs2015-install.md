@@ -25,13 +25,13 @@ ms.lasthandoff: 03/05/2018
 
 1. この [Web Platform Installer ブートストラッパー](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=VWDOrVs2015AzurePack;MicrosoftAzure-ServiceFabric-VS2015)をダウンロードして実行します。  
 
-2. ブートストラッパーは、(必要に応じて) Web Platform Installer をインストールし、**Azure SDK for Visual Studio 2015** および **Service Fabric SDK and Tools for Visual Studio 2015** 項目の最新バージョンを、"*インストールする項目*" のリストに自動的に追加します。  **[インストール]**をクリックします。
+2. ブートストラッパーは、(必要に応じて) Web Platform Installer をインストールし、**Azure SDK for Visual Studio 2015** および **Service Fabric SDK and Tools for Visual Studio 2015** 項目の最新バージョンを、"*インストールする項目*" のリストに自動的に追加します。  **[インストール]** をクリックします。
 
     ![Web Platform Installer](media/dotnet-sdk-vs2015-install/webpi.png)
 
 3. 次の画面で、**[同意する]** をクリックします。  Web PI が、選択したコンポーネントのダウンロードとインストールを始めます。
 
-4. インストールが完了すると、確認画面が表示されます。  **[完了]**をクリックします。  Web Platform Installer を閉じてかまいません。
+4. インストールが完了すると、確認画面が表示されます。  **[完了]** をクリックします。  Web Platform Installer を閉じてかまいません。
 
 ## <a name="verifying-the-installation"></a>インストールの確認
 
