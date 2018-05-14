@@ -1,3 +1,3 @@
-## <a name="get-help-and-give-feedback"></a><span data-ttu-id="b6f53-101">質問とフィードバック</span><span class="sxs-lookup"><span data-stu-id="b6f53-101">Get help and give feedback</span></span>
+## <a name="get-help-and-give-feedback"></a>質問とフィードバック
 
-<span data-ttu-id="b6f53-102">[Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-.net) のコミュニティに質問を投稿し、[GitHub プロジェクト](https://github.com/Azure/azure-sdk-for-net)で SDK に対して問題を開いてください。</span><span class="sxs-lookup"><span data-stu-id="b6f53-102">Post questions to the community on [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-.net) and open issues against the SDK on the [project GitHub](https://github.com/Azure/azure-sdk-for-net).</span></span>
+[Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-.net) のコミュニティに質問を投稿し、[GitHub プロジェクト](https://github.com/Azure/azure-sdk-for-net)で SDK に対して問題を開いてください。
