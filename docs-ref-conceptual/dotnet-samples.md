@@ -1,6 +1,6 @@
 ---
-title: .NET 用 Azure コード サンプル
-description: .NET および Azure のコード サンプル。
+title: .NET 用 Azure C# コード サンプル
+description: .NET および Azure 用 C# コード サンプル。
 layout: LandingPage
 ms.topic: reference
 author: camsoper
@@ -11,14 +11,15 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 85d792859a345cd4e4101aa88a2dcce68bc791b0
-ms.sourcegitcommit: 7b6128836d7657af2be53dcf40c1841cd8fda957
+ms.openlocfilehash: 2952f2999ae53100d35d90f44bfcc6c9df696b00
+ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
-# <a name="azure-code-samples-for-net"></a>.NET 用 Azure コード サンプル
-これらは、.NET を使用して Azure を使い始める際に推奨される主要なサンプル、チュートリアル、および例です。
+# <a name="azure-c-code-samples-for-net"></a>.NET 用 Azure C# コード サンプル
+
+これらは、および.NET を使用して Azure を使い始める際に推奨される主要なサンプル、チュートリアル、および例です。
 
 <div id="main" class="v2">
     <div class="container">
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>基本的な Web サイト</h3>
-                                    <p>SQL バックエンドに情報を保存できる簡単な Web サイトを作成する方法を説明します。</p>
+                                    <p>SQL バックエンドに情報を保存する簡単な ASP.NET Core Web サイトを作成する方法を示します。</p>
                                 </div>
                             </div>
                         </a>
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function">
+                        <a href="https://github.com/JeremyLikness/ShortLink">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -53,8 +54,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>GitHub からのイベントのトリガー</h3>
-                                    <p>Azure Functions と webhook を使用して、GitHub のアクションに基づいてイベントをトリガーする方法を説明します。</p>
+                                    <h3>URL 短縮ツール</h3>
+                                    <p>サーバーレス Azure Functions を使用してアクションをトリガーする方法を説明します。</p>
                                 </div>
                             </div>
                         </a>
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>フォト ギャラリー</h3>
-                                    <p>Azure Web Apps と Azure Blob Storage を使用して、ユーザーが写真をクラウドにアップロードできる Web ページを作成する方法を説明します。</p>
+                                    <p>Azure Blob Storage を使用して、クラウドからイメージ ファイルをアップロード、ダウンロード、およびアクセスする方法を説明します。</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app">
+                        <a href="https://github.com/Azure-Samples/service-fabric-dotnet-quickstart">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>投票アプリ</h3>
-                                    <p>Kubernetes と Docker コンテナーを使用して、簡単な投票アプリケーションを作成する方法を説明します。</p>
+                                    <p>Azure Service Fabric を使用して、分散アプリケーションに信頼性の高いマイクロサービスを作成する方法を説明します。</p>
                                 </div>
                             </div>
                         </a>
@@ -129,8 +130,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Cosmos DB の探索</h3>
-                                    <p>.NET Core と Mongo を使用して CosmosDB の基礎を示します。</p>
+                                    <h3>クラウド データベース</h3>
+                                    <p>Cosmos DB を使用して、先進的なクラウド データベースで基本的な検索、作成、および編集を行う方法を説明します。</p>
                                 </div>
                             </div>
                         </a>
