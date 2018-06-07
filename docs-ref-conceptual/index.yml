@@ -16,16 +16,17 @@ metadata:
   ms.technology: azure
   ms.devlang: dotnet
   ms.service: multiple
-  ms.openlocfilehash: b2f97eee78d6e4e5b71b036c3550e0532ff7962d
-  ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
+  ms.openlocfilehash: 0df719af621462048f432589f4235b220721c591
+  ms.sourcegitcommit: 4ec8ceb3a22c209c9c620dd0982cfbc08d21006c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/11/2018
+  ms.lasthandoff: 06/05/2018
+  ms.locfileid: "34761380"
 sections:
 - items:
   - type: markdown
     text: >
-      以下のリソースを使用して、Azure でアプリの開発を開始しましょう.NET 開発者向けの優れたチュートリアルとツールが用意されています。
+      以下のリソースを使用して、Azure でクラウド対応アプリの開発を開始しましょう。.NET 開発者向けの優れたチュートリアルとツールが用意されています。
 - items:
   - type: list
     style: cards
@@ -63,8 +64,8 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-      title: 最初の .NET アプリを Azure にデプロイする
-      href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
+      title: SQL Azure データベースを使用して ASP.NET アプリを作成する
+      href: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
       title: .NET のサーバーレス機能を作成する
@@ -82,13 +83,13 @@ sections:
       title: Service Fabric で .NET マイクロサービス アプリを作成する
       href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
     - image:
-        src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
-      title: .NET の CI/CD パイプラインを作成する
-      href: https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore
+        src: https://docs.microsoft.com/azure/media/index/api_textanalytics.svg
+      title: C# と Text Analytics API を使用して言語を分析する
+      href: https://docs.microsoft.com/azure/cognitive-services/text-analytics/quickstarts/csharp
 - title: Azure で .NET の使用を開始する
   items:
   - type: markdown
-    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Welcome-to-the-Azure-for-NET-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
+    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Create-a-NET-app-in-Azure-Quickstart/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
 - title: Pluralsight での .NET と Azure に関する無料ビデオ トレーニング
   items:
   - type: list
@@ -100,16 +101,6 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg
       title: .NET と C# を用いた Azure での開発
-- title: サンプル
-  items:
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/">Cosmos DB と Mongo DB API を使用した .NET アプリの開発</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/">.NET での Azure クライアント側暗号化の概要</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ ">.Net での Azure Table Storage の概要</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/">.NET での Azure Blob Storage</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/redis-cache-getting-started/">Azure Redis Cache の使用</a>
 - title: ステップバイステップのチュートリアル
   items:
   - type: paragraph
