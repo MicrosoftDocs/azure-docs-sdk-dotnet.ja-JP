@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728353"
 ---
 # <a name="azure-storage-apis-for-net"></a><span data-ttu-id="1ac40-104">.NET 用 Azure Storage API</span><span class="sxs-lookup"><span data-stu-id="1ac40-104">Azure Storage APIs for .NET</span></span>
 
