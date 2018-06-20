@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Data Lake Store ライブラリ"
-description: ".NET 用 Azure Data Lake Store ライブラリのリファレンス"
+title: .NET 用 Azure Data Lake Store ライブラリ
+description: .NET 用 Azure Data Lake Store ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Data Lake Store
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588475"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>.NET 用 Azure Data Lake Store ライブラリ
 

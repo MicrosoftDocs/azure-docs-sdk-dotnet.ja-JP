@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Media Services ライブラリ"
-description: ".NET 用 Azure Media Services ライブラリのリファレンス"
+title: .NET 用 Azure Media Services ライブラリ
+description: .NET 用 Azure Media Services ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Media Services
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487445"
 ---
 # <a name="azure-media-services-libraries-for-net"></a>.NET 用 Azure Media Services ライブラリ
 

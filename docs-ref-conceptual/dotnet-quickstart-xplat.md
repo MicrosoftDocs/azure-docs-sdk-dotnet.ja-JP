@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005879"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>コマンド ラインと .NET Core を使用した Azure へのデプロイ
 

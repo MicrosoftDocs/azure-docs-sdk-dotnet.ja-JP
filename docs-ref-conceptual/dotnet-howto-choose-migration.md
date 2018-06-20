@@ -1,7 +1,7 @@
 ---
-title: "適切な Azure ホスティング オプションの選択"
-description: "ASP.NET Web アプリケーションに適した Azure への移行パスについて説明します。"
-keywords: "Azure .NET, ASP.NET, App Service, VM, 仮想マシン, Web アプリ, 移行する, 移行"
+title: 適切な Azure ホスティング オプションの選択
+description: ASP.NET Web アプリケーションに適した Azure への移行パスについて説明します。
+keywords: Azure .NET, ASP.NET, App Service, VM, 仮想マシン, Web アプリ, 移行する, 移行
 author: CESARDELATORRE
 manager: wpickett
 ms.author: cesardl
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588465"
 ---
 # <a name="choose-the-right-azure-hosting-option"></a>適切な Azure ホスティング オプションの選択
 

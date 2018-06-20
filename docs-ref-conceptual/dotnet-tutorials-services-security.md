@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752854"
 ---
 # <a name="tutorials-for-authenticating-users-in-your-net-apps-running-on-azure"></a>Azure で実行する .NET アプリでのユーザーの認証に関するチュートリアル
 

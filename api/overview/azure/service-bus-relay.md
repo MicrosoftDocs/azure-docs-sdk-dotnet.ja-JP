@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Service Bus Relay ライブラリ"
-description: ".NET 用 Azure Service Bus Relay ライブラリのリファレンス"
+title: .NET 用 Azure Service Bus Relay ライブラリ
+description: .NET 用 Azure Service Bus Relay ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Service Bus Relay
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566163"
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>.NET 用 Azure Service Bus Relay ライブラリ
 

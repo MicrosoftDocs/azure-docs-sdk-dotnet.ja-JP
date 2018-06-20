@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Search ライブラリ"
-description: ".NET 用 Azure Search ライブラリのリファレンス"
+title: .NET 用 Azure Search ライブラリ
+description: .NET 用 Azure Search ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Search
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566303"
 ---
 # <a name="azure-search-libraries-for-net"></a>.NET 用 Azure Search ライブラリ
 
