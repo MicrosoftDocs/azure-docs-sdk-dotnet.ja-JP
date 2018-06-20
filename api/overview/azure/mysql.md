@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure Database for MySQL ライブラリ"
-description: "Azure Database for MySQL 用 .NET クライアント ライブラリのリファレンス ドキュメント"
-keywords: "Azure, .NET, SDK, API, SQL, データベース, MySQL"
+title: .NET 用 Azure Database for MySQL ライブラリ
+description: Azure Database for MySQL 用 .NET クライアント ライブラリのリファレンス ドキュメント
+keywords: Azure, .NET, SDK, API, SQL, データベース, MySQL
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566053"
 ---
 # <a name="azure-database-for-mysql-libraries-for-net"></a><span data-ttu-id="9a06f-104">.NET 用 Azure Database for MySQL ライブラリ</span><span class="sxs-lookup"><span data-stu-id="9a06f-104">Azure Database for MySQL libraries for .NET</span></span>
 

@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Traffic Manager ライブラリ"
-description: ".NET 用 Azure Traffic Manager ライブラリのリファレンス"
+title: .NET 用 Azure Traffic Manager ライブラリ
+description: .NET 用 Azure Traffic Manager ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Traffic Manager
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566104"
 ---
 # <a name="azure-traffic-manager-libraries-for-net"></a><span data-ttu-id="5f7d7-104">.NET 用 Azure Traffic Manager ライブラリ</span><span class="sxs-lookup"><span data-stu-id="5f7d7-104">Azure Traffic Manager libraries for .NET</span></span>
 

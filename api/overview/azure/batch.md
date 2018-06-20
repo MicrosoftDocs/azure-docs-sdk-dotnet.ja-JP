@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Batch ライブラリ"
-description: ".NET 用 Azure Batch ライブラリのリファレンス"
+title: .NET 用 Azure Batch ライブラリ
+description: .NET 用 Azure Batch ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Batch
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487265"
 ---
 # <a name="azure-batch-libraries-for-net"></a><span data-ttu-id="115fa-104">.NET 用 Azure Batch ライブラリ</span><span class="sxs-lookup"><span data-stu-id="115fa-104">Azure Batch libraries for .NET</span></span>
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005889"
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a><span data-ttu-id="f12f7-104">Visual Studio から Azure へのデプロイ</span><span class="sxs-lookup"><span data-stu-id="f12f7-104">Deploy to Azure from Visual Studio</span></span>
 

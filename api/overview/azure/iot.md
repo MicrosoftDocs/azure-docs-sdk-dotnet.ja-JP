@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure IoT ライブラリ"
-description: ".NET 用 Azure IoT ライブラリのリファレンス"
+title: .NET 用 Azure IoT ライブラリ
+description: .NET 用 Azure IoT ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, IoT
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487485"
 ---
 # <a name="azure-iot-libraries-for-net"></a><span data-ttu-id="febdf-104">.NET 用 Azure IoT ライブラリ</span><span class="sxs-lookup"><span data-stu-id="febdf-104">Azure IoT libraries for .NET</span></span>
 

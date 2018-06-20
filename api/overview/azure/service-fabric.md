@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Service Fabric ライブラリ"
-description: ".NET 用 Azure Service Fabric ライブラリのリファレンス"
+title: .NET 用 Azure Service Fabric ライブラリ
+description: .NET 用 Azure Service Fabric ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Service Fabric
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566099"
 ---
 # <a name="azure-service-fabric-libraries-for-net"></a><span data-ttu-id="4a4e0-104">.NET 用 Azure Service Fabric ライブラリ</span><span class="sxs-lookup"><span data-stu-id="4a4e0-104">Azure Service Fabric libraries for .NET</span></span>
 

@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Mobile ライブラリ"
-description: ".NET 用 Azure Mobile ライブラリのリファレンス"
+title: .NET 用 Azure Mobile ライブラリ
+description: .NET 用 Azure Mobile ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Mobile
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/24/2017
+ms.locfileid: "23489166"
 ---
 # <a name="azure-mobile-libraries-for-net"></a><span data-ttu-id="08472-104">.NET 用 Azure Mobile ライブラリ</span><span class="sxs-lookup"><span data-stu-id="08472-104">Azure Mobile libraries for .NET</span></span>
 

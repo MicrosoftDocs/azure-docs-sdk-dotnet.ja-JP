@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure Data Factory ライブラリ"
-description: ".NET 用 Azure Data Factory ライブラリのリファレンス"
+title: .NET 用 Azure Data Factory ライブラリ
+description: .NET 用 Azure Data Factory ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, Data Factory
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487145"
 ---
 # <a name="azure-data-factory-libraries-for-net"></a><span data-ttu-id="358f2-104">.NET 用 Azure Data Factory ライブラリ</span><span class="sxs-lookup"><span data-stu-id="358f2-104">Azure Data Factory libraries for .NET</span></span>
 

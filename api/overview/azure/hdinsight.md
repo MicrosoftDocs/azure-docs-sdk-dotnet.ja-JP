@@ -1,6 +1,6 @@
 ---
-title: ".NET 用 Azure HDInsight ライブラリ"
-description: ".NET 用 Azure HDInsight ライブラリのリファレンス"
+title: .NET 用 Azure HDInsight ライブラリ
+description: .NET 用 Azure HDInsight ライブラリのリファレンス
 keywords: Azure, .NET, SDK, API, HDInsight
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23486955"
 ---
 # <a name="azure-hdinsight-libraries-for-net"></a><span data-ttu-id="c90c2-104">.NET 用 Azure HDInsight ライブラリ</span><span class="sxs-lookup"><span data-stu-id="c90c2-104">Azure HDInsight libraries for .NET</span></span>
 

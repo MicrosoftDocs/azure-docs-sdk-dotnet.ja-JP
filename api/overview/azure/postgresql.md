@@ -1,7 +1,7 @@
 ---
-title: ".NET 用 Azure Database for PostgreSQL ライブラリ"
-description: "Azure Database for PostgreSQL 用 .NET クライアント ライブラリのリファレンス ドキュメント"
-keywords: "Azure, .NET ODBC, SDK, API, SQL, ADO.NET, データベース, PostGres, PostgreSQL"
+title: .NET 用 Azure Database for PostgreSQL ライブラリ
+description: Azure Database for PostgreSQL 用 .NET クライアント ライブラリのリファレンス ドキュメント
+keywords: Azure, .NET ODBC, SDK, API, SQL, ADO.NET, データベース, PostGres, PostgreSQL
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4dba7cd869bddff3dee7315d258522dc4879abce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/23/2017
+ms.locfileid: "25550812"
 ---
 # <a name="azure-database-for-postgresql-libraries-for-net"></a><span data-ttu-id="8e410-104">.NET 用 Azure Database for PostgreSQL ライブラリ</span><span class="sxs-lookup"><span data-stu-id="8e410-104">Azure Database for PostgreSQL libraries for .NET</span></span>
 

@@ -1,7 +1,7 @@
 ---
-title: "Azure への SQL Server データベースの移行"
-description: "SQL Server データベースをオンプレミスの SQL Server から Azure に移行する方法について説明します。"
-keywords: "Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, 移行する, 移行"
+title: Azure への SQL Server データベースの移行
+description: SQL Server データベースをオンプレミスの SQL Server から Azure に移行する方法について説明します。
+keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, 移行する, 移行
 author: camsoper
 manager: wpickett
 ms.author: casoper
@@ -16,6 +16,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728493"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a><span data-ttu-id="bee40-104">SQL Server データベースを Azure に移行する</span><span class="sxs-lookup"><span data-stu-id="bee40-104">Migrate a SQL Server database to Azure</span></span>
 

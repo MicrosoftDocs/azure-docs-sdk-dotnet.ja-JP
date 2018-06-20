@@ -1,3 +1,3 @@
-## <a name="more-samples"></a>その他のサンプル
+## <a name="more-samples"></a><span data-ttu-id="8fbef-101">その他のサンプル</span><span class="sxs-lookup"><span data-stu-id="8fbef-101">More samples</span></span>
 
-.NET 用 Azure 管理ライブラリのさまざまなサンプルが [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code) に用意されています。
+<span data-ttu-id="8fbef-102">.NET 用 Azure 管理ライブラリのさまざまなサンプルが [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code) に用意されています。</span><span class="sxs-lookup"><span data-stu-id="8fbef-102">The full collection of samples for the Azure Management Libraries for .NET can be found on [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).</span></span>
