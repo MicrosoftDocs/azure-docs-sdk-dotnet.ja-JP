@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: automation
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2055a5e24d445468763c049c34a5055cea108688
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: e45db49fa71e5ad16ab1e4f26d76cd9b0146ac5f
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23486695"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065762"
 ---
 # <a name="azure-automation-libraries-for-net"></a>.NET 用 Azure Automation ライブラリ
 
@@ -31,7 +29,7 @@ Microsoft Azure Automation を使用すると、ユーザーはクラウド環�
 
 Runbook とジョブを管理したり、Desired State Configuration の設定を管理したりするには、管理ライブラリを使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Automation)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Automation)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 
