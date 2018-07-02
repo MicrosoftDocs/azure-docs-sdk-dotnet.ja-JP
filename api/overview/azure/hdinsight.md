@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: hd-insight
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: da9023ab4e6106754d48acb31cda58cdb358f5cb
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 2cdb080b4d224a77a36318cefd13ebfae2e3e2e1
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23486955"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065812"
 ---
 # <a name="azure-hdinsight-libraries-for-net"></a>.NET 用 Azure HDInsight ライブラリ
 
@@ -69,7 +67,7 @@ JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob
 
 Hadoop クラスターを作成、管理、起動、停止、スケールするには、Azure HDInsight 管理 SDK を使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 

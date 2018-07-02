@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: event-hubs
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2ec234959ffc46d2399d1c763e05f173a311b0d2
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 5502ae24574c7883c34522ae18ca81bb516a33d2
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487295"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065312"
 ---
 # <a name="azure-event-hubs-libraries-for-net"></a>.NET 用 Azure Event Hubs ライブラリ
 
@@ -31,7 +29,7 @@ Azure Event Hubs の詳細については、「[Event Hubs とは](/azure/event-
 
 Event Hubs との間でメッセージを送受信するには、Event Hubs クライアントを使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.EventHubs)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.EventHubs)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 
@@ -66,7 +64,7 @@ await eventHubClient.SendAsync(new EventData(Encoding.UTF8.GetBytes(message)));
 
 ハブとコンシューマー グループを作成、更新、削除するには、Event Hubs 管理ライブラリを使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.EventHub)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.EventHub)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 
@@ -102,7 +100,7 @@ Console.WriteLine("Created Event Hub successfully.");
 > [!div class="nextstepaction"]
 > [Management API を探す](/dotnet/api/overview/azure/eventhub/management)
 
-## <a name="tutorials"></a>Tutorials (チュートリアル)
+## <a name="tutorials"></a>チュートリアル
 
 * [.NET Framework を使用して Azure Event Hubs にイベントを送信する](/azure/event-hubs/event-hubs-dotnet-framework-getstarted-send)
 
