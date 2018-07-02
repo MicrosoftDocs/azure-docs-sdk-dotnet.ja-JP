@@ -7,47 +7,45 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3aba3c77935e0f00c7396b4cafa06be32ae2a50d
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 30d5f9ffa0654673fe358872cbb7342fb87d4127
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
-ms.locfileid: "24533107"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065892"
 ---
-# <a name="azure-sql-database-apis-for-net"></a><span data-ttu-id="66066-104">.NET 用 Azure SQL Database API</span><span class="sxs-lookup"><span data-stu-id="66066-104">Azure SQL Database APIs for .NET</span></span>
+# <a name="azure-sql-database-apis-for-net"></a><span data-ttu-id="f032e-104">.NET 用 Azure SQL Database API</span><span class="sxs-lookup"><span data-stu-id="f032e-104">Azure SQL Database APIs for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="66066-105">概要</span><span class="sxs-lookup"><span data-stu-id="66066-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="f032e-105">概要</span><span class="sxs-lookup"><span data-stu-id="f032e-105">Overview</span></span>
 
-<span data-ttu-id="66066-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) は、リレーショナル データ、テーブル データ、JSON データ、空間データ、XML データに対応した、Microsoft SQL Server エンジンを使うデータベース サービスです。</span><span class="sxs-lookup"><span data-stu-id="66066-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) is a database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data.</span></span> 
+<span data-ttu-id="f032e-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) は、リレーショナル データ、テーブル データ、JSON データ、空間データ、XML データに対応した、Microsoft SQL Server エンジンを使うデータベース サービスです。</span><span class="sxs-lookup"><span data-stu-id="f032e-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) is a database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data.</span></span> 
 
-<span data-ttu-id="66066-107">.NET での SQL Database の使い方について詳しくは、「[.NET (C#) と Visual Studio で Azure SQL Database に接続してデータベースに照会する](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="66066-107">To learn more about the using SQL Database with .NET, see [Use .NET with Visual Studio to connect and query an Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span></span>
+<span data-ttu-id="f032e-107">.NET での SQL Database の使い方について詳しくは、「[.NET (C#) と Visual Studio で Azure SQL Database に接続してデータベースに照会する](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f032e-107">To learn more about the using SQL Database with .NET, see [Use .NET with Visual Studio to connect and query an Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="66066-108">クライアント ライブラリ</span><span class="sxs-lookup"><span data-stu-id="66066-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="f032e-108">クライアント ライブラリ</span><span class="sxs-lookup"><span data-stu-id="f032e-108">Client library</span></span>
 
-<span data-ttu-id="66066-109">データベースに接続して認証を行い、アドホックな T-SQL ステートメントとストアド プロシージャを実行するには、.NET SQL クライアント ライブラリを使います。</span><span class="sxs-lookup"><span data-stu-id="66066-109">Use the .NET SQL client library to connect and authenticate with your database and execute ad-hoc T-SQL statements and stored procedures.</span></span>
+<span data-ttu-id="f032e-109">データベースに接続して認証を行い、アドホックな T-SQL ステートメントとストアド プロシージャを実行するには、.NET SQL クライアント ライブラリを使います。</span><span class="sxs-lookup"><span data-stu-id="f032e-109">Use the .NET SQL client library to connect and authenticate with your database and execute ad-hoc T-SQL statements and stored procedures.</span></span>
 
-<span data-ttu-id="66066-110">[NuGet パッケージ]( https://www.nuget.org/packages/System.Data.SqlClient)を Visual Studio [パッケージ マネージャー コンソール](https://docs.microsoft.com/nuget/tools/package-manager-console)から直接インストールするか、[.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="66066-110">Install the [NuGet package]( https://www.nuget.org/packages/System.Data.SqlClient) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
+<span data-ttu-id="f032e-110">[NuGet パッケージ]( https://www.nuget.org/packages/System.Data.SqlClient)を Visual Studio [パッケージ マネージャー コンソール](https://docs.microsoft.com/nuget/tools/package-manager-console)から直接インストールするか、[.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="f032e-110">Install the [NuGet package]( https://www.nuget.org/packages/System.Data.SqlClient) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="66066-111">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="66066-111">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="f032e-111">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="f032e-111">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package System.Data.SqlClient
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="66066-112">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="66066-112">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="f032e-112">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="f032e-112">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package System.Data.SqlClient
 ```
 
-### <a name="code-example"></a><span data-ttu-id="66066-113">コード例</span><span class="sxs-lookup"><span data-stu-id="66066-113">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="f032e-113">コード例</span><span class="sxs-lookup"><span data-stu-id="f032e-113">Code Example</span></span>
 
-<span data-ttu-id="66066-114">この例では、データベースに接続し、テーブルから行を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="66066-114">This example connects to a database and reads rows from a table.</span></span>
+<span data-ttu-id="f032e-114">この例では、データベースに接続し、テーブルから行を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="f032e-114">This example connects to a database and reads rows from a table.</span></span>
 
 ```csharp
 /* Include this 'using' directive...
@@ -78,29 +76,29 @@ using (SqlConnection conn = new SqlConnection(connectionString))
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="66066-115">クライアント API を探す</span><span class="sxs-lookup"><span data-stu-id="66066-115">Explore the client APIs</span></span>](/dotnet/api/overview/azure/sql/client)
+> [<span data-ttu-id="f032e-115">クライアント API を探す</span><span class="sxs-lookup"><span data-stu-id="f032e-115">Explore the client APIs</span></span>](/dotnet/api/overview/azure/sql/client)
 
-## <a name="management-library"></a><span data-ttu-id="66066-116">管理ライブラリ</span><span class="sxs-lookup"><span data-stu-id="66066-116">Management library</span></span>
+## <a name="management-library"></a><span data-ttu-id="f032e-116">管理ライブラリ</span><span class="sxs-lookup"><span data-stu-id="f032e-116">Management library</span></span>
 
-<span data-ttu-id="66066-117">Azure SQL Database サーバー インスタンスの作成、管理、拡張を行うには、Azure SQL Database 管理ライブラリを使います。</span><span class="sxs-lookup"><span data-stu-id="66066-117">Use the Azure SQL Database management library to create, manage, and scale Azure SQL Database server instances.</span></span>
+<span data-ttu-id="f032e-117">Azure SQL Database サーバー インスタンスの作成、管理、拡張を行うには、Azure SQL Database 管理ライブラリを使います。</span><span class="sxs-lookup"><span data-stu-id="f032e-117">Use the Azure SQL Database management library to create, manage, and scale Azure SQL Database server instances.</span></span>
 
-<span data-ttu-id="66066-118">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/)を Visual Studio [パッケージ マネージャー コンソール](https://docs.microsoft.com/nuget/tools/package-manager-console)から直接インストールするか、[.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="66066-118">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
+<span data-ttu-id="f032e-118">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/)を Visual Studio [パッケージ マネージャー コンソール](https://docs.microsoft.com/nuget/tools/package-manager-console)から直接インストールするか、[.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="f032e-118">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="66066-119">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="66066-119">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="f032e-119">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="f032e-119">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.Sql.Fluent
 ``` 
 
-#### <a name="net-core-command-line"></a><span data-ttu-id="66066-120">.NET Core コマンド ライン</span><span class="sxs-lookup"><span data-stu-id="66066-120">.NET Core command line</span></span>
+#### <a name="net-core-command-line"></a><span data-ttu-id="f032e-120">.NET Core コマンド ライン</span><span class="sxs-lookup"><span data-stu-id="f032e-120">.NET Core command line</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.Sql.Fluent
 ```
 
-### <a name="code-example"></a><span data-ttu-id="66066-121">コード例</span><span class="sxs-lookup"><span data-stu-id="66066-121">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="f032e-121">コード例</span><span class="sxs-lookup"><span data-stu-id="f032e-121">Code Example</span></span>
 
-<span data-ttu-id="66066-122">この例では、新しい SQL Database サーバー インスタンスを作成した後、そのインスタンスに新しいデータベースを作成します。</span><span class="sxs-lookup"><span data-stu-id="66066-122">This example creates a new SQL Database server instance and then creates a new database on that instance.</span></span>
+<span data-ttu-id="f032e-122">この例では、新しい SQL Database サーバー インスタンスを作成した後、そのインスタンスに新しいデータベースを作成します。</span><span class="sxs-lookup"><span data-stu-id="f032e-122">This example creates a new SQL Database server instance and then creates a new database on that instance.</span></span>
 
 ```csharp
 /* Include these 'using' directives...
@@ -125,12 +123,12 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="66066-123">Management API を探す</span><span class="sxs-lookup"><span data-stu-id="66066-123">Explore the management APIs</span></span>](/dotnet/api/overview/azure/sql/management)
+> [<span data-ttu-id="f032e-123">Management API を探す</span><span class="sxs-lookup"><span data-stu-id="f032e-123">Explore the management APIs</span></span>](/dotnet/api/overview/azure/sql/management)
 
-## <a name="samples"></a><span data-ttu-id="66066-124">サンプル</span><span class="sxs-lookup"><span data-stu-id="66066-124">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="f032e-124">サンプル</span><span class="sxs-lookup"><span data-stu-id="f032e-124">Samples</span></span>
 
-- [<span data-ttu-id="66066-125">ADO.NET のコード例</span><span class="sxs-lookup"><span data-stu-id="66066-125">ADO.NET code examples</span></span>](/dotnet/framework/data/adonet/ado-net-code-examples)
-- [<span data-ttu-id="66066-126">SQL Database の .NET 用 Azure 管理ライブラリ サンプル</span><span class="sxs-lookup"><span data-stu-id="66066-126">Azure management libraries for .NET samples for SQL Database</span></span>](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
+- [<span data-ttu-id="f032e-125">ADO.NET のコード例</span><span class="sxs-lookup"><span data-stu-id="f032e-125">ADO.NET code examples</span></span>](/dotnet/framework/data/adonet/ado-net-code-examples)
+- [<span data-ttu-id="f032e-126">SQL Database の .NET 用 Azure 管理ライブラリ サンプル</span><span class="sxs-lookup"><span data-stu-id="f032e-126">Azure management libraries for .NET samples for SQL Database</span></span>](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
 
-<span data-ttu-id="66066-127">Azure SQL Database のサンプルの[完全な一覧](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database)を表示します。</span><span class="sxs-lookup"><span data-stu-id="66066-127">View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.</span></span>
+<span data-ttu-id="f032e-127">Azure SQL Database のサンプルの[完全な一覧](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database)を表示します。</span><span class="sxs-lookup"><span data-stu-id="f032e-127">View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.</span></span>
 
