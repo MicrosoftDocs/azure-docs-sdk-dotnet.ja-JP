@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: key-vault
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3b8bcb9135794592f493db679e60fd40116d05e6
-ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
+ms.openlocfilehash: 037b80f60616a37665eddb0b7b212d15180700ba
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2017
-ms.locfileid: "23489186"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065452"
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>.NET 用 Azure Key Vault ライブラリ
 
@@ -31,7 +29,7 @@ Azure Key Vault は、クラウド アプリケーションやサービスで使
 
 キーと関連資産 (証明書やシークレットなど) を管理するには、クライアント ライブラリを使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.KeyVault)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.KeyVault)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 
@@ -62,7 +60,7 @@ SecretBundle sec = await kv.GetSecretAsync(WebConfigurationManager.AppSettings["
 
 キー コンテナーを作成、削除、照会するには、管理ライブラリを使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.KeyVault.Fluent)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.KeyVault.Fluent)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 

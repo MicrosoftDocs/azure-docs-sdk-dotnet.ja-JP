@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: stream-analytics
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2a5e8b8481548d6cfebc5104eb459f8772f51462
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 4fc8c5700122a82a5e31df870787a67dad277542
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487135"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065932"
 ---
 # <a name="azure-stream-analytics-libraries-for-net"></a>.NET 用 Azure Stream Analytics ライブラリ
 
@@ -32,7 +30,7 @@ Azure Stream Analytics の詳細については、[Azure Stream Analytics のリ
 
 Azure Stream Analytics ジョブを作成、開始、停止するには、Azure Stream Analytics 管理ライブラリを使用します。
 
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.StreamAnalytics)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.StreamAnalytics)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 
