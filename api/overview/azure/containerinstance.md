@@ -5,19 +5,17 @@ keywords: Azure, .NET, SDK, API, Container Instances, ACI
 author: mmacy
 ms.author: marsma
 manager: jeconnoc
-ms.date: 05/25/2018
+ms.date: 06/11/2018
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: dcontainer-instances
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 033f67a989b0ed6cfcb67a6212c0d5c46c485afa
-ms.sourcegitcommit: 4ae9f77a9300a4fe54d0179055ae61191078f207
+ms.openlocfilehash: 85fe5485c04193b336d10e8c387719e2ad1e6910
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34567184"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37066146"
 ---
 # <a name="azure-container-instances-libraries-for-net"></a>.NET 用 Azure Container Instances ライブラリ
 
@@ -39,30 +37,57 @@ Install-Package Microsoft.Azure.Management.ContainerInstance.Fluent
 dotnet add package Microsoft.Azure.Management.ContainerInstance.Fluent
 ```
 
-## <a name="examples"></a>例
+## <a name="example-source"></a>サンプル ソース
 
-### <a name="create-container-group---single-container"></a>コンテナー グループを作成する - 1 つのコンテナー
+以下のコード例をコンテキスト内で確認するには、次の GitHub リポジトリでサンプルを検索してください。
+
+[Azure-Samples/aci-docs-sample-dotnet](https://github.com/Azure-Samples/aci-docs-sample-dotnet)
+
+## <a name="authentication"></a>認証
+
+SDK クライアントを認証する最も簡単な方法の 1 つは、[ファイル ベースの認証][sdk-auth]を使う方法です。 ファイル ベースの認証では、[IAzure][iazure] クライアント オブジェクトのインスタンス化時に資格情報ファイルが解析され、Azure での認証時にこれらの資格情報がオブジェクトによって使用されます。 ファイル ベースの認証を使用するには:
+
+1. [Azure CLI](/cli/azure) または [Cloud Shell](https://shell.azure.com/) で資格情報ファイルを作成します。
+
+   `az ad sp create-for-rbac --sdk-auth > my.azureauth`
+
+   [Cloud Shell](https://shell.azure.com/) を使用して資格情報ファイルを生成する場合は、その内容を、お使いの .NET アプリケーションがアクセスできるローカル ファイルにコピーします。
+
+2. `AZURE_AUTH_LOCATION` 環境変数を、生成された資格情報ファイルの完全なパスに設定します。 次に例を示します (Bash シェルの場合)。
+
+   ```bash
+   export AZURE_AUTH_LOCATION=/home/yourusername/my.azureauth
+   ```
+
+資格情報ファイルを作成し、`AZURE_AUTH_LOCATION` 環境変数を設定したら、[Azure.Authenticate][iazure-authenticate] メソッドを使用して、[IAzure][iazure] クライアント オブジェクトを初期化します。 例のプロジェクトでは、まず `AZURE_AUTH_LOCATION`値を取得し、次に、初期化された `IAzure` クライアント オブジェクト返すメソッドを呼び出します。
+
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
+
+サンプル アプリケーションのこのメソッドによって、初期化された[IAzure][iazure] インスタンスが返され、次にこのインスタンスは最初のパラメーターとしてサンプルの他のすべてのメソッドに渡されます。
+
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
+
+Azure の .NET 管理ライブラリで使用できる認証方法の詳細については、「[Authentication in Azure Management Libraries for .NET (.NET 用 Azure 管理ライブラリを使用した認証)][sdk-auth]」を参照してください。
+
+## <a name="create-container-group---single-container"></a>コンテナー グループを作成する - 1 つのコンテナー
 
 この例では、1 つのコンテナーを含むコンテナー グループが作成されます。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->
-[!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
 
-### <a name="create-container-group---multiple-containers"></a>コンテナー グループを作成する - 複数のコンテナー
+## <a name="create-container-group---multiple-containers"></a>コンテナー グループを作成する - 複数のコンテナー
 
 この例では、アプリケーション コンテナーとサイドカー コンテナーという 2 つのコンテナーを含むコンテナー グループが作成されます。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->
-[!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
 
-### <a name="asynchronous-container-create-with-polling"></a>ポーリングを使用して非同期でコンテナーを作成する
+## <a name="asynchronous-container-create-with-polling"></a>ポーリングを使用して非同期でコンテナーを作成する
 
 この例では、1 つのコンテナーを含むコンテナー グループを非同期で作成されます。 その後、コンテナー グループについて Azure にポーリングが実行され、状態が "実行中" になるまでコンテナー グループの状態が出力されます。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->
-[!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
 
-### <a name="create-task-based-container-group"></a>タスク ベースのコンテナー グループを作成する
+## <a name="create-task-based-container-group"></a>タスク ベースのコンテナー グループを作成する
 
 この例では、1 つのタスク ベースのコンテナーを含むコンテナー グループが作成されます。 コンテナーは、[再起動ポリシー](/azure/container-instances/container-instances-restart-policy) "Never" と[カスタム コマンド ライン](/azure/container-instances/container-instances-restart-policy#command-line-override)で構成されます。
 
@@ -74,29 +99,25 @@ dotnet add package Microsoft.Azure.Management.ContainerInstance.Fluent
 
 `WithStartingCommandLines("/bin/sh", "-c", "echo FOO BAR && tail -f /dev/null")`
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->
-[!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
 
-### <a name="list-container-groups"></a>コンテナー グループの一覧を表示する
+## <a name="list-container-groups"></a>コンテナー グループの一覧を表示する
 
 この例では、リソース グループ内のコンテナー グループの一覧が表示されます。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->
-[!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
 
-### <a name="get-an-existing-container-group"></a>既存のコンテナー グループを取得する
+## <a name="get-an-existing-container-group"></a>既存のコンテナー グループを取得する
 
 この例では、リソース グループ内に存在する特定のコンテナー グループが取得され、そのプロパティとその値がいくつか出力されます。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->
-[!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
 
-### <a name="delete-a-container-group"></a>コンテナー グループを削除する
+## <a name="delete-a-container-group"></a>コンテナー グループを削除する
 
 この例では、リソース グループからコンテナー グループが削除されます。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->
-[!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
 
 ## <a name="api-reference"></a>API リファレンス
 
@@ -115,7 +136,13 @@ dotnet add package Microsoft.Azure.Management.ContainerInstance.Fluent
 
 アプリで使用できるその他の[サンプル .NET コード](https://azure.microsoft.com/resources/samples/?platform=dotnet)を確認してください。
 
-[PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
-[samples]: https://azure.microsoft.com/resources/samples/?sort=0&term=ACI
+<!-- LINKS - External -->
 [aci-docs-sample-dotnet]: https://github.com/Azure-Samples/aci-docs-sample-dotnet
+[samples]: https://azure.microsoft.com/resources/samples/?sort=0&term=ACI
+[sdk-auth]: https://github.com/Azure/azure-libraries-for-net/blob/master/AUTH.md
+
+<!-- LINKS - Internal -->
+[DotNetCLI]: /dotnet/core/tools/dotnet-add-package
+[PackageManager]: /nuget/tools/package-manager-console
+[iazure]: /dotnet/api/microsoft.azure.management.fluent.azure
+[iazure-authenticate]: /dotnet/api/microsoft.azure.management.fluent.azure.authenticate

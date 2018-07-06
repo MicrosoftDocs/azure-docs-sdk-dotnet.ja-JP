@@ -6,18 +6,17 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: 53e899ba3cd2ff265a2068e1b7eee5baa4520879
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588485"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065342"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Azure 仮想マシンへの ASP.NET Web アプリケーションの移行
 
@@ -25,16 +24,7 @@ ms.locfileid: "26588485"
 
 ## <a name="quickstart"></a>クイック スタート
 
-仮想マシンを作成し、この仮想マシンにアプリを発行する方法について説明します。
-
-<div class="ico48Case">
-    <div class="ico48Link">
-        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
-            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-            <span>Azure VM に発行する</span>
-        </a>
-    </div>
-</div>
+仮想マシンを作成し、この仮想マシンにアプリを発行する方法について説明します: [Azure VM に発行する](https://tutorials.visualstudio.com/aspnet-vm/intro)
 
 ## <a name="get-started"></a>作業の開始
 
@@ -62,9 +52,9 @@ ms.locfileid: "26588485"
 
 オンプレミス コンピューターと同様に、仮想マシンの管理と更新はユーザーが行う必要があります<sup>&#42;</sup>。  [Azure App Service](https://docs.microsoft.com/azure/app-service/) や[コンテナー](https://docs.microsoft.com/azure/app-service/containers/)などのサービスとしてのプラットフォーム (PaaS) 環境でアプリケーションを実行できる場合、その必要はなくなります。
 
-"*<sup>&#42;</sup>[仮想マシン スケール セットの OS の自動アップグレードは、](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade)現在、プレビュー サービスとして提供されています。*"
+*<sup>&#42;</sup>[仮想マシン スケール セットの OS の自動アップグレード](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade)は、現在、プレビュー サービスとして提供されています。*
 
-### <a name="virtual-networks"></a>Virtual Networks
+### <a name="virtual-networks"></a>仮想ネットワーク
 
 Azure Virtual Network を使用すると、次のことが可能になります。
 - 制御可能なハイブリッド インフラストラクチャを構築する
@@ -96,7 +86,7 @@ Azure Virtual Network を使用すると、次のことが可能になります�
 #### <a name="centralized-logging"></a>ログの一元化
 複数のインスタンスでアプリケーションを実行する場合は、[Azure Storage](https://docs.microsoft.com/azure/storage/) などの一元化された場所にログを保存することを検討します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [Azure への SQL Server データベースの移行](dotnet-howto-migrate-sql.md)
