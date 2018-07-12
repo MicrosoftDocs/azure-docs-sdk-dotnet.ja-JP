@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
 ms.openlocfilehash: b817216e114e5ab3ff22c1c5adb0f892c7874147
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.sourcegitcommit: 1c2e1fd031ad012d6888fcde3cd325f7e8e49e0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 07/09/2018
 ms.locfileid: "29752864"
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>.NET 用 Azure 管理ライブラリの fluent の概念
@@ -72,10 +72,10 @@ foreach(var vm in vmList)
 
 | 動詞   |  使用例 |
 |--------|---------------|
-| [作成] | `azure.VirtualMachines.Create(listOfVMCreatables)` |
+| Create | `azure.VirtualMachines.Create(listOfVMCreatables)` |
 | 適用  | `virtualMachineScaleSet.Update().WithCapacity(6).Apply()` |
-| 削除 | `azure.Disks.DeleteById(id)` | 
-| 一覧表示   | `azure.SqlServers.List()` | 
+| Delete | `azure.Disks.DeleteById(id)` | 
+| List   | `azure.SqlServers.List()` | 
 | 取得    | `var vm  = azure.VirtualMachines.GetByResourceGroup(group, vmName)` |
 
 >[!NOTE]
