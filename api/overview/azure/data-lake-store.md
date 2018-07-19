@@ -10,12 +10,12 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f1b014c4835784ed8ecfa1e3b4bfd62a6ebf9562
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 7bbc8c6c5a71d16372d7ab756a5188d90503f52a
+ms.sourcegitcommit: 512e031ead61a578ac96835c8ea01829842740bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065632"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39116688"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>.NET 用 Azure Data Lake Store ライブラリ
 
@@ -40,7 +40,7 @@ Install-Package Microsoft.Azure.DataLake.Store
 ```bash
 dotnet add package Microsoft.Azure.DataLake.Store
 ```
-### <a name="authentication"></a>認証
+### <a name="authentication"></a>Authentication
 
 * アプリケーションのエンドユーザー認証については、「[End-user authentication with Data Lake Store using .NET SDK (.NET SDK を使用した Data Lake Store に対するエンドユーザー認証)](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk)」を参照してください。
 * アプリケーションのサービス間認証については、「[Service-to-service authentication with Data Lake Store using .NET SDK (.NET SDK を使用した Data Lake Store に対するサービス間認証)](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk)」を参照してください。
@@ -80,7 +80,7 @@ dotnet add package Microsoft.Azure.Management.DataLake.Store
 
 ## <a name="samples"></a>サンプル
 
-* [Azure Data Lake .NET クライアントのサンプル](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
+* [Azure Data Lake .NET クライアントのサンプル](https://azure.microsoft.com/resources/samples/data-lake-dotnet-client/)
 
 アプリで使用できるその他の[サンプル .NET コード](https://azure.microsoft.com/resources/samples/?platform=dotnet)を確認してください。
 
