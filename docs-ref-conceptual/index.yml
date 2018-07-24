@@ -1,32 +1,32 @@
 ### YamlMime:YamlDocument
+ms.openlocfilehash: 5f899128e033bb05fe867afdf3026dcb18d42f5f
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135660"
 documentType: LandingData
-title: .NET 開発者向けの Azure
+title: .NET および .NET Core 開発者向けの Azure
 metadata:
   document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
-  title: .NET 開発者向けの Azure - チュートリアル、C# の API リファレンス
-  description: 以下のリソースを使用して、Azure でアプリの開発を開始しましょう.NET 開発者向けの優れたチュートリアルとツールが用意されています。
+  title: .NET および .NET Core 開発者向けの Azure - チュートリアル、C# の API リファレンス
+  description: 以下のリソースを使用して、Azure でアプリの開発を開始しましょう。.NET、.NET Core、ASP.NET、ASP.NET Core を使用する開発者向けの優れたチュートリアルとツールが用意されています。
   keywords: Azure, .NET, SDK, API, NuGet
   author: camsoper
   ms.author: casoper
-  manager: douge
-  ms.date: 07/13/2017
+  manager: wpickett
+  ms.date: 07/17/2018
   ms.topic: landing-page
   featureFlags:
   - clicktale
   ms.technology: azure
   ms.devlang: dotnet
   ms.service: multiple
-  ms.openlocfilehash: 0df719af621462048f432589f4235b220721c591
-  ms.sourcegitcommit: 4ec8ceb3a22c209c9c620dd0982cfbc08d21006c
-  ms.translationtype: HT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/05/2018
-  ms.locfileid: "34761380"
 sections:
 - items:
   - type: markdown
     text: >
-      以下のリソースを使用して、Azure でクラウド対応アプリの開発を開始しましょう。.NET 開発者向けの優れたチュートリアルとツールが用意されています。
+      以下のリソースを使用して、Azure でクラウド対応アプリの開発を開始しましょう。.NET および .NET Core 開発者向けの優れたチュートリアルとツールが用意されています。
 - items:
   - type: list
     style: cards
@@ -34,17 +34,18 @@ sections:
     columns: 2
     items:
     - href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
-      html: <p>最初の .NET アプリを Azure にデプロイする</p>
+      html: <p>Azure に最初の ASP.NET Core Web アプリをデプロイする</p>
+      maintainContext: true
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
       title: 作業の開始
     - href: ./dotnet-samples?view=azure-dotnet
-      html: <p>.NET を使用した Azure サンプル コード</p>
+      html: <p>.NET および .NET Core を使用した Azure コード サンプル</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_code-samples.svg
       title: コード サンプル
     - href: https://docs.microsoft.com/dotnet/azure/dotnet-tools?view=azure-dotnet
-      html: <p>開発者用ツール</p>
+      html: <p>.NET および .NET Core の開発者ツール</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_download-install.svg
       title: SDK &amp; ツール
@@ -56,7 +57,7 @@ sections:
 - title: 5 分間のクイック スタート
   items:
   - type: paragraph
-    text: Azure サービスと C# を使用して .NET アプリを作成する方法について説明します。
+    text: Azure サービスと C# を使用して .NET および .NET Core アプリを作成する方法について説明します。
   - type: list
     style: cards
     className: cardsM
@@ -64,7 +65,7 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-      title: SQL Azure データベースを使用して ASP.NET アプリを作成する
+      title: SQL Azure データベースを使用して ASP.NET Web アプリを作成する
       href: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
@@ -76,7 +77,7 @@ sections:
       href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg
-      title: Azure Cosmos DB で .NET アプリを構築する
+      title: Azure Cosmos DB を使用して .NET Web アプリを作成する
       href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
@@ -104,13 +105,13 @@ sections:
 - title: ステップバイステップのチュートリアル
   items:
   - type: paragraph
-    text: .NET アプリでの Azure サービスとツールの使い方を習得できます。
+    text: .NET および .NET Core アプリでの Azure サービスとツールの使い方を習得できます。
   - type: list
     style: unordered
     items:
-    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Azure SQL Database を使用して ASP.NET Web アプリを作成する</a>
-    - html: <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-application">Azure Cosmos DB を使用して ASP.NET Web アプリを作成する</a>
-    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Web API を作成して Azure にデプロイする</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Azure App Service と Azure SQL Database を使用して ASP.NET Web アプリを作成する</a>
+    - html: <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-application">Azure App Service と Azure Cosmos DB を使用して ASP.NET Web アプリを作成する</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Web API を作成して Azure App Service にデプロイする</a>
     - html: <a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes と Windows コンテナーの概要</a>
     - html: <a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Azure SQL Database に接続してクエリを実行する</a>
     - html: <a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Azure Database for PostgreSQL に接続してクエリを実行する</a>
