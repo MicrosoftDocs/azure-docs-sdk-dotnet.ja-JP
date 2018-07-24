@@ -1,26 +1,26 @@
 ---
-title: .NET 用 Azure C# コード サンプル
-description: .NET および Azure 用 C# コード サンプル。
+title: .NET および .NET Core の Azure C# コード サンプル
+description: .NET、.NET Core、ASP.NET、ASP.NET Core を使用した Azure の C# コード サンプル。
 layout: LandingPage
 ms.topic: reference
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 04/12/2018
+ms.date: 07/17/2018
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 2952f2999ae53100d35d90f44bfcc6c9df696b00
-ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
+ms.openlocfilehash: b4a67a2b3c942ea5282878a61ccabb7c1d3aa95c
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051962"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135680"
 ---
-# <a name="azure-c-code-samples-for-net"></a>.NET 用 Azure C# コード サンプル
+# <a name="azure-c-code-samples-for-net-and-net-core"></a>.NET および .NET Core の Azure C# コード サンプル
 
-これらは、および.NET を使用して Azure を使い始める際に推奨される主要なサンプル、チュートリアル、および例です。
+これらは、C# と .NET および .NET Core を使用して Azure を使い始める際に推奨される主要なサンプル、チュートリアル、および例です。
 
 <div id="main" class="v2">
     <div class="container">
@@ -36,8 +36,8 @@ ms.locfileid: "34051962"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>基本的な Web サイト</h3>
-                                    <p>SQL バックエンドに情報を保存する簡単な ASP.NET Core Web サイトを作成する方法を示します。</p>
+                                    <h3>基本的な Web アプリ</h3>
+                                    <p>Azure SQL バックエンドに情報を保存する簡単な ASP.NET Core Web アプリを Azure App Service 上で作成する方法を説明します。</p>
                                 </div>
                             </div>
                         </a>
@@ -113,7 +113,7 @@ ms.locfileid: "34051962"
                                 </div>
                                 <div class="cardText">
                                     <h3>AI による画像分析</h3>
-                                    <p>Cognitive Services を使用して画像の視覚的特徴を検出する方法を説明します。</p>
+                                    <p>Azure Cognitive Services を使用して、画像の視覚的特徴を検出する方法を説明します。</p>
                                 </div>
                             </div>
                         </a>
@@ -132,13 +132,13 @@ ms.locfileid: "34051962"
                                 </div>
                                 <div class="cardText">
                                     <h3>クラウド データベース</h3>
-                                    <p>Cosmos DB を使用して、先進的なクラウド データベースで基本的な検索、作成、および編集を行う方法を説明します。</p>
+                                    <p>Azure Cosmos DB を使用して、最新のクラウド データベースで基本的な検索、作成、編集を行う方法を説明します。</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-            </li>             
+            </li>
         </ul>
     </div>
 </div>
