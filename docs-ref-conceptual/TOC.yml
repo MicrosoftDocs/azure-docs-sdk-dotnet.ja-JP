@@ -6,16 +6,22 @@
       items:
         - name: Web Apps
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
-        - name: サーバーレス関数
+          maintainContext: true
+        - name: サーバーレスな Functions
           href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
+          maintainContext: true
         - name: SQL Database
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
+          maintainContext: true
         - name: Cosmos DB
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
+          maintainContext: true
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+          maintainContext: true
         - name: BLOB ストレージ
           href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
+          maintainContext: true
     - name: .NET を使って作業を開始する
       href: dotnet-sdk-azure-get-started.md
     - name: ツール
@@ -25,31 +31,38 @@
       items:
         - name: Azure SQL Database を使用して ASP.NET Web アプリを作成する
           href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
+          maintainContext: true
         - name: Cosmos DB を使用して ASP.NET Web アプリを作成する
           href: /azure/documentdb/documentdb-dotnet-application
+          maintainContext: true
         - name: Web API を作成してデプロイする
           href: /azure/app-service-api/app-service-api-dotnet-get-started
+          maintainContext: true
         - name: Kubernetes と Windows コンテナーの概要
           href: /azure/container-service/container-service-kubernetes-windows-walkthrough
+          maintainContext: true
         - name: SQL Database に接続してクエリを実行する
           href: /azure/sql-database/sql-database-connect-query-dotnet
+          maintainContext: true
         - name: PostgreSQL に接続してクエリを実行する
           href: /azure/postgresql/connect-csharp
+          maintainContext: true
         - name: Cosmos DB SQL API を使ってみる
           href: /azure/cosmos-db/sql-api-get-started
+          maintainContext: true
     - name: 方法
       items:
         - name: 移行
           items:
             - name: 適切な Azure ホスティング オプションの選択
               href: dotnet-howto-choose-migration.md
-            - name: ASP.NET アプリを Azure App Service に移行する
+            - name: .NET Web アプリまたはサービスを Azure App Service に移行する
               href: dotnet-howto-migrate-app-service.md
             - name: ASP.NET アプリを Azure VM に移行する
               href: dotnet-howto-migrate-to-vm.md
             - name: SQL Server データベースを Azure に移行する
               href: dotnet-howto-migrate-sql.md
-        - name: 認証
+        - name: Authentication
           href: dotnet-sdk-azure-authenticate.md
         - name: Fluent API を使用する
           href: dotnet-sdk-azure-concepts.md
