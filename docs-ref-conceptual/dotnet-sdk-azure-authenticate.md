@@ -5,18 +5,18 @@ keywords: Azure, .NET, SDK, API, 認証, active directory, サービス プリ�
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 08/22/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 783b5ebf14abad992c18726df7232e4f3a68b72b
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 019f0047fb141842eb1481ad9b835fa865a9a139
+ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752774"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703045"
 ---
 # <a name="authenticate-with-the-azure-libraries-for-net"></a>.NET 用 Azure ライブラリを使った認証
 
@@ -103,9 +103,7 @@ var credentials = SdkContext.AzureCredentialsFactory
     AzureEnvironment.AzureGlobalCloud);
 ```
 
-- clientId: サービス プリンシパルの出力の *ApplicationId* の値を使います。
-- clientSecret: `New-AzureRmADServicePrincipal` を実行したときに割り当てた *-Password* パラメーターを使います (引用符は不要)。
-- tenantId: `Login-AzureRmAccount` を実行したときの *TenantId* の値を使います。
+サービス プリンシパル作成時の JSON 出力の *clientId*、*clientSecret*、および *tenantId* 値を使用します。
 
 その後、API を使うためのエントリ ポイントとなる `Azure` オブジェクトを作成します。
 
