@@ -10,7 +10,7 @@ title: .NET および .NET Core 開発者向けの Azure
 metadata:
   document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
   title: .NET および .NET Core 開発者向けの Azure - チュートリアル、C# の API リファレンス
-  description: 以下のリソースを使用して、Azure でアプリの開発を開始しましょう。\.NET、.NET Core、ASP.NET、ASP.NET Core を使用する開発者向けの優れたチュートリアルとツールが用意されています。
+  description: 以下のリソースを使用して、Azure でアプリの開発を開始しましょう .NET、.NET Core、ASP.NET、ASP.NET Core を使用する開発者向けの優れたチュートリアルとツールが用意されています。
   keywords: Azure, .NET, SDK, API, NuGet
   author: camsoper
   ms.author: casoper
