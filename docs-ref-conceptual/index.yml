@@ -26,7 +26,7 @@ sections:
 - items:
   - type: markdown
     text: >
-      以下のリソースを使用して、Azure でクラウド対応アプリの開発を開始しましょう。\.NET および .NET Core 開発者向けの優れたチュートリアルとツールが用意されています。
+      以下のリソースを使用して、Azure でクラウド対応アプリの開発を開始しましょう \.NET および .NET Core 開発者向けの優れたチュートリアルとツールが用意されています。
 - items:
   - type: list
     style: cards
