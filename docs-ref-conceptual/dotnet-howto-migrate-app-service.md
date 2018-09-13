@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 643d758af8f90f22791d3b7deb18ae6233067ef0
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
+ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135720"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700954"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>.NET Web アプリまたはサービスを Azure App Service に移行する 
 
@@ -30,10 +30,10 @@ ms.locfileid: "39135720"
 
 移行または変更が必要になる可能性のあるオンプレミスのリソースへのアクセスを確認します。 オンプレミスのリソースへのアクセスを軽減するには、次のような方法があります。
 
-* [Azure Virtual Network](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet) を使用して、App Service をオンプレミスのリソースに接続する VPN を作成します。
-* [Azure Relay](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it) を使用して、ファイアウォールを変更せずに、オンプレミス サービスをクラウドに安全に公開します。
+* [Azure Virtual Network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet) を使用して、App Service をオンプレミスのリソースに接続する VPN を作成します。
+* [Azure Relay](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it) を使用して、ファイアウォールを変更せずに、オンプレミス サービスをクラウドに安全に公開します。
 * [SQL データベース](https://go.microsoft.com/fwlink/?linkid=863217)などの依存関係を Azure に移行します。
-* クラウドのサービスとしてのプラットフォーム サービスを使用して依存関係を減らします。 たとえば、オンプレミスのメール サーバーに接続するのではなく、[SendGrid](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email) を使用することを検討します。 
+* クラウドのサービスとしてのプラットフォーム サービスを使用して依存関係を減らします。 たとえば、オンプレミスのメール サーバーに接続するのではなく、[SendGrid](https://docs.microsoft.com/azure/sendgrid-dotnet-how-to-send-email) を使用することを検討します。 
 
 ### <a name="port-bindings"></a>ポートのバインド
 
@@ -64,7 +64,7 @@ Azure App Service では既定で匿名認証がサポートされており、�
 従来、アプリケーションの applicationHost.config で構成していたあらゆるものを、Azure Portal で構成できるようになりました。 AppPool のビット、WebSocket の有効化/無効化、マネージド パイプライン バージョン、.NET Framework バージョン (2.0/4.0) などがこれに該当します。[アプリケーション設定](https://docs.microsoft.com/azure/app-service/web-sites-configure)を変更するには、[Azure Portal](https://portal.azure.com) に移動し、Web アプリのブレードを開いて、**[アプリケーションの設定]** タブを選択します。
 
 #### <a name="iis5-compatibility-mode"></a>IIS5 互換モード
-IIS5 互換モードはサポートされていません。 Azure App Service では、各 Web App とその下のすべてのアプリケーションが、[アプリケーション プール](http://technet.microsoft.com/en-us/library/cc735247(v=WS.10).aspx)の特定のセットを使用して同じワーカー プロセスで実行されます。
+IIS5 互換モードはサポートされていません。 Azure App Service では、各 Web App とその下のすべてのアプリケーションが、[アプリケーション プール](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx)の特定のセットを使用して同じワーカー プロセスで実行されます。
 
 #### <a name="iis7-schema-compliance"></a>IIS7+ スキーマ準拠  
 Azure App Service IIS スキーマで定義されていない要素と属性があります。 問題が発生した場合は、[XDT 変換](http://azure.microsoft.com/documentation/articles/web-sites-transform-extend/)を使用することを検討してください。
