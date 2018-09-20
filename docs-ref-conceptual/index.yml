@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f80b08f77cfb88b2e2148534553cc4c96cac6d76
-ms.sourcegitcommit: 0e64271404ddbb8f84f7e95691b29690de9e41bf
+ms.openlocfilehash: 0f2928212fca7c86defa37068e18e9ff96adb50a
+ms.sourcegitcommit: 319a55d604140fcc0b03a07b634ab9a3b22e657d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616384"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44703793"
 documentType: LandingData
 title: .NET および .NET Core 開発者向けの Azure
 metadata:
@@ -72,21 +72,21 @@ sections:
       title: .NET のサーバーレス機能を作成する
       href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
     - image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
-      title: .NET アプリを Azure SQL Database に接続する
-      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
-    - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg
       title: Azure Cosmos DB を使用して .NET Web アプリを作成する
       href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
     - image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
-      title: Service Fabric で .NET マイクロサービス アプリを作成する
-      href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
+        src: https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg
+      title: Application Insights を使用して ASP.NET アプリケーションを監視する
+      href: https://docs.microsoft.com/azure/application-insights/quick-monitor-portal
     - image:
-        src: https://docs.microsoft.com/azure/media/index/api_textanalytics.svg
-      title: C# と Text Analytics API を使用して言語を分析する
-      href: https://docs.microsoft.com/azure/cognitive-services/text-analytics/quickstarts/csharp
+        src: https://docs.microsoft.com/en-us/azure/media/index/storage.svg
+      title: Azure Storage を使用してオブジェクトを格納および取得する
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
+      title: .NET アプリを Azure SQL Database に接続する
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
 - title: Azure で .NET の使用を開始する
   items:
   - type: markdown
@@ -118,9 +118,10 @@ sections:
     style: unordered
     items:
     - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Azure App Service と Azure SQL Database を使用して ASP.NET Web アプリを作成する</a>
-    - html: <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-application">Azure App Service と Azure Cosmos DB を使用して ASP.NET Web アプリを作成する</a>
+    - html: <a href="https://docs.microsoft.com/azure/cosmos-db/sql-api-dotnet-application">Azure App Service と Azure Cosmos DB を使用して ASP.NET Web アプリを作成する</a>
     - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Web API を作成して Azure App Service にデプロイする</a>
     - html: <a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes と Windows コンテナーの概要</a>
     - html: <a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Azure SQL Database に接続してクエリを実行する</a>
     - html: <a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Azure Database for PostgreSQL に接続してクエリを実行する</a>
     - html: <a href="https://docs.microsoft.com/azure/cosmos-db/sql-api-get-started">.NET で Azure Cosmos DB SQL API を使ってみる</a>
+    - html: <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet">Service Fabric で .NET マイクロサービス アプリを作成する</a>
