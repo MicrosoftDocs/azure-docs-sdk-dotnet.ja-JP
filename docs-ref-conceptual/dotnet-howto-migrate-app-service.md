@@ -5,18 +5,18 @@ keywords: Azure .NET, ASP.NET, WCF, App Service, Web アプリ, 移行する, �
 author: camsoper
 manager: wpickett
 ms.author: casoper
-ms.date: 07/16/2018
+ms.date: 08/11/2018
 ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
-ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
+ms.openlocfilehash: 172ceb6956004dd560175d6662debdb4c898743d
+ms.sourcegitcommit: ed841c513dd332b14ca76a0c8a1893be13ec9f2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700954"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45567324"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>.NET Web アプリまたはサービスを Azure App Service に移行する 
 
@@ -96,7 +96,7 @@ SQL Server データベースについては、現在の [SQL Database の価格
 ### <a name="azure-active-directory-aad-integration"></a>Azure Active Directory (AAD) の統合  
 AAD は無料のアプリでは機能しません。 AAD を使用するには、アプリの SKU をアップグレードする必要があります。 「[App Service の価格](https://azure.microsoft.com/pricing/details/app-service/windows/)」をご覧ください。
 
-### <a name="monitoring-and-diagnostics"></a>Monitoring and Diagnostics
+### <a name="monitoring-and-diagnostics"></a>監視と診断
 監視と診断に現在使用しているオンプレミスのソリューションは、クラウドでは機能しない可能性があります。 ただし、Web アプリでの問題を特定し、デバッグできるように、Azure には、ログ記録、監視、診断用のツールが用意されています。 Web アプリの診断は、アプリの構成で簡単に有効にすることができます。また、記録されたログは、Azure Application Insights で表示できます。 Web アプリの診断ログの有効化の詳細については、[こちら](https://docs.microsoft.com/azure/app-service/web-sites-enable-diagnostic-log)をご覧ください。
 
 ### <a name="connection-strings-and-application-settings"></a>接続文字列とアプリケーション設定
@@ -117,4 +117,4 @@ AAD は無料のアプリでは機能しません。 AAD を使用するには�
 ## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [Azure App Service への ASP.NET Web アプリケーションの移行](https://aka.ms/azure-webapp-migrate)
+> [Visual Studio からアプリをデプロイする](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)
