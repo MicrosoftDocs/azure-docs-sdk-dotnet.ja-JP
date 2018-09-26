@@ -1,2 +1,0 @@
-> [!IMPORTANT]
-> <span data-ttu-id="0ea52-101">前提条件とインストール手順については、[こちらの説明](../dotnet-sdk-azure-sample-readme.md)を必ずご覧ください。</span><span class="sxs-lookup"><span data-stu-id="0ea52-101">Ensure you have read the [instructions](../dotnet-sdk-azure-sample-readme.md) for prerequisites and installation steps.</span></span>
