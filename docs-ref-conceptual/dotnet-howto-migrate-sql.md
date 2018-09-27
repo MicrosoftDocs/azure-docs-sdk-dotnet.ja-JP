@@ -1,22 +1,14 @@
 ---
 title: Azure への SQL Server データベースの移行
 description: SQL Server データベースをオンプレミスの SQL Server から Azure に移行する方法について説明します。
-keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, 移行する, 移行
-author: camsoper
-manager: wpickett
-ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: sql-database
-ms.custom: devcenter
-ms.openlocfilehash: d118d39e2168686c851f0daa6cb611f0a0c9d2fc
-ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
+ms.openlocfilehash: 49b03632b8ebe31439b3c39629fdaf751412fd5a
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
-ms.locfileid: "29728493"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190515"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a>SQL Server データベースを Azure に移行する
 
@@ -25,7 +17,7 @@ ms.locfileid: "29728493"
 Azure では、運用 SQL Server データベースを移行する際の主な選択肢として、次の 2 つがあります。
 
 1. [Azure VM の SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview): Azure で 実行されている Windows 仮想マシンにインストールされ、ホストされている SQL Server インスタンス。これは、サービスとしてのインフラストラクチャ (IaaS) とも呼ばれます。
-2. [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview): 完全に管理された Azure SQL データベース サービス。これは、サービスとしてのプラットフォーム (PaaS) とも呼ばれます。
+2. [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview): フル マネージドの Azure SQL データベース サービス。これは、サービスとしてのプラットフォーム (PaaS) とも呼ばれます。
 
 それぞれに、移行前に評価する必要がある長所と短所があります。
 
@@ -66,7 +58,7 @@ Azure では、運用 SQL Server データベースを移行する際の主な�
 
 一連のシナリオに基づく各サービスの違いを次の表に示します。
 
-| シナリオ | Azure VM の SQL Server | の接続文字列 |
+| シナリオ | Azure VM の SQL Server | Azure SQL Database |
 |----------|-------------------------|--------------------|
 | 移行 | データベースの最小限の変更が必要です。 | [Data Migration Assistant](https://www.microsoft.com/download/details.aspx?id=53595) によって Azure SQL で利用できないと判断された機能を使用する場合や、ローカルにインストールされた実行可能ファイルなどの他の依存関係がある場合、データベースの変更が必要になることがあります。|
 | 可用性、復旧、アップグレードの管理 | 可用性と復旧は手動で構成します。 アップグレードは、[VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) を使用して自動化できます。 | 自動的に管理されます。 |

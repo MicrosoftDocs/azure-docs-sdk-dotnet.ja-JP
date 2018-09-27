@@ -1,27 +1,21 @@
 ---
 title: .NET 用 Azure Stream Analytics ライブラリ
 description: .NET 用 Azure Stream Analytics ライブラリのリファレンス
-keywords: Azure, .NET, SDK, API, Stream Analytics
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: stream-analytics
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4fc8c5700122a82a5e31df870787a67dad277542
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: c04a5c8a7b1d7e0f283d4fb81bd772de24f195eb
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065932"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190455"
 ---
 # <a name="azure-stream-analytics-libraries-for-net"></a>.NET 用 Azure Stream Analytics ライブラリ
 
 ## <a name="overview"></a>概要
 
-[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction) は、完全に管理されたイベント処理エンジンであり、ストリーミング データを対象としたリアルタイム分析の計算を設定することができます。 対象となるデータは、デバイス、センサー、Web サイト、ソーシャル メディア フィード、アプリケーション、インフラストラクチャ システムなどから得ることができます。 
+[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction) は、フル マネージドのイベント処理エンジンであり、ストリーミング データを対象としたリアルタイム分析の計算を設定することができます。 対象となるデータは、デバイス、センサー、Web サイト、ソーシャル メディア フィード、アプリケーション、インフラストラクチャ システムなどから得ることができます。 
 
 Azure Stream Analytics の詳細については、[Azure Stream Analytics のリアルタイムの不正行為検出の使用](/azure/stream-analytics/stream-analytics-real-time-fraud-detection)に関する記事をご覧ください。
 

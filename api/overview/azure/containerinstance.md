@@ -1,21 +1,15 @@
 ---
 title: .NET 用 Azure Container Instances ライブラリ
 description: .NET 用 Azure Container Instances ライブラリのリファレンス
-keywords: Azure, .NET, SDK, API, Container Instances, ACI
-author: mmacy
-ms.author: marsma
-manager: jeconnoc
 ms.date: 06/11/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: dcontainer-instances
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 85fe5485c04193b336d10e8c387719e2ad1e6910
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 93f537058e0ed11f51cc6cb6cece01da80559822
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37066146"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190725"
 ---
 # <a name="azure-container-instances-libraries-for-net"></a>.NET 用 Azure Container Instances ライブラリ
 
@@ -43,7 +37,7 @@ dotnet add package Microsoft.Azure.Management.ContainerInstance.Fluent
 
 [Azure-Samples/aci-docs-sample-dotnet](https://github.com/Azure-Samples/aci-docs-sample-dotnet)
 
-## <a name="authentication"></a>認証
+## <a name="authentication"></a>Authentication
 
 SDK クライアントを認証する最も簡単な方法の 1 つは、[ファイル ベースの認証][sdk-auth]を使う方法です。 ファイル ベースの認証では、[IAzure][iazure] クライアント オブジェクトのインスタンス化時に資格情報ファイルが解析され、Azure での認証時にこれらの資格情報がオブジェクトによって使用されます。 ファイル ベースの認証を使用するには:
 

@@ -1,21 +1,13 @@
 ---
 title: Azure での .NET アプリの管理と監視に関するチュートリアル
 description: Azure で実行する .NET アプリケーションの正常性とパフォーマンスを監視し、利用統計情報をインストルメント化してユーザーがアプリを使う方法に関する情報を保存します。
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 46912f3c31a56724de90e90c36370209ed5c7bd8
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 289fa4468be6e76f0ca98d844237638a86c4d148
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752894"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190655"
 ---
 # <a name="tutorials-for-monitoring-and-managing-your-net-apps-in-azure"></a>Azure での .NET アプリの監視と管理に関するチュートリアル
 

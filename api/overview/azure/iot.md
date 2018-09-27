@@ -1,27 +1,21 @@
 ---
 title: .NET 用 Azure IoT ライブラリ
 description: .NET 用 Azure IoT ライブラリのリファレンス
-keywords: Azure, .NET, SDK, API, IoT
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: iot-hub
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: af823e910acedd4f204034b12a31ba61fd53e090
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 54182d8fabec0d3aee3ca3b58c7315bdf43cc24e
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065272"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190185"
 ---
 # <a name="azure-iot-libraries-for-net"></a>.NET 用 Azure IoT ライブラリ
 
 ## <a name="overview"></a>概要
 
-[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) は、何百万ものデバイスとソリューション バック エンド間で、セキュリティで保護された信頼性のある双方向通信を実現する、完全に管理されたサービスです。
+[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) は、何百万ものデバイスとソリューション バック エンド間で、セキュリティで保護された信頼性のある双方向通信を実現する、フル マネージドのサービスです。
 
 ネットワークに接続された単純なセンサーから、強力なスタンドアロン コンピューティング デバイスまで、広範なデバイスとデータ ソースを IoT ソリューションに含めることができます。 デバイスの処理能力、メモリ、通信帯域幅、通信プロトコルのサポートは限られていてもかまいません。 IoT の[デバイス SDK](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks) を使うと、さまざまなデバイスやバックエンド アプリケーションのためのクライアント アプリケーションを実装できます。
 

@@ -1,22 +1,13 @@
 ---
 title: .NET 用 Azure 管理ライブラリ リリース ノート | Microsoft Docs
 description: .NET 用 Azure 管理ライブラリの新機能や重大な変更が記載されています。
-keywords: Azure, .NET, API, リファレンス, ノート, 更新, 非推奨
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 48ff29507268f6b38acb24217801cf7b0227e444
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: dac9dee9c25fc349dedd50d6007f25c7d15b0928
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005909"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190675"
 ---
 # <a name="release-notes"></a>リリース ノート 
 
@@ -32,7 +23,7 @@ ms.locfileid: "31005909"
   </tr>
   <tr>
     <td>コンピューティング</td>
-    <td>仮想マシンと VM 拡張機能<br>仮想マシン スケール セット<br>管理ディスク</td>
+    <td>仮想マシンと VM 拡張機能<br>仮想マシン スケール セット<br>マネージド ディスク</td>
     <td></td>
     <td valign="top">Azure コンテナー サービス<br>Azure コンテナー レジストリ</td>
   </tr>

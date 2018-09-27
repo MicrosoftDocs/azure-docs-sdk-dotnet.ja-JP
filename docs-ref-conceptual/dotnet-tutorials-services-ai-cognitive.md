@@ -1,21 +1,13 @@
 ---
 title: Azure の AI および Cognitive Services に関する .NET チュートリアル | Microsoft Docs
 description: Microsoft Azure サービスで .NET アプリに AI および Cognitive Services を追加します。
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 047bc30fd8918cb141aa02fc06be21d6a09f142c
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: b450c64837a6f9c20497c78bdfbb97746220389f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752794"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190755"
 ---
 # <a name="azure-ai-and-cognitive-service-tutorials-using-net"></a>.NET を使う Azure AI および Cognitive Services チュートリアル
 
