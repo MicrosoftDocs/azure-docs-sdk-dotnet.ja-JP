@@ -1,29 +1,23 @@
 ---
 title: .NET 用 Azure Mobile ライブラリ
 description: .NET 用 Azure Mobile ライブラリのリファレンス
-keywords: Azure, .NET, SDK, API, Mobile
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: app-service
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: aa73549789369c3aa169d1aee6788129780dac66
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 0019971017922dcbbbbfebea240add30e7f1e8dc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065912"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190861"
 ---
-# <a name="azure-mobile-libraries-for-net"></a><span data-ttu-id="62670-104">.NET 用 Azure Mobile ライブラリ</span><span class="sxs-lookup"><span data-stu-id="62670-104">Azure Mobile libraries for .NET</span></span>
+# <a name="azure-mobile-libraries-for-net"></a><span data-ttu-id="5d45a-103">.NET 用 Azure Mobile ライブラリ</span><span class="sxs-lookup"><span data-stu-id="5d45a-103">Azure Mobile libraries for .NET</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="62670-105">クライアント ライブラリ</span><span class="sxs-lookup"><span data-stu-id="62670-105">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="5d45a-104">クライアント ライブラリ</span><span class="sxs-lookup"><span data-stu-id="5d45a-104">Client library</span></span>
 
-<span data-ttu-id="62670-106">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="62670-106">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="5d45a-105">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="5d45a-105">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="62670-107">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="62670-107">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="5d45a-106">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="5d45a-106">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Mobile.Server
@@ -34,7 +28,7 @@ dotnet add package Microsoft.Azure.Mobile.Server
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="62670-108">クライアント API を探す</span><span class="sxs-lookup"><span data-stu-id="62670-108">Explore the client APIs</span></span>](/dotnet/api/overview/azure/mobileapps/client)
+> [<span data-ttu-id="5d45a-107">クライアント API を探す</span><span class="sxs-lookup"><span data-stu-id="5d45a-107">Explore the client APIs</span></span>](/dotnet/api/overview/azure/mobileapps/client)
 
 
 

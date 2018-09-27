@@ -1,12 +1,23 @@
-<span data-ttu-id="69dbc-101">Azure Management Libraries for .NET を使うには、Azure サブスクリプション内のリソースの読み取りと作成を行うアクセス許可が、.NET アプリケーションに必要です。</span><span class="sxs-lookup"><span data-stu-id="69dbc-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="69dbc-102">サービス プリンシパルを作成し、その資格情報で実行してこのアクセスを許可するようにアプリを構成してください。</span><span class="sxs-lookup"><span data-stu-id="69dbc-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="69dbc-103">サービス プリンシパルによって、自分の ID に関連付けられた非対話型のアカウントを作成し、アプリの実行に必要な権限だけを付与することができます。</span><span class="sxs-lookup"><span data-stu-id="69dbc-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
+---
+ms.service: multiple
+ms.date: 9/20/2018
+ms.topic: include
+ms.openlocfilehash: 5c8cb328802cfb94e944e4241852fb9568e8507f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190535"
+---
+<span data-ttu-id="b9512-101">Azure Management Libraries for .NET を使うには、Azure サブスクリプション内のリソースの読み取りと作成を行うアクセス許可が、.NET アプリケーションに必要です。</span><span class="sxs-lookup"><span data-stu-id="b9512-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="b9512-102">サービス プリンシパルを作成し、その資格情報で実行してこのアクセスを許可するようにアプリを構成してください。</span><span class="sxs-lookup"><span data-stu-id="b9512-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="b9512-103">サービス プリンシパルによって、自分の ID に関連付けられた非対話型のアカウントを作成し、アプリの実行に必要な権限だけを付与することができます。</span><span class="sxs-lookup"><span data-stu-id="b9512-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
 
-<span data-ttu-id="69dbc-104">まず、[Azure Cloud Shell](https://shell.azure.com/bash) にログインします。</span><span class="sxs-lookup"><span data-stu-id="69dbc-104">First, login to [Azure Cloud Shell](https://shell.azure.com/bash).</span></span> <span data-ttu-id="69dbc-105">現在、サービス プリンシパル作成対象のサブスクリプションを使用していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="69dbc-105">Verify you are currently using the subscription in which you want the service principal created.</span></span> 
+<span data-ttu-id="b9512-104">まず、[Azure Cloud Shell](https://shell.azure.com/bash) にログインします。</span><span class="sxs-lookup"><span data-stu-id="b9512-104">First, login to [Azure Cloud Shell](https://shell.azure.com/bash).</span></span> <span data-ttu-id="b9512-105">現在、サービス プリンシパル作成対象のサブスクリプションを使用していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b9512-105">Verify you are currently using the subscription in which you want the service principal created.</span></span> 
 
 ```azurecli-interactive
 az account show
 ```
 
-<span data-ttu-id="69dbc-106">サブスクリプション情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="69dbc-106">Your subscription information is displayed.</span></span>
+<span data-ttu-id="b9512-106">サブスクリプション情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b9512-106">Your subscription information is displayed.</span></span>
 
 ```json
 {
@@ -24,15 +35,15 @@ az account show
 }
 ```
 
-<span data-ttu-id="69dbc-107">正しいサブスクリプションにログインしていない場合は、`az account set -s <name or ID of subscription>` を入力して正しいサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="69dbc-107">If you're not logged into the correct subscription, select the correct one by typing `az account set -s <name or ID of subscription>`.</span></span>
+<span data-ttu-id="b9512-107">正しいサブスクリプションにログインしていない場合は、`az account set -s <name or ID of subscription>` を入力して正しいサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b9512-107">If you're not logged into the correct subscription, select the correct one by typing `az account set -s <name or ID of subscription>`.</span></span>
 
-<span data-ttu-id="69dbc-108">次のコマンドを使って、サービス プリンシパルを作成します。</span><span class="sxs-lookup"><span data-stu-id="69dbc-108">Create the service principal with the following command:</span></span>
+<span data-ttu-id="b9512-108">次のコマンドを使って、サービス プリンシパルを作成します。</span><span class="sxs-lookup"><span data-stu-id="b9512-108">Create the service principal with the following command:</span></span>
 
 ```azurecli-interactive
 az ad sp create-for-rbac --sdk-auth
 ```
 
-<span data-ttu-id="69dbc-109">サービス プリンシパル情報が JSON として表示されます。</span><span class="sxs-lookup"><span data-stu-id="69dbc-109">The service principal information is displayed as JSON.</span></span>
+<span data-ttu-id="b9512-109">サービス プリンシパル情報が JSON として表示されます。</span><span class="sxs-lookup"><span data-stu-id="b9512-109">The service principal information is displayed as JSON.</span></span>
 
 ```json
 {
@@ -49,4 +60,4 @@ az ad sp create-for-rbac --sdk-auth
 }
 ```
 
-<span data-ttu-id="69dbc-110">後で使用できるように、JSON 出力をコピーして、テキスト エディターに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="69dbc-110">Copy and paste the JSON output to a text editor for use later.</span></span>
+<span data-ttu-id="b9512-110">後で使用できるように、JSON 出力をコピーして、テキスト エディターに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="b9512-110">Copy and paste the JSON output to a text editor for use later.</span></span>
