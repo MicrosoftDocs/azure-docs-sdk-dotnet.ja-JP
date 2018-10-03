@@ -1,48 +1,43 @@
 ---
 title: .NET 用 Azure Event Grid ライブラリ
 description: .NET 用 Azure Event Grid ライブラリのリファレンス
-author: rloutlaw
-ms.author: routlaw
-manager: angerobe
 ms.date: 04/16/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: event-grid
-ms.custom: devcenter
-ms.openlocfilehash: 894b8a5beaf0507ab50e8eed6a5ab20d10a71ba6
-ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
+ms.openlocfilehash: 5b19f8aa8b28b3e4aef528da051b6e7d177f1a2f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750600"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190395"
 ---
-# <a name="azure-event-grid-libraries-for-net"></a><span data-ttu-id="a89e0-103">.NET 用 Azure Event Grid ライブラリ</span><span class="sxs-lookup"><span data-stu-id="a89e0-103">Azure Event Grid libraries for .NET</span></span>
+# <a name="azure-event-grid-libraries-for-net"></a><span data-ttu-id="0d4f8-103">.NET 用 Azure Event Grid ライブラリ</span><span class="sxs-lookup"><span data-stu-id="0d4f8-103">Azure Event Grid libraries for .NET</span></span>
 
-<span data-ttu-id="a89e0-104">Azure Event Grid で簡単な HTTP ベースのイベント処理を使用して、Azure サービスやカスタム ソースのイベントをリッスンして対応するイベント ドリブン アプリケーションを構築します。</span><span class="sxs-lookup"><span data-stu-id="a89e0-104">Build event-driven applications that listen and react to events from Azure services and custom sources using simple HTTP-based event handling with Azure Event Grid.</span></span>
+<span data-ttu-id="0d4f8-104">Azure Event Grid で簡単な HTTP ベースのイベント処理を使用して、Azure サービスやカスタム ソースのイベントをリッスンして対応するイベント ドリブン アプリケーションを構築します。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-104">Build event-driven applications that listen and react to events from Azure services and custom sources using simple HTTP-based event handling with Azure Event Grid.</span></span>
 
-<span data-ttu-id="a89e0-105">Azure Event Grid の[詳細を確認](/azure/event-grid/overview)し、[Azure Blob Storage イベントのチュートリアル](/azure/storage/blobs/storage-blob-event-quickstart-powershell)を開始してください。</span><span class="sxs-lookup"><span data-stu-id="a89e0-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span></span> 
+<span data-ttu-id="0d4f8-105">Azure Event Grid の[詳細を確認](/azure/event-grid/overview)し、[Azure Blob Storage イベントのチュートリアル](/azure/storage/blobs/storage-blob-event-quickstart-powershell)を開始してください。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span></span> 
 
-## <a name="client-sdk"></a><span data-ttu-id="a89e0-106">クライアント SDK</span><span class="sxs-lookup"><span data-stu-id="a89e0-106">Client SDK</span></span>
+## <a name="client-sdk"></a><span data-ttu-id="0d4f8-106">クライアント SDK</span><span class="sxs-lookup"><span data-stu-id="0d4f8-106">Client SDK</span></span>
 
-<span data-ttu-id="a89e0-107">Azure Event Grid クライアント SDK を使用して、イベントの作成、認証、トピックへの投稿を行います。</span><span class="sxs-lookup"><span data-stu-id="a89e0-107">Create events, authenticate, and post to topics using the Azure Event Grid Client SDK.</span></span>
+<span data-ttu-id="0d4f8-107">Azure Event Grid クライアント SDK を使用して、イベントの作成、認証、トピックへの投稿を行います。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-107">Create events, authenticate, and post to topics using the Azure Event Grid Client SDK.</span></span>
 
-<span data-ttu-id="a89e0-108">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="a89e0-108">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="0d4f8-108">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-108">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="a89e0-109">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="a89e0-109">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="0d4f8-109">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="0d4f8-109">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.EventGrid
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="a89e0-110">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="a89e0-110">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="0d4f8-110">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="0d4f8-110">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.EventGrid 
 ```
 
-### <a name="publish-events"></a><span data-ttu-id="a89e0-111">イベントの発行</span><span class="sxs-lookup"><span data-stu-id="a89e0-111">Publish events</span></span>
+### <a name="publish-events"></a><span data-ttu-id="0d4f8-111">イベントの発行</span><span class="sxs-lookup"><span data-stu-id="0d4f8-111">Publish events</span></span>
 
-<span data-ttu-id="a89e0-112">次のコードでは、Azure で認証し、カスタム型の `EventGridEvent` イベント (この例では `Contoso.Items.ItemsReceivedEvent`) の `List` をトピックに発行します。</span><span class="sxs-lookup"><span data-stu-id="a89e0-112">The following code authenticates with Azure and publishes a `List` of  `EventGridEvent` events of a custom type (in this example, `Contoso.Items.ItemsReceivedEvent` ) to a topic.</span></span> <span data-ttu-id="a89e0-113">このサンプルで使用されているトピック キーとエンドポイント アドレスは、Azure PowerShell から取得できます。</span><span class="sxs-lookup"><span data-stu-id="a89e0-113">The topic key and endpoint address used in the sample can be retrieved from Azure PowerShell:</span></span>
+<span data-ttu-id="0d4f8-112">次のコードでは、Azure で認証し、カスタム型の `EventGridEvent` イベント (この例では `Contoso.Items.ItemsReceivedEvent`) の `List` をトピックに発行します。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-112">The following code authenticates with Azure and publishes a `List` of  `EventGridEvent` events of a custom type (in this example, `Contoso.Items.ItemsReceivedEvent` ) to a topic.</span></span> <span data-ttu-id="0d4f8-113">このサンプルで使用されているトピック キーとエンドポイント アドレスは、Azure PowerShell から取得できます。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-113">The topic key and endpoint address used in the sample can be retrieved from Azure PowerShell:</span></span>
 
 ```powershell
 $endpoint = (Get-AzureRmEventGridTopic -ResourceGroupName gridResourceGroup -Name <topic-name>).Endpoint
@@ -83,9 +78,9 @@ static IList<EventGridEvent> GetEventsList()
 }
 ```
 
-### <a name="consume-events"></a><span data-ttu-id="a89e0-114">イベントの使用</span><span class="sxs-lookup"><span data-stu-id="a89e0-114">Consume events</span></span>
+### <a name="consume-events"></a><span data-ttu-id="0d4f8-114">イベントの使用</span><span class="sxs-lookup"><span data-stu-id="0d4f8-114">Consume events</span></span>
 
-<span data-ttu-id="a89e0-115">このスニペットでは、カスタム イベント `Contoso.Items.ItemsReceived` などのイベントや、Blob Storage など、他の Azure サービスからトリガーされるイベントを使用します。</span><span class="sxs-lookup"><span data-stu-id="a89e0-115">This snippet consumes events, including a custom event `Contoso.Items.ItemsReceived` as well as events triggered from other Azure services, such as Blob Storage.</span></span>
+<span data-ttu-id="0d4f8-115">このスニペットでは、カスタム イベント `Contoso.Items.ItemsReceived` などのイベントや、Blob Storage など、他の Azure サービスからトリガーされるイベントを使用します。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-115">This snippet consumes events, including a custom event `Contoso.Items.ItemsReceived` as well as events triggered from other Azure services, such as Blob Storage.</span></span>
 
 ```csharp
 string response = string.Empty;
@@ -120,33 +115,33 @@ foreach (EventGridEvent receivedEvent in events)
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="a89e0-116">クライアント API を探す</span><span class="sxs-lookup"><span data-stu-id="a89e0-116">Explore the client APIs</span></span>](/dotnet/api/overview/azure/eventgrid/client)
+> [<span data-ttu-id="0d4f8-116">Publishing API を確認する</span><span class="sxs-lookup"><span data-stu-id="0d4f8-116">Explore the publishing APIs</span></span>](/dotnet/api/overview/azure/eventgrid/publish)
 
-## <a name="management-sdk"></a><span data-ttu-id="a89e0-117">管理 SDK</span><span class="sxs-lookup"><span data-stu-id="a89e0-117">Management SDK</span></span>
+## <a name="management-sdk"></a><span data-ttu-id="0d4f8-117">管理 SDK</span><span class="sxs-lookup"><span data-stu-id="0d4f8-117">Management SDK</span></span>
 
-<span data-ttu-id="a89e0-118">管理 SDK を使用して、Event Grid のインスタンス、トピック、サブスクリプションを作成、更新、削除します。</span><span class="sxs-lookup"><span data-stu-id="a89e0-118">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
+<span data-ttu-id="0d4f8-118">管理 SDK を使用して、Event Grid のインスタンス、トピック、サブスクリプションを作成、更新、削除します。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-118">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
 
-<span data-ttu-id="a89e0-119">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="a89e0-119">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="0d4f8-119">[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。</span><span class="sxs-lookup"><span data-stu-id="0d4f8-119">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="a89e0-120">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="a89e0-120">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="0d4f8-120">Visual Studio パッケージ マネージャー</span><span class="sxs-lookup"><span data-stu-id="0d4f8-120">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.EventGrid
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="a89e0-121">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="a89e0-121">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="0d4f8-121">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="0d4f8-121">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.EventGrid
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="a89e0-122">Management API を探す</span><span class="sxs-lookup"><span data-stu-id="a89e0-122">Explore the management APIs</span></span>](/dotnet/api/overview/azure/eventgrid/management)
+> [<span data-ttu-id="0d4f8-122">Management API を探す</span><span class="sxs-lookup"><span data-stu-id="0d4f8-122">Explore the management APIs</span></span>](/dotnet/api/overview/azure/eventgrid/management)
 
-## <a name="learn-more"></a><span data-ttu-id="a89e0-123">詳細情報</span><span class="sxs-lookup"><span data-stu-id="a89e0-123">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="0d4f8-123">詳細情報</span><span class="sxs-lookup"><span data-stu-id="0d4f8-123">Learn more</span></span>
 
-- [<span data-ttu-id="a89e0-124">Event Grid SDK を使用してイベントを受信する</span><span class="sxs-lookup"><span data-stu-id="a89e0-124">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
+- [<span data-ttu-id="0d4f8-124">Event Grid SDK を使用してイベントを受信する</span><span class="sxs-lookup"><span data-stu-id="0d4f8-124">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

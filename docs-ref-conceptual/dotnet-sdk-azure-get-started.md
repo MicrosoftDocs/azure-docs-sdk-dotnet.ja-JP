@@ -1,329 +1,78 @@
 ---
-title: Azure .NET および .NET Core API の概要
-description: ご利用の Azure サブスクリプションでの .NET および .NET Core 用 Azure ライブラリの基本的な使用方法について説明します。
-keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API ,認証, 概要
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+title: Azure と .NET を使用して作業を開始する
+description: Azure と .NET について知っておくべき基本的事項について説明します。
+ms.date: 09/19/2018
+ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703055"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190595"
 ---
-# <a name="get-started-with-the-azure-net-and-net-core-apis"></a><span data-ttu-id="47e20-104">Azure .NET および .NET Core API の概要</span><span class="sxs-lookup"><span data-stu-id="47e20-104">Get started with the Azure .NET and .NET Core APIs</span></span>
+# <a name="get-started-with-azure-and-net"></a><span data-ttu-id="4ea13-103">Azure と .NET を使用して作業を開始する</span><span class="sxs-lookup"><span data-stu-id="4ea13-103">Get started with Azure and .NET</span></span>
 
-<span data-ttu-id="47e20-105">このチュートリアルでは、いくつかの [.NET 用 Azure API](/dotnet/api/overview/azure/) の使い方を示します。</span><span class="sxs-lookup"><span data-stu-id="47e20-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="47e20-106">認証の設定、Azure Storage アカウントの作成と使用、Azure SQL Database の作成と使用、仮想マシンのデプロイ、GitHub からの Azure App Service Web アプリのデプロイについて説明します。</span><span class="sxs-lookup"><span data-stu-id="47e20-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
+<span data-ttu-id="4ea13-104">このドキュメントでは、Azure サービスを使用してアプリの開発を始めるために .NET 開発者が知っておく必要がある主要な概念とサービスの概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="4ea13-104">This document provides an overview of key concepts and services .NET developers should be familar with to get started developing apps using Azure services.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="47e20-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="47e20-107">Prerequisites</span></span>
+## <a name="key-concepts"></a><span data-ttu-id="4ea13-105">主要な概念</span><span class="sxs-lookup"><span data-stu-id="4ea13-105">Key Concepts</span></span>
 
-- <span data-ttu-id="47e20-108">Azure アカウント。</span><span class="sxs-lookup"><span data-stu-id="47e20-108">An Azure account.</span></span> <span data-ttu-id="47e20-109">所有していない場合は、[無料試用版を入手](https://azure.microsoft.com/free/)してください。</span><span class="sxs-lookup"><span data-stu-id="47e20-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
+<span data-ttu-id="4ea13-106">**Azure アカウント**: Azure アカウントは、Azure サービス ([Azure portal](https://portal.azure.com) や [Cloud Shell](https://shell.azure.com) など) にサインインする際に使用する資格情報です。</span><span class="sxs-lookup"><span data-stu-id="4ea13-106">**Azure account**: Your Azure account is the credential you use to sign into Azure services, such as the [Azure Portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).</span></span> <span data-ttu-id="4ea13-107">Azure アカウントがない場合は、[アカウントを無料で作成](https://azure.microsoft.com/free/dotnet/)できます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-107">If you don't have an Azure account, you can [create one for free](https://azure.microsoft.com/free/dotnet/).</span></span>
 
-## <a name="set-up-authentication"></a><span data-ttu-id="47e20-110">認証の設定</span><span class="sxs-lookup"><span data-stu-id="47e20-110">Set up authentication</span></span>
+<span data-ttu-id="4ea13-108">**Azure サブスクリプション**: サブスクリプションとは、Azure リソースを作成する際の料金プランです。</span><span class="sxs-lookup"><span data-stu-id="4ea13-108">**Azure subscription**: A subscription is the billing plan within which Azure resources are created.</span></span> <span data-ttu-id="4ea13-109">サブスクリプションには、個人用サブスクリプションと会社が管理するエンタープライズ サブスクリプションがあります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-109">Subscriptions can be individual subscriptions or enterprise subscriptions managed by your company.</span></span> <span data-ttu-id="4ea13-110">Azure アカウントは複数のサブスクリプションに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-110">Your Azure account can be associated with multiple subscriptions.</span></span> <span data-ttu-id="4ea13-111">この場合、リソースの作成時に適切なサブスクリプションを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-111">In this case, make sure you're selecting the correct subscription when creating resources.</span></span> <span data-ttu-id="4ea13-112">詳細については、「[アカウント、サブスクリプション、課金の概要](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-112">For more information, see [Understanding accounts, subscriptions and billing](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).</span></span>
 
-[!include[Create service principal](includes/create-sp.md)]
+> [!TIP]
+> <span data-ttu-id="4ea13-113">Visual Studio サブスクリプションをお持ちの場合は、[月単位の Azure クレジットをアクティブにする](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)ことができます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-113">If you have a Visual Studio subscription, [you have monthly Azure credits waiting to be activated](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).</span></span>
 
-[!include[File-based authentication](includes/file-based-auth.md)]
+<span data-ttu-id="4ea13-114">**リソース グループ**: リソース グループを使用すると、管理のために Azure リソースをグループにまとめることができます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-114">**Resource group**: Resource groups are a way to organize your Azure resources into groups for management.</span></span> <span data-ttu-id="4ea13-115">コンピューター上のフォルダーにファイルを保存するのと同様に、Azure で作成されたリソースは、リソース グループに保存されます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-115">Resources created in Azure will be stored in a resource group, similar to saving a file in a folder on a computer.</span></span>
 
-## <a name="create-a-new-project"></a><span data-ttu-id="47e20-111">新しいプロジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="47e20-111">Create a new project</span></span> 
+<span data-ttu-id="4ea13-116">**ホスティング**: Azure でコードを実行するには、ユーザー指定のコードの実行をサポートするサービスでホストされている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-116">**Hosting**: To run code in Azure, it needs to be hosted in a service that supports executing user-provided code.</span></span>
 
-<span data-ttu-id="47e20-112">新しいコンソール アプリケーション プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="47e20-112">Create a new console application project.</span></span>  <span data-ttu-id="47e20-113">Visual Studio でこれを行うには、**[ファイル]**、**[新規]** の順にクリックし、**[プロジェクト]** をクリックします。Visual C# テンプレートで、**[コンソール アプリ (.NET Core)]** を選び、プロジェクトの名前を設定して、**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="47e20-113">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
+<span data-ttu-id="4ea13-117">**マネージド サービス**: Azure には、ユーザーがデータや情報を Azure に提供するためのサービスが用意されており、Azure の実装によって適切なアクションが実行されます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-117">**Managed services**: Azure provides some services where you provide data or information to Azure, and Azure's implementation takes the appropriate action.</span></span> <span data-ttu-id="4ea13-118">一例として Azure Blob Storage があります。このサービスでは、ユーザーがファイルを提供すると、Azure によってそれらの読み取り、書き込み、永続化が処理されます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-118">One example is Azure Blob Storage, where you provide files and Azure handles reading, writing, and persisting them.</span></span>
 
-![[新しいプロジェクト] ダイアログ](media/dotnet-sdk-azure-get-started/new-project.png)
+## <a name="choosing-a-hosting-option"></a><span data-ttu-id="4ea13-119">ホスティング オプションの選択</span><span class="sxs-lookup"><span data-stu-id="4ea13-119">Choosing a hosting option</span></span>
 
-<span data-ttu-id="47e20-115">新しいコンソール アプリが作成されたら、**[ツール]**、**[NuGet パッケージ マネージャー]**、**[パッケージ マネージャー コンソール]** の順にクリックして、パッケージ マネージャー コンソールを開きます。</span><span class="sxs-lookup"><span data-stu-id="47e20-115">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="47e20-116">コンソールで、次の 3 つのコマンドを実行して、必要なパッケージを入手します。</span><span class="sxs-lookup"><span data-stu-id="47e20-116">In the console, get the packages you'll need by executing the following three commands:</span></span>
+<span data-ttu-id="4ea13-120">Azure でのホスティングは、3 つのカテゴリに分けることができます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-120">Hosting in Azure can be divided into three categories.</span></span>
 
-```powershell
-# Azure Management Libraries for .NET (Fluent)
-Install-Package Microsoft.Azure.Management.Fluent
+* <span data-ttu-id="4ea13-121">**サービスとしてのインフラストラクチャ (IaaS)**: IaaS を使用して、関連付けられているネットワークおよびストレージ コンポーネントと共に、必要な仮想マシンをプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="4ea13-121">**Infrastructure-as-a-Service (IaaS)**: With IaaS, you provision the virtual machines you need along with associated network and storage components.</span></span> <span data-ttu-id="4ea13-122">その後、必要なソフトウェアとアプリケーションをそれらの VM にデプロイします。</span><span class="sxs-lookup"><span data-stu-id="4ea13-122">You then deploy whatever software and applications you want onto those VMs.</span></span> <span data-ttu-id="4ea13-123">このモデルは従来のオンプレミス環境に最も近いものですが、Microsoft がインフラストラクチャを管理する点が異なります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-123">This model is the closest to a traditional on-premises environment except that Microsoft manages the infrastructure.</span></span> <span data-ttu-id="4ea13-124">オペレーティング システム、カスタム ソフトウェア、セキュリティ更新プログラムなど、個々の VM は引き続きユーザーが管理します。</span><span class="sxs-lookup"><span data-stu-id="4ea13-124">You still manage the individual VMs, including the operating system, custom software, and security updates.</span></span>
 
-# Azure Store client libraries
-Install-Package WindowsAzure.Storage
+* <span data-ttu-id="4ea13-125">**サービスとしてのプラットフォーム (PaaS)**: PaaS は、管理されたホスティング環境を提供します。この環境では、VM やネットワーク リソースを管理せずにアプリケーションをデプロイできます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-125">**Platform-as-a-Service (PaaS)**: PaaS provides a managed hosting environment where you deploy your application without needing to manage VMs or networking resources.</span></span> <span data-ttu-id="4ea13-126">たとえば、個々の VM を作成するのではなく、インスタンス数を指定すると、サービスによって、必要なリソースがプロビジョニング、構成、および管理されます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-126">For example, instead of creating individual VMs, you specify an instance count, and the service will provision, configure, and manage the necessary resources.</span></span> <span data-ttu-id="4ea13-127">Azure App Service は PaaS サービスの例です。</span><span class="sxs-lookup"><span data-stu-id="4ea13-127">Azure App Service is an example of a PaaS service.</span></span>
+  
+* <span data-ttu-id="4ea13-128">**サービスとしての関数 (FaaS)**: 一般に "サーバーレス コンピューティング" と呼ばれる FaaS は、PaaS よりもさらに先を行き、ホスティング環境に関する懸念を取り除きます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-128">**Functions-as-a-Service (FaaS)**: Commonly referred to as serverless computing, FaaS goes even further than PaaS in abstracting the concerns of the hosting environment.</span></span> <span data-ttu-id="4ea13-129">コンピューティング インスタンスを作成し、それらのインスタンスにコードをデプロイするのではなく、コードをデプロイすると、サービスによってコードが自動的に実行されます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-129">Instead of creating compute instances and then deploying code to those instances, you deploy your code and the service automatically runs it.</span></span> <span data-ttu-id="4ea13-130">コンピューティング リソースを管理する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="4ea13-130">You don't need to administer the compute resources.</span></span> <span data-ttu-id="4ea13-131">プラットフォームによって、トラフィックを処理するために必要なレベルに、コードがシームレスにスケールアップまたはスケールダウンされ、コードの実行時間にのみ課金されます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-131">The platform seamlessly scales your code up or down to whatever level necessary to handle the traffic, and you pay only when your code is running.</span></span> <span data-ttu-id="4ea13-132">Azure Functions は FaaS サービスの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="4ea13-132">Azure Functions is a FaaS service.</span></span>
 
-# SQL Database client libraries
-Install-Package System.Data.SqlClient
-```
+<span data-ttu-id="4ea13-133">一般に、アプリケーションで FaaS モデルや PaaS モデルが重視されるようになると、クラウドでの実行によって得られるメリットが増えます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-133">Generally, the more your application favors FaaS and PaaS models, the more benefits you'll see from running in the cloud.</span></span> <span data-ttu-id="4ea13-134">Azure における 3 つの一般的なホスティングの選択肢とそれらを選ぶ状況の概要を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4ea13-134">Below is a summary of three common hosting choices in Azure and when to choose them.</span></span>
 
-## <a name="directives"></a><span data-ttu-id="47e20-117">ディレクティブ</span><span class="sxs-lookup"><span data-stu-id="47e20-117">Directives</span></span>
-
-<span data-ttu-id="47e20-118">アプリケーションの `Program.cs` ファイルを編集します。</span><span class="sxs-lookup"><span data-stu-id="47e20-118">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="47e20-119">最上部の `using` ディレクティブを次の内容で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="47e20-119">Replace the `using` directives at the top with the following:</span></span>
-
-```csharp
-using System;
-using System.Linq;
-using Microsoft.Azure.Management.Compute.Fluent;
-using Microsoft.Azure.Management.Compute.Fluent.Models;
-using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Data.SqlClient;
-```
+* <span data-ttu-id="4ea13-135">[Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is): Web アプリケーションまたはサービスをホストする場合は、まず App Service を検討します。</span><span class="sxs-lookup"><span data-stu-id="4ea13-135">[Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is): If you're looking to host a web application or service, look at App Service first.</span></span> <span data-ttu-id="4ea13-136">App Service と ASP.NET、WCF、ASP.NET Core の各アプリを使った作業を開始する場合は、「[Azure に ASP.NET Core Web アプリを作成する](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-136">To get started with App Service and ASP.NET, WCF, and ASP.NET Core apps, see [Create an ASP.NET Core web app in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet).</span></span>
 
-## <a name="create-a-virtual-machine"></a><span data-ttu-id="47e20-120">仮想マシンの作成</span><span class="sxs-lookup"><span data-stu-id="47e20-120">Create a virtual machine</span></span>
+* <span data-ttu-id="4ea13-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview): Azure Functions はイベント ドリブン ワークフローに最適です。</span><span class="sxs-lookup"><span data-stu-id="4ea13-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview): Azure Functions is great for event-driven workflows.</span></span> <span data-ttu-id="4ea13-138">例として、Webhook への応答、キューまたは Blob Storage 内の項目の処理、タイマーなどがあります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-138">Examples include responding to webhooks, processing items in queues or blob storage, and timers.</span></span> <span data-ttu-id="4ea13-139">Azure Functions を使った作業を開始する場合は、「[Visual Studio を使用して初めての関数を作成する](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-139">To get started with Azure Functions, see [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).</span></span>
 
-<span data-ttu-id="47e20-121">この例では、仮想マシンをデプロイします。</span><span class="sxs-lookup"><span data-stu-id="47e20-121">This example deploys a virtual machine.</span></span> 
+* <span data-ttu-id="4ea13-140">[Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): 特定の依存関係のため、App Service では既存のアプリケーションのホスティングのニーズが満たされない場合は、Virtual Machines が最も簡単な出発点となります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-140">[Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): If App Service doesn't meet your needs for hosting an existing application due to specific dependencies, Virtual Machines will be the easiest place to start.</span></span> <span data-ttu-id="4ea13-141">Virtual Machines と ASP.NET または WCF を使った作業を開始する場合は、「[Deploy an ASP.NET app to an Azure virtual machine (ASP.NET アプリを Azure 仮想マシンにデプロイする)](https://tutorials.visualstudio.com/aspnet-vm/intro)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-141">To get started with Virtual Machines and ASP.NET or WCF, see [Deploy an ASP.NET app to an Azure virtual machine](https://tutorials.visualstudio.com/aspnet-vm/intro).</span></span>
 
-<span data-ttu-id="47e20-122">`Main` メソッドを次のコードで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="47e20-122">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="47e20-123">仮想マシンの実際の `username` と `password` を指定してください。</span><span class="sxs-lookup"><span data-stu-id="47e20-123">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
+> [!TIP]
+> <span data-ttu-id="4ea13-142">Azure サービスの詳細な一覧については、「[Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-142">For a more complete list of Azure services, see [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options).</span></span> <span data-ttu-id="4ea13-143">サービスの選択の詳細については、「[Azure コンピューティング サービスのデシジョン ツリー](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-143">For more information on choosing a service, see [Decision tree for Azure compute services](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).</span></span>
 
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string username = "MY_USERNAME";
-    string password = "MY_PASSWORD";
-    string rgName = "sampleResourceGroup";
-    string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the VM
-    Console.WriteLine("Creating VM...");
-    var windowsVM = azure.VirtualMachines.Define(windowsVmName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewPrimaryNetwork("10.0.0.0/28")
-        .WithPrimaryPrivateIPAddressDynamic()
-        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
-        .WithPopularWindowsImage(KnownWindowsVirtualMachineImage.WindowsServer2012R2Datacenter)
-        .WithAdminUsername(username)
-        .WithAdminPassword(password)
-        .WithSize(VirtualMachineSizeTypes.StandardD2V2)
-        .Create();
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="47e20-124">**F5** キーを押してサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="47e20-124">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="47e20-125">数分後、プログラムが終了すると、Enter キーを押すように求められます。</span><span class="sxs-lookup"><span data-stu-id="47e20-125">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="47e20-126">Enter キーを押した後、Cloud Shell を使ってサブスクリプション内の仮想マシンを確認します。</span><span class="sxs-lookup"><span data-stu-id="47e20-126">After pressing enter, verify the virtual machine in your subscription with the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az vm list
-```
-
-## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="47e20-127">GitHub リポジトリからの Web アプリのデプロイ</span><span class="sxs-lookup"><span data-stu-id="47e20-127">Deploy a web app from a GitHub repo</span></span>
-
-<span data-ttu-id="47e20-128">次に、既存の GitHub リポジトリから新しい Web アプリを作成してデプロイするように、コードを変更します。</span><span class="sxs-lookup"><span data-stu-id="47e20-128">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="47e20-129">`Main` メソッドを次のコードに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="47e20-129">Replace the `Main` method with the following code:</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string appName = SdkContext.RandomResourceName("WebApp", 20);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the web app
-    Console.WriteLine("Creating Web App...");
-    var app = azure.WebApps.Define(appName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewFreeAppServicePlan()
-        .DefineSourceControl()
-        .WithPublicGitRepository("https://github.com/Azure-Samples/app-service-web-dotnet-get-started")
-        .WithBranch("master")
-        .Attach()
-        .Create();
-    Console.WriteLine("Your web app is live at: https://{0}", app.HostNames.First());
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="47e20-130">前と同じように **F5** キーを押してコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="47e20-130">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="47e20-131">ブラウザーを開き、コンソールに表示される URL に移動して、デプロイを確認します。</span><span class="sxs-lookup"><span data-stu-id="47e20-131">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
-
-## <a name="connect-to-a-sql-database"></a><span data-ttu-id="47e20-132">SQL Database への接続</span><span class="sxs-lookup"><span data-stu-id="47e20-132">Connect to a SQL database</span></span>
-
-<span data-ttu-id="47e20-133">この例では、新しい Azure SQL Database を作成し、いくつかの SQL 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="47e20-133">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
-
-<span data-ttu-id="47e20-134">`Main` メソッドを次のように置き換えて、`dbPassword` に強力なパスワードを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="47e20-134">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
-
-```csharp
- static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string adminUser = SdkContext.RandomResourceName("db", 8);
-    string sqlServerName = SdkContext.RandomResourceName("sql", 10);
-    string sqlDbName = SdkContext.RandomResourceName("dbname", 8);
-    string dbPassword = "YOUR_PASSWORD_HERE";
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the SQL server and database
-    Console.WriteLine("Creating server...");
-    var sqlServer = azure.SqlServers.Define(sqlServerName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithAdministratorLogin(adminUser)
-        .WithAdministratorPassword(dbPassword)
-        .WithNewFirewallRule("0.0.0.0", "255.255.255.255")
-        .Create();
-
-    Console.WriteLine("Creating database...");
-    var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-
-    // Display information for connecting later...
-    Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
-    Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-
-    // Build the connection string
-    var builder = new SqlConnectionStringBuilder();
-    builder.DataSource = sqlServer.FullyQualifiedDomainName;
-    builder.InitialCatalog = sqlDbName;
-    builder.UserID = adminUser + "@" + sqlServer.Name; // Format user ID as "user@server"
-    builder.Password = dbPassword;
-    builder.Encrypt = true;
-    builder.TrustServerCertificate = true;
-
-    // connect to the database, create a table and insert an entry into it
-    using (var conn = new SqlConnection(builder.ConnectionString))
-    {
-        conn.Open();
-
-        Console.WriteLine("Populating database...");
-        var createCommand = new SqlCommand("CREATE TABLE CLOUD (name varchar(255), code int);", conn);
-        createCommand.ExecuteNonQuery();
-
-        var insertCommand = new SqlCommand("INSERT INTO CLOUD (name, code ) VALUES ('Azure', 1);", conn);
-        insertCommand.ExecuteNonQuery();
-
-        Console.WriteLine("Reading from database...");
-        var selectCommand = new SqlCommand("SELECT * FROM CLOUD", conn);
-        var results = selectCommand.ExecuteReader();
-        while(results.Read())
-        {
-            Console.WriteLine("Name: {0} Code: {1}", results[0], results[1]);
-        }
-    }
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="47e20-135">前と同じように **F5** キーを押してコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="47e20-135">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="47e20-136">サーバーが作成されて意図したとおりに動作していることはコンソール出力で確認できますが、好みに応じて、SQL Server Management Studio などのツールで直接接続してもかまいません。</span><span class="sxs-lookup"><span data-stu-id="47e20-136">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
-
-## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="47e20-137">新しいストレージ アカウントへの BLOB の書き込み</span><span class="sxs-lookup"><span data-stu-id="47e20-137">Write a blob into a new storage account</span></span>
-
-<span data-ttu-id="47e20-138">この例では、ストレージ アカウントを作成し、BLOB をアップロードします。</span><span class="sxs-lookup"><span data-stu-id="47e20-138">This example creates a storage account and upload a blob.</span></span>  
-
-<span data-ttu-id="47e20-139">`Main` メソッドを次のコードで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="47e20-139">Replace the `Main` method with the following.</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string storageAccountName = SdkContext.RandomResourceName("st", 10);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the storage account
-    Console.WriteLine("Creating storage account...");
-    var storage = azure.StorageAccounts.Define(storageAccountName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .Create();
-
-    var storageKeys = storage.GetKeys();
-    string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storage.Name
-        + ";AccountKey=" + storageKeys[0].Value
-        + ";EndpointSuffix=core.windows.net";
-
-    var account = CloudStorageAccount.Parse(storageConnectionString);
-    var serviceClient = account.CreateCloudBlobClient();
-
-    // Create container. Name must be lower case.
-    Console.WriteLine("Creating container...");
-    var container = serviceClient.GetContainerReference("helloazure");
-    container.CreateIfNotExistsAsync().Wait();
-
-    // Make the container public
-    var containerPermissions = new BlobContainerPermissions()
-        { PublicAccess = BlobContainerPublicAccessType.Container };
-    container.SetPermissionsAsync(containerPermissions).Wait();
-
-    // write a blob to the container
-    Console.WriteLine("Uploading blob...");
-    var blob = container.GetBlockBlobReference("helloazure.txt");
-    blob.UploadTextAsync("Hello, Azure!").Wait();
-    Console.WriteLine("Your blob is located at {0}", blob.StorageUri.PrimaryUri);
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="47e20-140">**F5** キーを押してサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="47e20-140">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="47e20-141">数分後、プログラムが終了します。</span><span class="sxs-lookup"><span data-stu-id="47e20-141">After several minutes, the program finishes.</span></span> <span data-ttu-id="47e20-142">コンソールに表示される URL を参照して、BLOB がアップロードされたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="47e20-142">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="47e20-143">"Hello, Azure!" というテキストが</span><span class="sxs-lookup"><span data-stu-id="47e20-143">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="47e20-144">ブラウザーに表示されるはずです。</span><span class="sxs-lookup"><span data-stu-id="47e20-144">in your browser.</span></span>
-
-## <a name="clean-up"></a><span data-ttu-id="47e20-145">クリーンアップ</span><span class="sxs-lookup"><span data-stu-id="47e20-145">Clean up</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="47e20-146">このチュートリアルで作成したリソースをクリーンアップしないと、引き続き課金されます。</span><span class="sxs-lookup"><span data-stu-id="47e20-146">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="47e20-147">忘れずにこの手順を実行してください。</span><span class="sxs-lookup"><span data-stu-id="47e20-147">Be sure to do this step.</span></span>
-
-<span data-ttu-id="47e20-148">Cloud Shell で次のように入力して、作成したすべてのリソースを削除します。</span><span class="sxs-lookup"><span data-stu-id="47e20-148">Delete all the resources you created by entering the following in the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az group delete --name sampleResourceGroup
-```
-
-## <a name="explore-more-samples"></a><span data-ttu-id="47e20-149">その他のサンプルを探す</span><span class="sxs-lookup"><span data-stu-id="47e20-149">Explore more samples</span></span>
-
-<span data-ttu-id="47e20-150">.NET 用 Azure ライブラリを使ってリソースを管理したりタスクを自動化したりする方法をさらに詳しく知るには、[仮想マシン](dotnet-sdk-azure-virtual-machine-samples.md)、[Web アプリ](dotnet-sdk-azure-web-apps-samples.md)、[SQL データベース](dotnet-sdk-azure-sql-database-samples.md)に関するサンプル コードを参照してください。</span><span class="sxs-lookup"><span data-stu-id="47e20-150">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
-
-## <a name="reference"></a><span data-ttu-id="47e20-151">リファレンス</span><span class="sxs-lookup"><span data-stu-id="47e20-151">Reference</span></span>
-
-<span data-ttu-id="47e20-152">すべてのパッケージには、[リファレンス](http://docs.microsoft.com/dotnet/api)が提供されています。</span><span class="sxs-lookup"><span data-stu-id="47e20-152">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
-
-[!include[Contribute and community](includes/contribute.md)]
+## <a name="choosing-a-data-storage-service"></a><span data-ttu-id="4ea13-144">データ ストレージ サービスの選択</span><span class="sxs-lookup"><span data-stu-id="4ea13-144">Choosing a data storage service</span></span>
+
+<span data-ttu-id="4ea13-145">Azure には、ニーズに応じてデータを格納するための複数のサービスが用意されています。</span><span class="sxs-lookup"><span data-stu-id="4ea13-145">Azure offers several services for storing your data depending on your needs.</span></span> <span data-ttu-id="4ea13-146">.NET 開発者向けの最も一般的なデータ サービスを次に示します。</span><span class="sxs-lookup"><span data-stu-id="4ea13-146">The most common data services for .NET developers are:</span></span>
+
+* <span data-ttu-id="4ea13-147">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): SQL Server を既に使用しているアプリケーションをクラウドに移行する場合は、Azure SQL Database が自然な出発点です。</span><span class="sxs-lookup"><span data-stu-id="4ea13-147">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): If you're looking to migrate an application that is already using SQL Server to the cloud, Azure SQL Database is a natural place to start.</span></span> <span data-ttu-id="4ea13-148">作業を開始するには、「[チュートリアル: SQL Database を使用して Azure に ASP.NET アプリを作成する](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-148">To get started, see [Tutorial: Build an ASP.NET app in Azure with SQL Database](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).</span></span>
+
+* <span data-ttu-id="4ea13-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/): Azure Cosmos DB は、クラウド向けに設計された最新のデータベースです。</span><span class="sxs-lookup"><span data-stu-id="4ea13-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/): Azure Cosmos DB is a modern database designed for the cloud.</span></span> <span data-ttu-id="4ea13-150">特定のデータベース依存関係がまだない新しいアプリケーションを開始する場合は、Azure Cosmos DB を検討してください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-150">When starting a new application that doesn't yet have a specific database dependency, you should look at Azure Cosmos DB.</span></span> <span data-ttu-id="4ea13-151">Cosmos DB は、自動スケール、予測可能なパフォーマンス、高速応答時間、スキーマレスなデータのクエリを実行できることが重要である、新しい Web、モバイル、ゲーム、IoT の各アプリケーションに適しています。</span><span class="sxs-lookup"><span data-stu-id="4ea13-151">Cosmos DB is a good choice for new web, mobile, gaming, and IoT applications where automatic scale, predictable performance, fast response times, and the ability to query schema-free data are important.</span></span> <span data-ttu-id="4ea13-152">作業を開始するには、「[クイック スタート: SQL API と Azure Portal を使って Azure Cosmos DB による .NET Web アプリを作る](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-152">To get started, see [Quickstart: Build a .NET web app with Azure Cosmos DB using the SQL API and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).</span></span>
+
+* <span data-ttu-id="4ea13-153">[Azure Blob Storage](https://docs.microsoft.com/azure/storage/): Azure Blob Storage は、画像、ファイル、ストリームなどの大きなバイナリ オブジェクトの格納と取得に最適化されています。</span><span class="sxs-lookup"><span data-stu-id="4ea13-153">[Azure Blob Storage](https://docs.microsoft.com/azure/storage/): Azure Blob Storage is optimized for storing and retrieving large binary objects, such as images, files, and streams.</span></span> <span data-ttu-id="4ea13-154">オブジェクト ストアにより、大量の非構造化データの管理が可能になります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-154">Object stores enable the management of extremely large amounts of unstructured data.</span></span> <span data-ttu-id="4ea13-155">作業を開始するには、「[Quickstart: Use .NET to create a blob in object storage (クイック スタート: .NET を使用してオブジェクト ストレージに BLOB を作成する)](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-155">To get started, see [Quickstart: Use .NET to create a blob in object storage](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="4ea13-156">詳細については、「[適切なデータ ストアの選択](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-156">For more information, see [Choose the right data store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).</span></span>
+
+## <a name="diagnosing-problems-in-the-cloud"></a><span data-ttu-id="4ea13-157">クラウドでの問題の診断</span><span class="sxs-lookup"><span data-stu-id="4ea13-157">Diagnosing problems in the Cloud</span></span>
+
+<span data-ttu-id="4ea13-158">アプリケーションを Azure にデプロイした後、開発環境では動作していても、Azure では動作しない状況に遭遇することがあります。</span><span class="sxs-lookup"><span data-stu-id="4ea13-158">Once you deploy your application to Azure, you may run into cases where it worked in development but doesn't in Azure.</span></span> <span data-ttu-id="4ea13-159">問題を診断するときは、まず次の 2 つを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="4ea13-159">Below are two good places to start when diagnosing issues:</span></span>
+
+* <span data-ttu-id="4ea13-160">**Visual Studio からのリモート デバッグ**: (このドキュメントで説明するサービスを含め) ほとんどの Azure コンピューティング サービスでは、Visual Studio を使用したリモート デバッグとログの取得がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="4ea13-160">**Remote debug from Visual Studio**: Most Azure compute services (including the services discussed in this document) support remote debugging with Visual Studio and acquiring logs.</span></span> <span data-ttu-id="4ea13-161">アプリケーションで Visual Studio の機能を調べるには、Visual Studio のクイック起動ツール バー (右上隅) に「Cloud Explorer」と入力して、Cloud Explorer ツール ウィンドウを開き、ツリーで目的のアプリケーションを見つけます。</span><span class="sxs-lookup"><span data-stu-id="4ea13-161">To explore Visual Studio's capabilities with your application, open the Cloud Explorer tool window by typing 'Cloud Explorer' into Visual Studio's quick launch toolbar (in the upper-right corner), and then locate your application in the tree.</span></span> <span data-ttu-id="4ea13-162">詳細については、[Visual Studio を使用した Azure App Service の Web アプリのトラブルシューティング](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug)に関するページをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-162">For details, see [Troubleshoot a web app in Azure App Service using Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).</span></span>
+
+* <span data-ttu-id="4ea13-163">**Application Insights**: [Application Insights](https://docs.microsoft.com/azure/application-insights/) は、診断データ、テレメトリ、パフォーマンス データをアプリケーションから自動的に取り込む、完全なアプリケーション パフォーマンス監視 (APM) ソリューションです。</span><span class="sxs-lookup"><span data-stu-id="4ea13-163">**Application Insights**: [Application Insights](https://docs.microsoft.com/azure/application-insights/) is a complete application performance monitoring (APM) solution that captures diagnostic data, telemetry, and performance data from applications automatically.</span></span> <span data-ttu-id="4ea13-164">アプリの診断データの収集を開始するには、「[ASP.NET Web アプリケーションの監視を開始する](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4ea13-164">To get started collecting diagnostic data for your app, see [Start monitoring your ASP.NET Web Application](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal).</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="4ea13-165">次の手順</span><span class="sxs-lookup"><span data-stu-id="4ea13-165">Next steps</span></span>
+
+* [<span data-ttu-id="4ea13-166">Azure に最初の ASP.NET Core Web アプリをデプロイする</span><span class="sxs-lookup"><span data-stu-id="4ea13-166">Deploy your first ASP.NET Core web app to Azure</span></span>](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
+* [<span data-ttu-id="4ea13-167">.NET 用 Azure API での認証の詳細を確認する</span><span class="sxs-lookup"><span data-stu-id="4ea13-167">Learn about authentication in Azure APIs for .NET</span></span>](dotnet-sdk-azure-authenticate.md)
+* [<span data-ttu-id="4ea13-168">クラウド アプリのエラーを診断する</span><span class="sxs-lookup"><span data-stu-id="4ea13-168">Diagnose errors in your cloud apps</span></span>](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps)
+* <span data-ttu-id="4ea13-169">[.NET 開発者向けの Azure クイック スタート ガイド](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook) (無料の電子書籍) をダウンロードする</span><span class="sxs-lookup"><span data-stu-id="4ea13-169">Download the free e-book [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)</span></span>
