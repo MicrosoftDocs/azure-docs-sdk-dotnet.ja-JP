@@ -2,12 +2,12 @@
 title: Azure と .NET を使用して作業を開始する
 description: Azure と .NET について知っておくべき基本的事項について説明します。
 ms.date: 09/19/2018
-ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190595"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348144"
 ---
 # <a name="get-started-with-azure-and-net"></a>Azure と .NET を使用して作業を開始する
 
@@ -63,7 +63,6 @@ Azure には、ニーズに応じてデータを格納するための複数の�
 > 詳細については、「[適切なデータ ストアの選択](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)」をご覧ください。
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>クラウドでの問題の診断
-
 アプリケーションを Azure にデプロイした後、開発環境では動作していても、Azure では動作しない状況に遭遇することがあります。 問題を診断するときは、まず次の 2 つを使用することをお勧めします。
 
 * **Visual Studio からのリモート デバッグ**: (このドキュメントで説明するサービスを含め) ほとんどの Azure コンピューティング サービスでは、Visual Studio を使用したリモート デバッグとログの取得がサポートされています。 アプリケーションで Visual Studio の機能を調べるには、Visual Studio のクイック起動ツール バー (右上隅) に「Cloud Explorer」と入力して、Cloud Explorer ツール ウィンドウを開き、ツリーで目的のアプリケーションを見つけます。 詳細については、[Visual Studio を使用した Azure App Service の Web アプリのトラブルシューティング](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug)に関するページをご覧ください。
