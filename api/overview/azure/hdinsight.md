@@ -3,13 +3,13 @@ title: Azure HDInsight .NET SDK
 description: Azure HDInsight .NET SDK のリファレンス
 ms.date: 9/19/2018
 ms.topic: reference
-ms.service: hd-insight
-ms.openlocfilehash: d25bdb1c9086cd93190b97f519654f2c193b9dc3
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: hdinsight
+ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190685"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348204"
 ---
 # <a name="azure-hdinsight-net-sdk"></a>Azure HDInsight .NET SDK
 
@@ -122,7 +122,7 @@ Azure SQL Database のサンプルの[完全な一覧](https://azure.microsoft.c
 
 ## <a name="overview"></a>概要
 
-HDInsight .NET SDK に用意されているクラスとメソッドを使用すると、お使いの HDInsight クラスターを管理することができます。 これには、スクリプト アクションを作成、削除、更新、一覧表示、スケーリング、実行したり、HDInsight クラスターのプロパティを監視、取得したりする操作が含まれます。
+HDInsight .NET SDK に用意されているクラスとメソッドを使用すると、お使いの HDInsight クラスターを管理することができます。 これには、スクリプト アクションを作成、削除、更新、一覧表示、サイズ変更、実行したり、HDInsight クラスターのプロパティを監視、取得したりする操作が含まれます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -463,9 +463,9 @@ client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPat
 client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPatchParameters(new Dictionary<string, string> { { "tag1Name", "tag1Value" }, { "tag2Name", "tag2Value" } }));
 ```
 
-### <a name="scale-cluster"></a>クラスターのスケーリング
+### <a name="resize-cluster"></a>クラスターのサイズ変更
 
-特定のクラスターの worker ノード数を増減するには、次のように新しいサイズを指定します。
+特定のクラスターの worker ノード数をサイズ変更するには、次のように新しいサイズを指定します。
 
 ```csharp
 client.Clusters.Resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker Nodes (int)>)

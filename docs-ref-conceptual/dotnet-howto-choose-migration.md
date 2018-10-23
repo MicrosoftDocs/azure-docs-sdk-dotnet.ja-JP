@@ -4,12 +4,12 @@ description: ASP.NET Web アプリケーションに適した Azure への移行
 author: CESARDELATORRE
 ms.author: cesardl
 ms.date: 11/15/2017
-ms.openlocfilehash: 7c0d10436efa86c3d4a60f80e2eebd935ee01cee
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 20bdef0614d8d492c3724f5a0f74f5ec9b2aa032
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190615"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348224"
 ---
 # <a name="choose-the-right-azure-hosting-option"></a>適切な Azure ホスティング オプションの選択
 
@@ -30,7 +30,7 @@ ms.locfileid: "47190615"
 
 |                 | Azure VM | Azure App Service | Windows コンテナー |
 |-----------------|-----------|-------------------|--------------------|
-|いつ使用するか      |<ul><li>アプリケーションに、サーバーとローカルの .msi インストール ファイルに対する強固な依存関係がある場合。</li><li>最も簡単なアプリケーション移行パスを必要としている場合。</li></ul>|アプリにサーバーに対する依存関係がなく、データベース サーバーにアクセスするクリーンな ASP.NET Web アプリ (MVC、WebForm) または N 層アプリ (Web API、WCf) である場合。 |<ul><li>アプリケーションに元のサーバーに対する依存関係があるが、それらの依存関係を Docker の Windows イメージに含めることができる場合。</li><li>アプリを最新化して、[クラウド DevOps 対応](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications)にする場合。</li></ul>|
+|いつ使用するか      |<ul><li>アプリケーションに、サーバーとローカルの .msi インストール ファイルに対する強固な依存関係がある場合。</li><li>最も簡単なアプリケーション移行パスを必要としている場合</li></ul>|アプリにサーバーに対する依存関係がなく、データベース サーバーにアクセスするクリーンな ASP.NET Web アプリ (MVC、WebForm) または N 層アプリ (Web API、WCf) である場合。 |<ul><li>アプリケーションに元のサーバーに対する依存関係があるが、それらの依存関係を Docker の Windows イメージに含めることができる場合。</li><li>アプリを最新化して、[クラウド DevOps 対応](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications)にする場合。</li></ul>|
 |長所  |<ul><li>最も簡単な移行パス。</li><li>使い慣れた環境。 デプロイ環境は、オンプレミス サーバーとほぼ同じ VM。</li></ul> |PaaS の継続的なメンテナンス、Azure でアプリを管理およびスケールする最も簡単な方法。 |<ul><li>将来に備えて、アプリのコンテナーに依存関係が含まれているクラウド DevOps 対応。</li><li>.NET/C# コードのリファクタリングがほとんど不要。</li></ul> |
 |短所             |IaaS。 メンテナンスにコストがかかる。 ネットワーク、ロード バランサー、スケールアウト、IIS 管理などについて VM インフラストラクチャを管理する必要がある。 |<ul><li>すべてのアプリが[サポート](http://www.migratetoazure.net/ReadinessAssessment)されているわけではない。</li><li>一部のアプリでは、Azure App Service をサポートするために、リファクタリングと若干の再設計が必要。</li></ul> |<ul><li>Docker のスキルの学習曲線。</li><li>一部のコードとアプリ構成設定の変更。</li></ul>|
 |必要条件 |オンプレミスのアプリと同じ要件の Windows Server VM | [Azure App Service の互換性の分析](https://www.migratetoazure.net/Resources)に関するページで指定されている Azure App Service の要件 |<ul><li>[Windows Server 2016 with Containers - Azure VM](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WindowsServer?tab=Overview)<br />or</li><li>[Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) (Kubernetes オーケストレーター)<br />or<li>[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) オーケストレーター</li></ul> |
