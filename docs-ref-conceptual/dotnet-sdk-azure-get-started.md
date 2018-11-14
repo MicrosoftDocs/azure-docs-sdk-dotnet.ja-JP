@@ -2,12 +2,12 @@
 title: Azure と .NET を使用して作業を開始する
 description: Azure と .NET について知っておくべき基本的事項について説明します。
 ms.date: 09/19/2018
-ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 63587d7d5ccb79eee47185ff1f3ccb9cbd09c0ea
+ms.sourcegitcommit: 0de939648fa01698016fed633200f8eb07c96eb7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348144"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276582"
 ---
 # <a name="get-started-with-azure-and-net"></a>Azure と .NET を使用して作業を開始する
 
@@ -61,6 +61,10 @@ Azure には、ニーズに応じてデータを格納するための複数の�
 
 > [!TIP]
 > 詳細については、「[適切なデータ ストアの選択](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)」をご覧ください。
+
+## <a name="connecting-to-azure-services"></a>Azure サービスへの接続
+
+Visual Studio を使用する場合は、特定の Azure サービスのサポートをプロジェクトに追加できます。  Visual Studio の **[接続済みサービス]** ダイアログを使用すると、必要な参照、接続コード、および構成設定をプロジェクトに簡単に追加できます。  よく使用される一部の Azure サービス ([Storage](/azure/vs-azure-tools-connected-services-storage)、[Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) 認証、[Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service)、([Computer Vision](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service) を含む) [Cognitive Services](/azure/cognitive-services/) など) は、すぐ使えるようにサポートされています。  サード パーティのサービスを含むその他のサービスは、拡張機能として [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance) で入手できます。
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>クラウドでの問題の診断
 アプリケーションを Azure にデプロイした後、開発環境では動作していても、Azure では動作しない状況に遭遇することがあります。 問題を診断するときは、まず次の 2 つを使用することをお勧めします。
