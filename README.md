@@ -1,4 +1,10 @@
-## Microsoft Open Source Code of Conduct
+## <a name="documentation-for-azure-net-sdk-apis"></a><span data-ttu-id="a972f-101">Azure .NET SDK API のドキュメント</span><span class="sxs-lookup"><span data-stu-id="a972f-101">Documentation for Azure .NET SDK APIs</span></span>
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+### <a name="overview"></a><span data-ttu-id="a972f-102">概要</span><span class="sxs-lookup"><span data-stu-id="a972f-102">Overview</span></span>
+
+<span data-ttu-id="a972f-103">このリポジトリには、[docs.microsoft.com でホストされる](https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet) Azure .NET SDK API ドキュメントの生コンテンツが格納されています。</span><span class="sxs-lookup"><span data-stu-id="a972f-103">This repository houses raw content for the Azure .NET SDK API documentation, [hosted on docs.microsoft.com](https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet).</span></span> <span data-ttu-id="a972f-104">ここに示すコンテンツは、Azure サービスを操作および管理するツールを提供する各種 NuGet パッケージから生成されます。</span><span class="sxs-lookup"><span data-stu-id="a972f-104">Content provided here is generated from various NuGet packages that provide tooling to interact and manage Azure services.</span></span>
+
+### <a name="code-of-conduct"></a><span data-ttu-id="a972f-105">倫理規定</span><span class="sxs-lookup"><span data-stu-id="a972f-105">Code of Conduct</span></span>
+
+<span data-ttu-id="a972f-106">このプロジェクトでは、[Microsoft オープン ソースの倫理規定](https://opensource.microsoft.com/codeofconduct/)を採用しています。</span><span class="sxs-lookup"><span data-stu-id="a972f-106">This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).</span></span>
+<span data-ttu-id="a972f-107">詳細については、[倫理規定についてよくある質問](https://opensource.microsoft.com/codeofconduct/faq/)を参照するか、[opencode@microsoft.com](mailto:opencode@microsoft.com) 宛てに質問またはコメントをお送りください。</span><span class="sxs-lookup"><span data-stu-id="a972f-107">For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.</span></span>
