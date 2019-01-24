@@ -4,12 +4,12 @@ description: .NET 用 Azure Cosmos DB ライブラリのリファレンス
 ms.date: 08/31/2018
 ms.topic: reference
 ms.service: cosmos-db
-ms.openlocfilehash: 8ff565f1cd72eec2f574b45d04ceac526b8c5eb0
-ms.sourcegitcommit: 01ec3adba39a6f946015552c28da0a9a6bb57180
+ms.openlocfilehash: 95fcd8468c3d472cfcadeaae3b56ae789c3b1e7a
+ms.sourcegitcommit: 55ee51501678d1575e5159f0ac0e475b5bf9daf3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112020"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54453996"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a>.NET 用 Azure Cosmos DB ライブラリ
 
@@ -56,7 +56,7 @@ dotnet add package Microsoft.Azure.Cosmos
 
 ### <a name="code-example"></a>コード例
 
-この例では、既存の Azure Cosmos DB SQL API データベースに接続し、コレクションからドキュメントを読み取って、`Item` オブジェクトとして逆シリアル化します。 この例では、.NET SDK のバージョン 2.x を使用しています。   
+この例では、既存の Azure Cosmos DB SQL API データベースに接続し、コレクションからドキュメントを読み取って、`TodoItem` オブジェクトとして逆シリアル化します。 この例では、.NET SDK のバージョン 2.x を使用しています。   
 
 ```csharp
 /* Include this "using" directive...
@@ -65,7 +65,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString();
+var todoItem = client.ReadDocumentAsync<TodoItem>(documentUri);
 ```
 
 この例では、既存の Azure Cosmos DB SQL API データベースに接続して、新しいデータベースとコンテナーを作成し、コンテナーから項目を読み取って、`TodoItem` オブジェクトに逆シリアル化します。 この例では、.NET SDK のバージョン 3.x を使用しています。   
