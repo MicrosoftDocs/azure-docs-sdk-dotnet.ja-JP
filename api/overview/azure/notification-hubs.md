@@ -4,12 +4,12 @@ description: .NET 用 Azure Notification Hubs ライブラリのリファレン�
 ms.date: 10/19/2017
 ms.topic: reference
 ms.service: notification-hubs
-ms.openlocfilehash: 197ca22527a475b43b45149a40e96e5a027739ad
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 750a51e8dfa7323f6afb54735b4bfc517f9ec15f
+ms.sourcegitcommit: 4b68c73652cb7e44cf4db36f70cb33a17dd863ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190265"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58085839"
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a>.NET 用 Azure Notification Hubs ライブラリ
 
@@ -20,7 +20,7 @@ Azure Notification Hubs は、使いやすいマルチプラットフォーム�
 [NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
 > [!NOTE]
-> [NuGet パッケージの新しいプレビュー バージョン](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/2.0.0-preview1)では .NET Standard がサポートされるようになりました。これにより、バックエンドでの Notification Hubs の使用に対して.NET Core を使うことができます
+> [Azure Notification Hubs NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs)では .NET Standard がサポートされるようになりました。これにより、バックエンドでの Notification Hubs の使用に対して .NET Core を使うことができます
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
 
@@ -45,7 +45,6 @@ await hub.SendWindowsNativeNotificationAsync(toast);
 
 > [!div class="nextstepaction"]
 > [クライアント API を探す](/dotnet/api/overview/azure/notificationhubs/client)
-
 
 ## <a name="management-library"></a>管理ライブラリ
 
