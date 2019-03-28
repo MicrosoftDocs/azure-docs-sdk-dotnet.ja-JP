@@ -3,11 +3,11 @@ ms.service: multiple
 ms.date: 9/20/2018
 ms.topic: include
 ms.openlocfilehash: 5c8cb328802cfb94e944e4241852fb9568e8507f
-ms.sourcegitcommit: e25b6ac74033f3b0a7610bf66feb654acb43054c
+ms.sourcegitcommit: e534dad2d96b72ab6a9bc4b5567508962bd7e05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53430535"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343331"
 ---
 Azure Management Libraries for .NET を使うには、Azure サブスクリプション内のリソースの読み取りと作成を行うアクセス許可が、.NET アプリケーションに必要です。 サービス プリンシパルを作成し、その資格情報で実行してこのアクセスを許可するようにアプリを構成してください。 サービス プリンシパルによって、自分の ID に関連付けられた非対話型のアカウントを作成し、アプリの実行に必要な権限だけを付与することができます。
 
