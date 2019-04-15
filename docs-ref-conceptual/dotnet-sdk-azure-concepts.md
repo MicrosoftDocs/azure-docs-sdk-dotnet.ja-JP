@@ -177,7 +177,7 @@ var azure = Azure
 | トレース レベル | 有効になるログ 
 | ------------ | ---------------
 | HttpLoggingDelegatingHandler.Level.None | 出力なし
-| HttpLoggingDelegatingHandler.Level.Basic | 基になる REST 呼び出しの URL、応答コード、時間がログに記録されます。
+| HttpLoggingDelegatingHandler.Level.Basic | 基になる REST 呼び出しの URL、応答コード、時間がログに記録されます
 | HttpLoggingDelegatingHandler.Level.Body | Basic の全出力内容に加えて、REST 呼び出しの要求と応答の本文がログに記録されます。
 | HttpLoggingDelegatingHandler.Level.Headers | Basic の全出力内容に加えて、REST 呼び出しの要求ヘッダーと応答ヘッダーがログに記録されます。
 | HttpLoggingDelegatingHandler.Level.BodyAndHeaders | Body と Headers の両方のログ レベルの全出力内容がログに記録されます。
