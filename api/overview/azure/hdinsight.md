@@ -1,128 +1,23 @@
 ---
-title: Azure HDInsight .NET SDK
-description: Azure HDInsight .NET SDK のリファレンス
-ms.date: 9/19/2018
+title: Azure HDInsight SDK for .NET
+description: Azure HDInsight SDK for .NET のリファレンス
+ms.date: 04/10/2019
 ms.topic: reference
 ms.service: hdinsight
-ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 2282a302b269a52c71ed88c26e021344cdca4382
+ms.sourcegitcommit: 4328168172ac1b1a448e16988f75199262bc5c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348204"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59700260"
 ---
-# <a name="azure-hdinsight-net-sdk"></a>Azure HDInsight .NET SDK
+# <a name="azure-hdinsight-sdk-for-net"></a>Azure HDInsight SDK for .NET
 
-## <a name="azure-hdinsight-libraries-for-net-2x"></a>.NET 2.X 用 Azure HDInsight ライブラリ
+Azure HDInsight は、HDInsight クラスターの管理と Hadoop ジョブの送信および監視用のクラスを提供する .NET 用の管理とジョブの SDK を提供します。
 
-## <a name="overview"></a>概要
+## <a name="management"></a>管理
 
-HDInsight Service .NET SDK は、Azure HDInsight Service によって管理される Hadoop ジョブの作成、構成、送信、監視に関連するクラスを提供します。 また、HDInsight Service を使用して Azure サブスクリプションを管理するクラスや、クラスター、ストレージ アカウント、Azure サブスクリプションによって管理されている HDInsight クラスターに関連付けられた他の資産を構成するクラスも提供します。
-
-## <a name="management-libraries"></a>管理ライブラリ
-
-### <a name="jobs"></a>[ジョブ]
-
-Hadoop クラスターでジョブを作成、管理、監視するには、Azure HDInsight クライアント SDK を使用します。 
-
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
-
-#### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
-
-```powershell
-Install-Package Microsoft.Azure.Management.HDInsight.Job
-```
-
-```bash
-dotnet add package Microsoft.Azure.Management.HDInsight.Job
-```
-
-#### <a name="code-example"></a>コード例
-
-この例では、Hadoop クラスターで Hive ジョブを実行します。
-
-```csharp
-HDInsightJobManagementClient managementClient = new HDInsightJobManagementClient(clusterUri, credentials);
-
-Dictionary<string, string> defines = new Dictionary<string, string> {
-    { "hive.execution.engine", "tez" },
-    { "hive.exec.reducers.max", "1" }
-};
-List<string> arguments = new List<string> { { "argA" }, { "argB" } };
-HiveJobSubmissionParameters parameters = new HiveJobSubmissionParameters
-{
-    Query = "SHOW TABLES",
-    Defines = defines,
-    Arguments = arguments
-};
-
-JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob(parameters);
-```
-
-### <a name="hdinsight"></a>HDInsight
-
-Hadoop クラスターを作成、管理、起動、停止、スケールするには、Azure HDInsight 管理 SDK を使用します。
-
-[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
-
-#### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
-
-```powershell
-Install-Package Microsoft.Azure.Management.HDInsight
-```
-
-```bash
-dotnet add package Microsoft.Azure.Management.HDInsight
-```
-
-#### <a name="code-example"></a>コード例
-
-この例では、既存の Azure Blob Storage を使用して、2 つのノードを持つ HDInsight Hadoop Linux クラスターを作成します。
-
-```csharp
-HDInsightManagementClient managementClient = new HDInsightManagementClient(authToken);
-// Set parameters for the new cluster
-ClusterCreateParameters parameters = new ClusterCreateParameters
-{
-    ClusterSizeInNodes = 2,
-    UserName = "admin",
-    Password = "<Enter HTTP User Password>",
-    ClusterType = "Hadoop",
-    OSType = OSType.Linux,
-    Version = "3.5",
-    // Use an Azure storage account as the default storage
-    DefaultStorageInfo = new AzureStorageInfo("<StorageAccount>", "<StorageKey>", "<BlobContainerName>"),
-    Location = "EAST US 2",
-    SshUserName = "sshuser",
-    SshPassword = "<Enter SSH User Password>",
-};
-
-// Create the cluster
-managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName>", parameters);
-```
-
-> [!div class="nextstepaction"]
-> [Management API を探す](/dotnet/api/overview/azure/hdinsights/management)
-
-
-## <a name="samples"></a>サンプル
-
-- [クラスターの作成](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-create-linux-clusters-dotnet-sdk)
-- [クラスターの管理](https://docs.microsoft.com/azure/hdinsight/hdinsight-administer-use-dotnet-sdk)
-- [Hive ジョブの実行](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-hive-dotnet-sdk)
-- [Pig ジョブの実行](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-pig-dotnet-sdk)
-- [その他のジョブ](https://docs.microsoft.com/azure/hdinsight/hdinsight-submit-hadoop-jobs-programmatically)
-
-Azure SQL Database のサンプルの[完全な一覧](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=hdinsight)を表示します。
-
-[PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
-
-## <a name="hdinsight-net-management-sdk-3x-preview"></a>HDInsight .NET Management SDK 3.X プレビュー
-
-## <a name="overview"></a>概要
-
-HDInsight .NET SDK に用意されているクラスとメソッドを使用すると、お使いの HDInsight クラスターを管理することができます。 これには、スクリプト アクションを作成、削除、更新、一覧表示、サイズ変更、実行したり、HDInsight クラスターのプロパティを監視、取得したりする操作が含まれます。
+.NET 用の HDInsight 管理 SDK には、HDInsight クラスターの管理に使用できるクラスとメソッドが用意されています。 これには、スクリプト アクションを作成、削除、更新、一覧表示、サイズ変更、実行したり、HDInsight クラスターのプロパティを監視、取得したりする操作が含まれます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -136,7 +31,7 @@ Visual Studio プロジェクトから **[ツール]**、**[NuGet パッケー�
 パッケージ マネージャー コンソールで、次のコマンドを実行します。
 
 ```
-  Install-Package Microsoft.Azure.Management.HDInsight -Version 3.1.0-preview
+  Install-Package Microsoft.Azure.Management.HDInsight
   Install-Package Microsoft.Azure.Management.Fluent
   Install-Package Microsoft.Azure.Management.ResourceManager.Fluent
 ```
@@ -146,7 +41,7 @@ Visual Studio プロジェクトから **[ツール]**、**[NuGet パッケー�
 SDK は最初に Azure サブスクリプションで認証する必要があります。  以下の例に従って、サービス プリンシパルを作成し、これを使用して認証します。 その後、`HDInsightManagementClient` のインスタンスが生成されます。これには、管理操作の実行に使用できるメソッドが多数含まれています (以下のセクションで説明します)。
 
 > [!NOTE]
-> 認証方法は以下の例の他にもあり、そちらの方がご自身のニーズに適している可能性もあります。 すべての方法については、「[.NET 用 Azure ライブラリを使った認証](https://docs.microsoft.com/en-us/dotnet/azure/dotnet-sdk-azure-authenticate?view=azure-dotnet)」を参照してください
+> 認証方法は以下の例の他にもあり、そちらの方がご自身のニーズに適している可能性もあります。 すべてのメソッドの概要については、[.NET 用 Azure ライブラリを使った認証](https://docs.microsoft.com/en-us/dotnet/azure/dotnet-sdk-azure-authenticate?view=azure-dotnet)をご覧ください。
 
 ### <a name="authentication-example-using-a-service-principal"></a>サービス プリンシパルを使用した認証の例
 
@@ -243,7 +138,6 @@ namespace HDI_SDK_Test
 }
 ```
 
-
 ## <a name="cluster-management"></a>クラスターの管理
 
 > [!NOTE]
@@ -251,7 +145,11 @@ namespace HDI_SDK_Test
 
 ### <a name="create-a-cluster"></a>クラスターの作成
 
-新しいクラスターを作成するには、`client.Clusters.Create()` を呼び出します。 
+新しいクラスターを作成するには、`client.Clusters.Create()` を呼び出します。
+
+#### <a name="samples"></a>サンプル
+
+一般的な数種類のタイプの HDInsight クラスターを作成するためのコード サンプルが次にあります: [HDInsight .NET サンプル](https://github.com/Azure-Samples/hdinsight-dotnet-sdk-samples)。
 
 #### <a name="example"></a>例
 
@@ -478,7 +376,7 @@ HDInsight 管理 SDK を使用して、Operations Management Suite (OMS) でご�
 ### <a name="enable-oms-monitoring"></a>OMS 監視の有効化
 
 > [!NOTE]
-> OMS の監視を有効にするには、既存の Log Analytics ワークスペースが必要です。 まだ作成していない場合、その方法については、「[Azure ポータルで Log Analytics ワークスペースを作成する](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace)」を参照してください。
+> OMS の監視を有効にするには、既存の Log Analytics ワークスペースが必要です。 まだ作成していない場合、その方法については、「[Azure portal で Log Analytics ワークスペースを作成する](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace)」を参照してください。
 
 ご自身のクラスターで OMS 監視を有効にするには:
 
@@ -506,7 +404,7 @@ client.Extension.DisableMonitoring("<Resource Group Name>", "<Cluster Name>");
 
 HDInsight には、クラスターをカスタマイズするためにカスタム スクリプトを呼び出すスクリプト アクションという構成方法があります。
 > [!NOTE]
-> スクリプト アクションを使用する方法の詳細については、「[スクリプト アクションを使用して Linux ベースの HDInsight クラスターをカスタマイズする](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)」を参照してください
+> スクリプト アクションの使用方法の詳細については、「[スクリプト アクションを使用して Linux ベースの HDInsight クラスターをカスタマイズする](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)」を参照してください
 
 ### <a name="execute-script-actions"></a>スクリプト アクションの実行
 
@@ -582,3 +480,49 @@ while (true)
     scriptExecutionsPaged = client.ScriptExecutionHistory.ListNext(scriptExecutionsPaged.NextPageLink);
 }
 ```
+
+## <a name="jobs"></a>[ジョブ]
+
+Hadoop クラスターでジョブを作成、管理、監視するには、.NET 用の Azure HDInsight ジョブ SDK を使用します。
+
+### <a name="sdk-installation"></a>SDK のインストール
+
+[NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使用してインストールします。
+
+#### <a name="visual-studio-package-manager"></a>Visual Studio パッケージ マネージャー
+
+```powershell
+Install-Package Microsoft.Azure.Management.HDInsight.Job
+```
+
+```bash
+dotnet add package Microsoft.Azure.Management.HDInsight.Job
+```
+
+### <a name="code-example"></a>コード例
+
+この例では、Hadoop クラスターで Hive ジョブを実行します。
+
+```csharp
+HDInsightJobManagementClient managementClient = new HDInsightJobManagementClient(clusterUri, credentials);
+
+Dictionary<string, string> defines = new Dictionary<string, string> {
+    { "hive.execution.engine", "tez" },
+    { "hive.exec.reducers.max", "1" }
+};
+List<string> arguments = new List<string> { { "argA" }, { "argB" } };
+HiveJobSubmissionParameters parameters = new HiveJobSubmissionParameters
+{
+    Query = "SHOW TABLES",
+    Defines = defines,
+    Arguments = arguments
+};
+
+JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob(parameters);
+```
+
+### <a name="samples"></a>サンプル
+
+- [Hive ジョブの実行](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-hive-dotnet-sdk)
+- [Pig ジョブの実行](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-pig-dotnet-sdk)
+- [その他のジョブ](https://docs.microsoft.com/azure/hdinsight/hdinsight-submit-hadoop-jobs-programmatically)
