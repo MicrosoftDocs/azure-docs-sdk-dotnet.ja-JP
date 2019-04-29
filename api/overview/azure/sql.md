@@ -17,7 +17,7 @@ ms.locfileid: "47190635"
 
 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) は、リレーショナル データ、テーブル データ、JSON データ、空間データ、XML データに対応した、Microsoft SQL Server エンジンを使うデータベース サービスです。 
 
-.NET での SQL Database の使い方について詳しくは、「[.NET (C#) と Visual Studio で Azure SQL Database に接続してデータベースに照会する](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)」をご覧ください。
+.NET での SQL Database の使い方について詳しくは、「[.NET (C#) と Visual Studio で Azure SQL データベースに接続してデータベースに照会する](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)」をご覧ください。
 
 ## <a name="client-library"></a>クライアント ライブラリ
 
