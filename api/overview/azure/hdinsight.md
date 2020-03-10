@@ -17,7 +17,7 @@ Azure HDInsight は、HDInsight クラスターの管理と Hadoop ジョブの�
 
 ## <a name="management"></a>管理
 
-.NET 用の HDInsight 管理 SDK には、HDInsight クラスターの管理に使用できるクラスとメソッドが用意されています。 これには、スクリプト アクションを作成、削除、更新、一覧表示、サイズ変更、実行したり、HDInsight クラスターのプロパティを監視、取得したりする操作が含まれます。
+.NET 用の HDInsight management SDK には、HDInsight クラスターの管理に使用できるクラスとメソッドが用意されています。 これには、スクリプト アクションを作成、削除、更新、一覧表示、サイズ変更、実行したり、HDInsight クラスターのプロパティを監視、取得したりする操作が含まれます。
 
 ## <a name="prerequisites"></a>前提条件
 
