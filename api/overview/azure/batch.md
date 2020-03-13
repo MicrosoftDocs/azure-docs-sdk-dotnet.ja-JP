@@ -123,7 +123,7 @@ using (BatchManagementClient batchManagementClient = new BatchManagementClient(n
 
 ## <a name="samples"></a>サンプル
 
-* [.NET サンプル用の Azure Batch クライアントおよび管理 SDK](https://github.com/Azure/azure-batch-samples/tree/master/CSharp)
+* [.NET サンプル用の Azure Batch クライアントおよび Management SDK](https://github.com/Azure/azure-batch-samples/tree/master/CSharp)
 
 アプリで使用できるその他の[サンプル .NET コード](https://azure.microsoft.com/resources/samples/?platform=dotnet)を確認してください。
 
