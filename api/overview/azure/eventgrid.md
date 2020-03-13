@@ -117,9 +117,9 @@ foreach (EventGridEvent receivedEvent in events)
 > [!div class="nextstepaction"]
 > [Publishing API を確認する](/dotnet/api/overview/azure/eventgrid/publish)
 
-## <a name="management-sdk"></a>管理 SDK
+## <a name="management-sdk"></a>Management SDK
 
-管理 SDK を使用して、Event Grid のインスタンス、トピック、サブスクリプションを作成、更新、削除します。
+Management SDK を使用して、Event Grid のインスタンス、トピック、サブスクリプションを作成、更新、削除します。
 
 [NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)を Visual Studio [パッケージ マネージャー コンソール][PackageManager]から直接インストールするか、[.NET Core CLI][DotNetCLI] を使ってインストールします。
 
